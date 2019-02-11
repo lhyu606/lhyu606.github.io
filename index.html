@@ -1,1 +1,44 @@
-<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>vuesell</title><link rel=stylesheet href=static/css/reset.css><link href=/static/css/app.b878b79807d014acb7ff1ec44fb14c99.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=/static/js/manifest.6c7ebf18d43a6e178bb1.js></script><script type=text/javascript src=/static/js/vendor.0b24fdb50a4644173a77.js></script><script type=text/javascript src=/static/js/app.9cd0e831e9153c0fe63e.js></script></body></html>
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>vuesell</title><link rel=stylesheet href=static/css/reset.css><style type=text/css>#Loading {
+        top:50%;
+        left:50%;
+        position: absolute;
+        -webkit-transform: translateY(-50%)  translateX(-50%);
+        transform: translateY(-50%)  translateX(-50%);
+        z-index:100;
+      }
+      @-webkit-keyframes ball-beat {
+        50% {
+          opacity: 0.2;
+          -webkit-transform: scale(0.75);
+          transform: scale(0.75); }
+ 
+        100% {
+          opacity: 1;
+          -webkit-transform: scale(1);
+          transform: scale(1); } }
+ 
+      @keyframes ball-beat {
+        50% {
+          opacity: 0.2;
+          -webkit-transform: scale(0.75);
+          transform: scale(0.75); }
+ 
+        100% {
+          opacity: 1;
+          -webkit-transform: scale(1);
+          transform: scale(1); } }
+ 
+      .ball-beat > div {
+        background-color: #279fcf;
+        width: 15px;
+        height: 15px;
+        border-radius: 100% !important;
+        margin: 2px;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        display: inline-block;
+        -webkit-animation: ball-beat 0.7s 0s infinite linear;
+        animation: ball-beat 0.7s 0s infinite linear; }
+      .ball-beat > div:nth-child(2n-1) {
+        -webkit-animation-delay: 0.35s !important;
+        animation-delay: 0.35s !important; }</style><link href=/static/css/app.b878b79807d014acb7ff1ec44fb14c99.css rel=stylesheet></head><body><div id=Loading><div class="loader-inner ball-beat"><div></div><div></div><div></div></div></div><div id=app></div><script type=text/javascript src=/static/js/manifest.8f23c775164170b5a83a.js></script><script type=text/javascript src=/static/js/vendor.0b24fdb50a4644173a77.js></script><script type=text/javascript src=/static/js/app.bd04ef1cc8573f174ad6.js></script></body></html>
