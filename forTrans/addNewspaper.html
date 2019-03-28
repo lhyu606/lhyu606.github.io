@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>新增/编辑号外内容板块</title>
+    <link rel="stylesheet" href="../layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="css/upload.css">
+    <link rel="stylesheet" type="text/css" href="themes/default/css/ueditor.css">
+    <link rel="stylesheet" type="text/css" href="third-party/codemirror/codemirror.css">
+    <link rel="stylesheet" type="text/css" href="css/addNewspaper.css">
+</head>
+<body>
+<!--新增小二内容-->
+
+    <script id="editor" type="text/plain" style="width:1024px;height:500px;"></script>
+    <input type="submit" name="">
+<button id="btn">click</button>
+<!-- 编辑商品窗口 -->
+<div class="edit-box">
+    <div class="cont layui-container">
+        <div class="edit-title">编辑卡片</div>
+        <form class="layui-form" lay-filter="edit-form">
+            <input type="hidden" name="" id="carId" value="">
+            <div class="layui-form-item">
+                <div class="layui-input-inline"  style="width: 100%;">
+                  <input type="text" id="carUrl" name="carUrl" lay-verify="title" disabled="disabled" class="layui-input">
+                </div>
+              </div>
+              <div class="layui-row">
+                  <div class="layui-col-xs4">
+                      <img src="" id="carImgUrl" width="100" height="100">
+                  </div>
+                  <div class="layui-col-xs8">
+                      <div class="layui-form-item">
+                        <div class="layui-input-inline" style="width: 100%;">
+                          <input type="text" id="carDes" name="carDes" lay-verify="title"  class="layui-input">
+                        </div>
+                      </div>
+                      <div class="layui-form-item">
+                        <div class="layui-input-inline" style="width: 100%;">
+                          <input type="text" id="carPrice" name="carPrice" lay-verify="title"  class="layui-input">
+                        </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="layui-row" style="margin-top: 20px;">
+                <div class="layui-col-xs4  layui-col-xs-offset2">
+                    <div class="layui-input-inline" >
+                    <input type="button" name="carCancel" id
+                    ="carCancel" class="layui-btn" value="取消" style="width: 120px;">
+                  </div>
+                </div>
+                <div class="layui-col-xs4 layui-col-xs-offset2"">
+                    <div class="layui-input-inline">
+                    <input type="button" name="carYes" id="carYes" class="layui-btn" value="确认" style="width: 120px;">
+                  </div>
+                </div>
+                <div class="layui-col-xs2"></div>
+              </div>
+            </div>
+        </form>
+        
+    </div>
+</div>
+
+
+<div id="cont">
+    
+ <div class='tao-msg item{{id}}'>
+    <div class='contain'>
+    <div class="msg-box">
+        <div class='img'><img src='{{pic}}' /></div>
+        <div class='content'>
+          <div class='des'><span class="msg-logo"></span>{{des}}</div>
+          <div class='price-box'>
+            <span class="nowprice">&yen;<span class="now-big">199</span>.99</span>
+            <span class='tmprice'>天猫价：<span class="tm-line">399.90</span></span>
+          </div>
+          <a href="https://www.baidu.com" class="link"></a>
+        </div>
+    </div>
+    </div>
+    <div class="mask">
+        <span class="edit">编辑</span>
+        <span class="remove">删除</span>
+    </div>
+  </div>
+
+</div>
+<div id="cont1"></div>
+<div id="cont2"></div>
+<script src="../layui/layui.js"></script>
+<script src="../pubJS/jquery-1.9.0.min.js"></script>
+<script src="../pubJS/jquery.form.js"></script>
+<script src="../pubJS/public.js"></script>
+<script src="config.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/ueditor/ueditor.all.js"> </script>
+    <!--建议手动加在语言，避免在ie下有时因为加载语言失败导致编辑器加载失败-->
+    <!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
+    <script type="text/javascript" charset="utf-8" src="lang/zh-cn/zh-cn.js"></script>
+<script type="text/javascript" src="third-party/codemirror/codemirror.js"></script>
+<script type="text/javascript" src="third-party/zeroclipboard/ZeroClipboard.js"></script>
+<script src="js/addNewspaper.js?v=201901091555"></script>
+</body>
+</html>
