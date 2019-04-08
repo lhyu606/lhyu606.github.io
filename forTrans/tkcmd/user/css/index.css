@@ -1,0 +1,66 @@
+.content {
+    position: absolute;
+    top: 74px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+.top0 {
+    top: 0!important;
+}
+.backst_logo {
+    position: absolute;
+    left: 20px;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+.backst_logo img {
+    width: 32px;
+    height:32px;
+}
+.layui-nav-child dd {
+    text-indent: 14px;
+}
+
+.top_title {
+    height: 74px;
+    line-height: 74px;
+    color: #333;
+    padding-left: 35px;
+    background: #fff;
+}
+.nav_title {
+    font-size: 22px;
+}
+.nav_title label {
+    font-size: 20px;
+    margin-left: 15px;
+}
+.inputTels {
+    margin-left: 20px;
+}
+
+.remainNum {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+.flex_c {
+    display: flex;
+    flex-direction: row;
+}
+.remainWtkNum {
+    height: 37px;
+    line-height: 37px;
+    flex: 1;
+}
+.remainWtkNum>span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #009688;
+    padding: 6px;
+}
+

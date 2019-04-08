@@ -1,0 +1,154 @@
+.search_condition {
+	float: right;
+}
+#searchs,#identitys {
+	width: 150px;
+	height: 32px;
+	border: 1px solid #3899E8;
+	border-radius: 4px;
+	margin: 10px;
+	float: left;
+	color: #666666;
+}
+#identitys {
+	margin-left: 20px;
+}
+.identity_set {
+	position: fixed;
+	margin: auto;
+	display: none;
+	width: 335px;
+	height: auto;
+	line-height: 40px;
+	background: #FFFFFF;
+	border: 1px solid #E2E2E2;
+	border-radius: 4px;
+	box-shadow: 0px 0px 20px #E2E2E2;
+	left: 0;
+	right: 0;
+	top: 27%;
+	z-index: 10;
+}
+.title {
+	background: #3899E8;
+	color: #FFFFFF;
+	padding: 0 10px;
+	font-weight: bold;
+}
+.power_detail {
+	padding: 15px;
+	color: #666666;
+	line-height: 45px;
+}
+.power_detail span {
+	display: inline-block;
+	font-size: 12px;
+	text-align: right;
+	width: 194px;
+	color: #666;
+}
+.power_detail input {
+	width: 70px;
+	height: 30px;
+	padding: 0 1px;
+	text-align: center;
+	color: #999999;
+	border: 1px solid #DDDDDD;
+	margin: 0 5px;
+}
+.identity_detail {
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	border: 1px solid #DDDDDD;
+	margin-left: 10px;
+	margin-top: 6px;
+	float: right;
+}
+.identity_detail i {
+	display: inline-block;
+	width: 60px;
+	line-height: 30px!important;
+	text-align: right;
+	position: relative;
+	top: -7px;
+}
+.select {
+	width: 100px;
+	height: 30px;
+	background: #FFFFFF;
+	border: 1px solid #DDDDDD;
+	text-align: center;
+	position: absolute;
+	z-index: 10;
+	right: 18px;
+	top: 62px;
+	cursor: pointer;
+}
+.select li:first-child {
+	border-bottom: 1px solid #DDDDDD;
+}
+.select li:hover {
+	background: #e6f4ff;
+}
+.power_detail>div {
+	text-align: center;
+}
+.reset,.sure {
+	width: 85px;
+	height: 35px;
+	border: 1px solid #3899E8;
+	border-radius: 4px;
+}
+.reset {
+	background: #FFFFFF;
+	color: #3899E8;
+	margin-right: 25px;
+}
+.sure {
+	color: #FFFFFF;
+	background: #3899E8;
+}
+.click {
+	color: #3899E8;
+	cursor: pointer;
+}
+.wrong {
+	border: 1px solid #FF0000 !important;
+}
+.floatR {
+	float: right;
+}
+.team_num {
+	color: #3899E8;
+	cursor: pointer;
+}
+.screenAll {
+	display: none;
+	z-index: 9;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.4;
+}
+
+
+.operate {
+	background: #fff;
+}
+.more_operate {
+	position: absolute;
+	display: none;
+	background: #fff;
+	z-index: 2;
+	width: 100px;
+	border: 1px solid #e5e5e5;
+}
+.more_operate li {
+	line-height: 35px;
+	cursor: pointer;
+	color: #3899E8;
+}

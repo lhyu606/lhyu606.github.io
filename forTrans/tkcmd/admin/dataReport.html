@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>数据报表</title>
+    <link rel="stylesheet" href="../layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="css/public.css">
+</head>
+
+<body>
+    <fieldset class="layui-elem-field layui-field-title">
+        <legend>数据报表</legend>
+    </fieldset>
+
+    <form class="layui-form" action="">
+        <div class="layui-form-item" style="text-align: center">
+            <div class="layui-inline" id="dateType">
+                <select name="dateType" lay-filter="dateType">
+                    <option value="day">按日查询</option>
+                    <option value="month">按月查询</option>
+                </select>
+            </div>
+            <div class="layui-inline" id="dateSelect">
+                <select name="dateSelect" lay-filter="dateSelect">
+                    <option value="7">近7天</option>
+                    <option value="30">近30天</option>
+                </select>
+            </div>
+        </div>
+    </form>
+
+    <div class="tableList cl">
+        <table class="layui-table" id="table" lay-filter="">
+            <thead>
+                <tr>
+                    <th>日期</th>
+                    <th>注册量</th>
+                    <th>订单量</th>
+                    <th>订单总额</th>
+                    <th>佣金总额</th>
+                    <th>小二/掌柜数</th>
+                    <!--<th>总监数</th>-->
+                </tr>
+            </thead>
+
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="../layui/layui.js"></script>
+    <script src="../pubJS/jquery-1.9.0.min.js"></script>
+    <script src="../pubJS/public.js"></script>
+    <script src="config.js"></script>
+    <script src="js/dataReport.js?v=201810231107"></script>
+</body>
+</html>
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>新增榜单</title>
+    <link rel="stylesheet" href="../layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="css/public.css">
+</head>
+
+<body>
+    <div class="fl" style="width: 100%;margin: 10px 0;">
+        <!--新增榜单-->
+        <form class="layui-form" action="" id='myupload' method='post' enctype='multipart/form-data' onsubmit="return saveConfig();">
+            <input type="text" name="sign" hidden>
+            <div class="layui-form-item">
+                <label class="layui-form-label">类型名称</label>
+                <div class="layui-input-block">
+                    <input type="text" name="title" autocomplete="off" placeholder="请输入类型名称" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">上传图片</label>
+                <label>
+                    <div class="addImg fl">
+                        <img src="img/add_img.png"/>
+                        <input type="file" class="uploadfile" style="display: none;"/>
+                    </div>
+                </label>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">跳转地址</label>
+                <div class="layui-input-block">
+                    <input type="text" name="click_url" autocomplete="off" placeholder="（非必填）" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">备注</label>
+                <div class="layui-input-block">
+                    <textarea type="text" name="comment" autocomplete="off" placeholder="请输入备注" class="layui-textarea"></textarea>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <label class="layui-form-label">开始时间</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="start_date" class="layui-input" id="startTime" placeholder="yyyy-MM-dd">
+                    </div>
+                    <label class="layui-form-label">结束时间</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="end_date" class="layui-input" id="endTime" placeholder="yyyy-MM-dd">
+                    </div>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">选择类型</label>
+                <div class="layui-input-inline">
+                    <select name="type" lay-filter="type">
+                        <option value="">选择类型</option>
+                        <option value="">选择类型</option>
+                        <option value="0">首页轮播图</option>
+                        <option value="1">按钮</option>
+                        <option value="2">banner活动</option>
+                        <option value="3">号外轮播图</option>
+                        <option value="4">免单banner</option>
+                        <option value="5">榜单扩展图</option>
+                        <option value="6">二维码海报图</option>
+                        <option value="7">我的底部轮播图</option>
+                    </select>
+                </div>
+                <label class="layui-form-label">状态</label>
+                <div class="layui-input-inline">
+                    <select name="status" lay-filter="status">
+                        <option value="">选择状态</option>
+                        <option value="0">仅保存</option>
+                        <option value="1">立即生效</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="layui-form-item" style="text-align: center">
+                <label for="submit_btn">
+                    <input type="submit" id="submit_btn" style="display: none"/>
+                    <button class="layui-btn" style="margin-top: 30px">提交</button>
+                </label>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="../layui/layui.js"></script>
+    <script src="../pubJS/jquery-1.9.0.min.js"></script>
+    <script src="../pubJS/jquery.form.js"></script>
+    <script src="../pubJS/public.js"></script>
+    <script src="config.js"></script>
+    <script src="js/addLabList.js?v=201811031555"></script>
+</body>
+</html>

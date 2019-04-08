@@ -1,0 +1,159 @@
+body{ background: #eee; }
+/*html { min-width: 1600px;}*/
+
+.centent{
+    width: 15%;
+    height: 812px;
+    border-right: 2px solid #009688;
+    box-sizing: border-box;
+}
+.treebox{
+    width: 100%;
+    height: 812px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: #fff;
+}
+.memberList {
+    font-size: 22px;
+    color: #323333;
+    text-indent: 22px;
+    line-height: 45px;
+}
+.ontree{
+    background-color: #009688;
+    padding: 5px;
+    border-radius: 4px;
+    color: white !important;
+}
+.tree a{
+    color: #323333;
+    height: 26px;
+    line-height: 26px;
+    font-size: 16px;
+    overflow: hidden;
+}
+.tree a:hover{
+    color: #009688;
+    cursor: pointer;
+}
+.tree ul{
+    padding-left: 20px;
+    margin-top: 4px;
+}
+.firstTree ul>li {
+    text-indent: 20px;
+}
+.close_menu,.open_menu{
+    overflow: hidden;
+}
+.close_menu span,.open_menu span{
+    width: 24px;
+    height: 24px;
+    display: block;
+    float: left;
+    cursor: pointer;
+    opacity: 0.5;
+}
+.close_menu span{
+    background: url(../img/close.png) no-repeat left top;
+}
+.open_menu span{
+    background: url(../img/open.png) no-repeat left top;
+}
+.close_menu span:hover,.open_menu span:hover{
+    opacity: 1;
+}
+
+.top_title {
+    height: 74px;
+    line-height: 74px;
+    color: #333;
+    padding-left: 35px;
+    margin-bottom: 10px;
+    background: #fff;
+    min-width: 1160px;
+}
+.remainWtkNum{
+    margin-left: 40px;
+    height: 74px;
+    line-height: 74px;
+}
+.remainWtkNum>span{
+    font-size: 20px;
+    font-weight: bold;
+    color: #009688;
+    padding: 7px;
+}
+
+.content {
+    background: #fff;
+    margin: 16px 15px 0;
+    min-width: 1160px;
+}
+.wtkInfo {
+    line-height: 38px;
+    font-size: 18px;
+    margin-left: 27px;
+}
+.wtkInfo i {
+    color: #00A6F4;
+}
+.demoTable {
+    margin-right: 22px;
+}
+#goodsInfo input[type='checkbox'] {
+    display: none;
+}
+.padding0 {
+    padding: 0 !important;
+}
+.tableList {
+    clear: both;
+    margin: 0 20px;
+}
+.memberNoCheck {
+    line-height: 38px;
+    margin-left: 80px;
+}
+.isStaff {
+    color: #666666;
+}
+.delToPoll {
+    background: #00A6F4;
+}
+.setSub {
+    float: left;
+}
+.teamDetail {
+    display: inline-block;
+    float: right;
+}
+.teamNum {
+    background: #00AFEF;
+}
+.lvlDetail {
+    display: inline-block;
+    display: none;
+    margin: 0 auto;
+}
+.goBack {
+    width: 50px;
+    height: 50px;
+    right: 0;
+    bottom: 6%;
+    background: #92B8B1;
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 5px 10px;
+    position: fixed;
+    background: url("../img/back_ico_n.png")no-repeat;
+    z-index: 10;
+}
+.goBack:hover{
+    background: url("../img/back_ico_h.png")no-repeat;
+}
+.noSub{
+    background: #e1e1e1;
+    cursor: not-allowed;
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>服务商信息详情</title>
+    <link rel="stylesheet" href="../layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="css/public.css">
+</head>
+
+<body>
+    <div class="fl" style="width: 100%;margin: 10px 0;">
+        <!--服务商信息详情-->
+        <form class="layui-form" action="" id='myupload' method='post' enctype='multipart/form-data' onsubmit="return editProviderInfo();">
+            <input type="text" name="token" hidden>
+            <input type="text" name="p_account" hidden>
+            <input type="text" name="p_uid" hidden>
+            <!--<input type="text" name="status" hidden>-->
+            <div class="layui-form-item">
+                <label class="layui-form-label">公司名称</label>
+                <div class="layui-input-block">
+                    <input type="text" name="company" autocomplete="off" placeholder="请输入公司名称" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">公司法人</label>
+                <div class="layui-input-block">
+                    <input type="text" name="legal_person" autocomplete="off" placeholder="请输入公司法人" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">联系人</label>
+                <div class="layui-input-block">
+                    <input type="text" name="linkman" autocomplete="off" placeholder="请输入联系人" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">联系人电话</label>
+                <div class="layui-input-block">
+                    <input type="text" name="linkman_tel" autocomplete="off" placeholder="请输入联系人电话" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item fl">
+                <label class="layui-form-label">选择状态</label>
+                <div class="layui-input-inline">
+                    <select name="status" lay-filter="status" id="statusSel">
+                        <option value="">选择状态</option>
+                        <option value="0">待审核</option>
+                        <option value="1">重新审核</option>
+                        <option value="2">审核拒绝</option>
+                        <option value="3">审核通过</option>
+                    </select>
+                </div>
+            </div>
+            <div class="layui-form-item fl">
+                <label class="layui-form-label">选择地区</label>
+                <div class="layui-input-inline">
+                    <select name="province" lay-filter="province" id="provinceSel">
+                        <option value="">选择省份</option>
+                    </select>
+                </div>
+                <div class="layui-input-inline" style="display: none;">
+                    <select name="city" lay-filter="city" id="citySel">
+                        <option value="">选择城市</option>
+                    </select>
+                </div>
+                <div class="layui-input-inline" style="display: none">
+                    <select name="street" lay-filter="street" id="streetSel">
+                        <option value="">选择街道</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div style="display: none">
+                <div class="layui-form-item imgList">
+                    <label class="layui-form-label">营业执照</label>
+                    <label>
+                        <div class="addImg fl">
+                            <img src="img/add_img.png"/>
+                            <input type="file" class="uploadfile" name="bl1" style="display: none;"/>
+                        </div>
+                    </label>
+                    <label>
+                        <div class="addImg fl" style="margin: 0 20px;">
+                            <img src="img/add_img.png"/>
+                            <input type="file" class="uploadfile" name="bl2" style="display: none;"/>
+                        </div>
+                    </label>
+                    <label>
+                        <div class="addImg fl">
+                            <img src="img/add_img.png"/>
+                            <input type="file" class="uploadfile" name="bl3" style="display: none;"/>
+                        </div>
+                    </label>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">详细地址</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="address" autocomplete="off" placeholder="详细地址" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">开户卡号</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="open_account" autocomplete="off" placeholder="开户卡号" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">开户行名</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="open_bankname" autocomplete="off" placeholder="开户行名" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">开户许可证</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="permit_card" autocomplete="off" placeholder="开户许可证" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">身份证正面照</label>
+                    <label>
+                        <div class="addImg fl">
+                            <img src="img/add_img.png"/>
+                            <input type="file" class="uploadfile" name="legal_positive" style="display: none;"/>
+                        </div>
+                    </label>
+                </div>
+                <div class="layui-form-item">
+                <label class="layui-form-label">身份证反面照</label>
+                <label>
+                    <div class="addImg fl">
+                        <img src="img/add_img.png"/>
+                        <input type="file" class="uploadfile" name="legal_negative" style="display: none;"/>
+                    </div>
+                </label>
+            </div>
+            </div>
+
+
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <label for="submit_btn">
+                        <input type="submit" id="submit_btn" style="display: none"/>
+                        <button class="layui-btn layui-btn-normal" style="margin-top: 30px">立即提交</button>
+                    </label>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="../layui/layui.js"></script>
+    <script src="../pubJS/area.js"></script>
+    <script src="../pubJS/jquery-1.9.0.min.js"></script>
+    <script src="../pubJS/jquery.form.js"></script>
+    <script src="../pubJS/public.js"></script>
+    <script src="config.js"></script>
+    <script src="js/lookAndEdit.js?v=201811031555"></script>
+</body>
+</html>

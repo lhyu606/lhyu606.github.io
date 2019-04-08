@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>用户信息</title>
+	<link rel="stylesheet" href="../layui/css/layui.css" media="all">
+	<link rel="stylesheet" href="css/public.css">
+</head>
+
+<body>
+
+	<fieldset class="layui-elem-field layui-field-title">
+		<legend>用户信息</legend>
+	</fieldset>
+
+	<!--条件筛选-->
+	<form class="layui-form" action="">
+		<div class="layui-form-item">
+			<!--状态搜索-->
+			<div class="layui-inline">
+				<label class="layui-form-label">用户信息</label>
+				<div class="layui-input-inline">
+					<select name="identitys" lay-filter="identitys" id="identitys">
+						<option value="10">全部身份</option>
+						<option value="1">小二</option>
+						<option value="2">掌柜</option>
+					</select>
+				</div>
+			</div>
+			<!--按账号搜索-->
+			<div class="fr">
+				<div class="layui-inline">
+					<div class="layui-input-inline" style="width: 140px;">
+						<select name="searchs" lay-filter="searchs" id="searchs">
+							<option value="0">按手机号查询</option>
+						</select>
+					</div>
+				</div>
+				<div class="layui-inline"><input class="layui-input" name="id" id="searchInfo" placeholder="请输入账号"></div>
+				<button class="layui-inline layui-btn search" data-type="reload" onclick="return false;">搜索</button>
+			</div>
+		</div>
+	</form>
+
+
+	<!--数据列表-->
+	<div class="tableList cl">
+		<table class="layui-table" id="dataInfo">
+			<thead>
+				<tr>
+					<th>手机号</th><th>身份</th><th style="width: 80px;">注册时间</th><th>推荐人</th>
+					<th>保留2</th><th>保留4</th><th>保留6</th><th>团队人数</th><th>余额</th><th>锁定金额</th>
+					<th>支付宝</th><th>微信</th><th>操作</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+	</div>
+
+	<!--分页-->
+	<div id="Pagination" class="pagination"></div>
+
+
+	<script src="../layui/layui.js"></script>
+	<script src="../pubJS/jquery-1.9.0.min.js"></script>
+	<script src="../pubJS/jquery.table2excel.js"></script>
+	<script src="../pubJS/jquery.pagination.js"></script>
+	<script src="../pubJS/public.js"></script>
+	<script src="config.js"></script>
+	<script src="js/userMessage.js?v=201811031001"></script>
+</body>
+</html>

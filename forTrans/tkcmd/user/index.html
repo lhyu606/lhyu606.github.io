@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>加盟商管理系统</title>
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body class="layui-layout-body">
+    <div class="layui-layout layui-layout-admin">
+        <!-- 头部区域 -->
+        <div class="layui-header">
+            <div class="backst_logo">用户管理系统</div>
+            <ul class="layui-nav layui-layout-right">
+                <li class="layui-nav-item">
+                    <a href="javascript:">
+                        <img src="img/admin_icon.png" class="layui-nav-img">
+                        <span id="adminAccount"></span>
+                    </a>
+                    <dl class="layui-nav-child">
+                        <dd><a id="adminLogout" href="#">退出</a></dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 左侧导航区域 -->
+        <div class="layui-side layui-bg-black">
+            <div class="layui-side-scroll">
+                <ul class="layui-nav layui-nav-tree">
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a href="javascript:">团队管理</a>
+                        <dl class="layui-nav-child">
+                            <dd class="wiTKList layui-this"><a href="javascript:">微淘客</a></dd>
+                            <dd class="memberList"><a href="javascript:">团员</a></dd>
+                            <dd class="memberManage"><a href="javascript:">直属团员</a></dd>
+                            <dd class="directorManage"><a href="javascript:">总监</a></dd>
+                            <dd class="filialeManage hide"><a href="javascript:">服务商</a></dd>
+                            <dd class="branchCompany hide"><a href="javascript:">分公司</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a href="javascript:">数据报表</a>
+                        <dl class="layui-nav-child">
+                            <dd class="dataReport"><a href="javascript:">数据汇总</a></dd>
+                            <dd class="tdTalAndCommInc"><a href="javascript:">交易总额 / 佣金收益</a></dd>
+                            <dd class="tradeVolum"><a href="javascript:">交易量</a></dd>
+                            <dd class="driveBonusInc"><a href="javascript:">直推奖金收益</a></dd>
+                            <dd class="developUserNum"><a href="javascript:">发展用户数</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 内容主体区域 -->
+        <div class="layui-body">
+            <div class="top_title">
+                <div class="fl nav_title">
+                    <span class="rolePlay">微淘客</span><label>共有<span class="rolePlay">微淘客</span><span id="memberSum">--</span>人</label>
+                </div>
+
+                <button class="layui-btn inputTels">批量赋予天使会员</button>
+                <button class="layui-btn giveNum">转赠天使会员名额</button>
+
+                <!--剩余赋予微淘客数量-->
+                <div class="fr remainNum">
+                    <div class="flex_c">
+                        <div class="remainWtkNum">还剩<span class="tshyCount">--</span>个天使会员名额</div>
+                        <div class="remainWtkNum">还剩<span class="wtkCount">--</span>个微淘客名额</div>
+                    </div>
+                    <div class="flex_c">
+                        <div class="remainWtkNum">还剩<span class="jyCount">--</span>个总监名额</div>
+                        <div class="remainWtkNum fws_div hide">还剩<span class="fwsCount">--</span>个服务商名额</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="content">
+                <iframe id="mainx_frm" name='mainx_frm' src="" width="100%" height="100%" frameborder="0"><!--iframe加载页--></iframe>
+            </div>
+        </div>
+
+        <!-- 底部固定区域 -->
+        <div class="layui-footer" style="background: #fff">厦门云致科技有限公司</div>
+    </div>
+
+    <script src="../layui/layui.js"></script>
+    <script src="../pubJS/jquery-1.9.0.min.js"></script>
+    <script src="../pubJS/public.js"></script>
+    <script src="config.js"></script>
+    <script src="js/index.js?v=201810251042"></script>
+</body>
+</html>

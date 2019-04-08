@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>朋友圈配置</title>
+    <link rel="stylesheet" href="../layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="css/public.css">
+</head>
+
+<body>
+    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+        <legend>一键发圈</legend>
+    </fieldset>
+
+    <!--商品榜单-->
+    <div class="goodLabel">
+        <a class="layui-btn layui-btn-radius" labKey="">全部动态</a>
+        <a class="layui-btn layui-btn-primary layui-btn-radius" labKey="0">商品动态</a>
+        <a class="layui-btn layui-btn-primary layui-btn-radius" labKey="1">公司动态</a>
+        <a class="layui-btn layui-btn-primary layui-btn-radius" labKey="2">新手必发</a>
+    </div>
+
+    <button class="layui-btn fl addMeterial">新建组</button>
+    <button class="layui-btn fr delete_check">删除选中</button>
+
+    <div class="goodsList">
+        <table class="layui-table" id="dataInfo">
+            <thead>
+                <tr>
+                    <th style="width: 20px">
+                        <input type="checkbox" id="checkAll"/>
+                        <label for="checkAll">
+                            <div class="allClick layui-unselect layui-form-checkbox" lay-skin="primary">
+                                <i class="layui-icon"></i>
+                            </div>
+                        </label>
+                    </th>
+                    <th width="400px">内容</th>
+                    <th>图片/视频/文章链接</th>
+                    <th>备注</th>
+                    <th>建议时间</th>
+                    <th>开始时间</th>
+                    <th>结束时间</th>
+                    <th>是否生效</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <!--分页-->
+    <div id="Pagination" class="pagination"><!-- 这里显示分页 --></div>
+
+
+    <script src="../layui/layui.js"></script>
+    <script src="../pubJS/jquery-1.9.0.min.js"></script>
+    <script src="../pubJS/jquery.pagination.js"></script>
+    <script src="../pubJS/public.js"></script>
+    <script src="config.js"></script>
+    <script src="js/frdCrlManage.js?v=201811031555"></script>
+</body>
+</html>

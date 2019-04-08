@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>新增小二内容板块</title>
+    <link rel="stylesheet" href="../layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="css/addMeterial.css">
+</head>
+<body>
+<!--新增小二内容-->
+    <form class="layui-form" action="" id='myupload' method='post' enctype='multipart/form-data' onsubmit="return saveWaiter();">
+        <input type="text" name="token" hidden>
+        <input type="text" name="id" hidden>
+        <input type="text" name="weight" hidden>
+        <input type="text" name="pic" hidden>
+        <input type="text" name="s_pic" hidden>
+        <div class="layui-form-item">
+            <label class="layui-form-label">小二类型</label>
+            <div class="layui-input-inline">
+                <select name="type" lay-filter="type">
+                    <option value="0">拉新</option>
+                    <option value="1">每日爆款</option>
+                    <option value="2">早安签</option>
+                    <option value="3">商学院</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">标题</label>
+            <div class="layui-input-block">
+                <input type="text" name="title" autocomplete="off" placeholder="请输入标题" class="layui-input comment"/>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">主图</label>
+            <label>
+                <div class="wImg">
+                    <img src="img/add_img.png"/>
+                    <input type="file" class="w_Img" style="display: none;"/>
+                </div>
+            </label>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">缩略图</label>
+            <label>
+                <div class="sImg">
+                    <img src="img/add_img.png"/>
+                    <input type="file" class="s_Img" style="display: none;"/>
+                </div>
+            </label>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">文本内容</label>
+            <div class="layui-input-block">
+                <textarea type="text" name="content" autocomplete="off" placeholder="请输入内容" class="layui-textarea comment"></textarea>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">商品id</label>
+            <div class="layui-input-block">
+                <input type="text" name="auctionId" autocomplete="off" placeholder="类型是商品类型的必填" class="layui-input comment"/>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">url</label>
+            <div class="layui-input-block">
+                <input type="text" name="url" autocomplete="off" placeholder="类型是网站类型的必填" class="layui-input comment"/>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">交互类型</label>
+            <div class="layui-input-inline">
+                <select name="int_type" lay-filter="int_type">
+                    <option value="good" selected>商品类型</option>
+                    <option value="h5">页面类型</option>
+                    <option value="text">图文类型</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">分享次数</label>
+            <div class="layui-input-block">
+                <input type="text" name="share_num" autocomplete="off" placeholder="请输入标题" class="layui-input comment"/>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">开始时间</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="start_time" class="layui-input" id="startTime" placeholder="yyyy-MM-dd">
+                </div>
+                <label class="layui-form-label">结束时间</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="end_time" class="layui-input" id="endTime" placeholder="yyyy-MM-dd">
+                </div>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">状态选择</label>
+            <div class="layui-input-inline">
+                <select name="status" lay-filter="status">
+                    <option value="0" selected>仅保存</option>
+                    <option value="1">立即生效</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="layui-form-item" style="text-align: center">
+            <label for="submit_btn">
+                <input type="submit" id="submit_btn" style="display: none"/>
+                <button class="layui-btn" style="margin-top: 30px">提交</button>
+            </label>
+        </div>
+    </form>
+
+    <script src="../layui/layui.js"></script>
+    <script src="../pubJS/jquery-1.9.0.min.js"></script>
+    <script src="../pubJS/jquery.form.js"></script>
+    <script src="../pubJS/public.js"></script>
+    <script src="config.js"></script>
+    <script src="js/addWaiter.js?v=201901091555"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>新增榜单</title>
+    <link rel="stylesheet" href="../layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="css/addMeterial.css">
+</head>
+
+<body>
+    <!--新增榜单-->
+    <form class="layui-form" action="" id='myupload' method='post' enctype='multipart/form-data' onsubmit="return create();">
+        <input type="text" name="sign" hidden>
+        <input type="text" name="token" hidden>
+        <div class="layui-form-item">
+            <label class="layui-form-label">素材类型</label>
+            <div class="layui-input-inline">
+                <select name="type" lay-filter="type">
+                    <option value="0">商品动态</option>
+                    <option value="1">公司动态</option>
+                    <option value="2">新手必发</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">内容</label>
+            <div class="layui-input-block">
+                <textarea type="text" name="content" autocomplete="off" placeholder="请输入内容" class="layui-textarea comment"></textarea>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">备注</label>
+            <div class="layui-input-block">
+                <input type="text" name="comment" autocomplete="off" placeholder="请输入备注" class="layui-input comment"/>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">上传素材</label>
+            <div class="layui-input-block">
+                <input type="radio" lay-filter="scType" name="scType" value="pic" title="图片素材">
+                <!--<input type="radio" lay-filter="scType" name="scType" value="video" title="视频素材">-->
+                <input type="radio" lay-filter="scType" name="scType" value="article" title="链接素材">
+            </div>
+        </div>
+
+        <!--文件上传-->
+        <div class="layui-form-item switchType">
+
+        </div>
+
+
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">开始时间</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="start_time" class="layui-input" id="startTime" placeholder="yyyy-MM-dd">
+                </div>
+                <label class="layui-form-label">结束时间</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="end_time" class="layui-input" id="endTime" placeholder="yyyy-MM-dd">
+                </div>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">建议时间</label>
+            <div class="layui-input-inline">
+                <input type="text" name="advise" autocomplete="off" placeholder="请输入建议时间" class="layui-input"/>
+                <!--<select name="advise" lay-filter="advise">-->
+                    <!--<option value="10点-11点发" selected>10点-11点发</option>-->
+                    <!--<option value="15点-16点发">15点-16点发</option>-->
+                    <!--<option value="20点-21点发">20点-21点发</option>-->
+                <!--</select>-->
+            </div>
+            <label class="layui-form-label">状态选择</label>
+            <div class="layui-input-inline">
+                <select name="status" lay-filter="status">
+                    <option value="0" selected>仅保存</option>
+                    <option value="1">立即生效</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="layui-form-item" style="text-align: center">
+            <label for="submit_btn">
+                <input type="submit" id="submit_btn" style="display: none"/>
+                <button class="layui-btn" style="margin-top: 30px">提交</button>
+            </label>
+        </div>
+    </form>
+
+
+    <script src="../layui/layui.js"></script>
+    <script src="../pubJS/jquery-1.9.0.min.js"></script>
+    <script src="../pubJS/jquery.form.js"></script>
+    <script src="../pubJS/public.js"></script>
+    <script src="config.js"></script>
+    <script src="js/addMeterial.js?v=201811031555"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+    <h1 id='code'></h1>
+    <script>
+        var par = parseURL(window.location.href);
+        var rc = par.params.state || par.params.recommendCode || par.params.rc || 'hhhhh';
+        var group_id = 1;
+        var wxInfo = window.localStorage.getItem('wxInfo') ? JSON.parse(window.localStorage.getItem('wxInfo')) : window.localStorage.getItem('wxInfo');
+        function parseURL(url) {
+            var a =  document.createElement('a');
+            a.href = url;
+            return {
+                source: url,
+                protocol: a.protocol.replace(':',''),
+                host: a.hostname,
+                port: a.port,
+                query: a.search,
+                params: (function(){
+                    var ret = {},
+                        seg = a.search.replace(/^\?/,'').split('&'),
+                        len = seg.length, i = 0, s;
+                    for (;i<len;i++) {
+                        if (!seg[i]) { continue; }
+                        s = seg[i].split('=');
+                        ret[s[0]] = s[1];
+                    }
+                    return ret;
+                })(),
+                file: (a.pathname.match(/\/([^\/?#]+)$/i) || [,''])[1],
+                hash: a.hash.replace('#',''),
+                path: a.pathname.replace(/^([^\/])/,'/$1'),
+                relative: (a.href.match(/tps?:\/\/[^\/]+(.+)/) || [,''])[1],
+                segments: a.pathname.replace(/^\//,'').split('/')
+            };
+        }
+            $(function() {
+            if(!par.params.code) {
+                var redirect_uri = 'http://mng.sosheng.net/code.html?rc=hhahha&group_id=1&avatar=2132132';
+                redirect_uri = encodeURIComponent(redirect_uri)
+                window.location.href = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx5778207eb1a95a25&' +
+                    'redirect_uri='+ redirect_uri + '&response_type=code&scope=snsapi_userinfo'+
+                    '#wechat_redirect';
+                return;
+            }
+            else{
+
+                $("body").append('<h1>' + window.location.href +'</h1>'); // 追加新元素
+                $("body").append('<h1>' + par.params.code +'</h1>'); // 追加新元素
+                $("body").append('<h1>' + par.params.group_id +'</h1>'); // 追加新元素
+                $("body").append('<h1>' + par.params.rc +'</h1>'); // 追加新元素
+                $("body").append('<h1>' + par.params.avatar +'</h1>'); // 追加新元素
+                //TODO  调用接口获取微信unionid和微信头像
+            }
+        });
+    </script>
+</body>
+</html>

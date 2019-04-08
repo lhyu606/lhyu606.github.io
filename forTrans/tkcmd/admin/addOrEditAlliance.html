@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>添加、编辑加盟商</title>
+    <link rel="stylesheet" href="../layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="css/public.css">
+</head>
+
+<body>
+    <div class="fl" style="width: 100%;margin: 10px 0;">
+        <!--添加、编辑加盟商-->
+        <form class="layui-form" action="" id='myupload' method='post' enctype='multipart/form-data' onsubmit="return editProviderInfo();">
+            <input type="text" name="token" hidden/>
+            <input type="text" name="uid" hidden/>
+            <div class="layui-form-item">
+                <label class="layui-form-label">账号</label>
+                <div class="layui-input-block">
+                    <input type="text" name="account" autocomplete="off" class="layui-input" disabled>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">公司名称</label>
+                <div class="layui-input-block">
+                    <input type="text" name="company" autocomplete="off" placeholder="请输入公司名称" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">公司法人</label>
+                <div class="layui-input-block">
+                    <input type="text" name="legal_person" autocomplete="off" placeholder="请输入公司法人" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">联系人</label>
+                <div class="layui-input-block">
+                    <input type="text" name="linkman" autocomplete="off" placeholder="请输入联系人" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">联系人电话</label>
+                <div class="layui-input-block">
+                    <input type="text" name="linkman_tel" autocomplete="off" placeholder="请输入联系人电话" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">选择地区</label>
+                <div class="layui-input-inline">
+                    <select name="province" lay-filter="province">
+                        <option value="">选择省份</option>
+                    </select>
+                </div>
+                <div class="layui-input-inline" style="display: none;">
+                    <select name="city" lay-filter="city">
+                        <option value="">选择城市</option>
+                    </select>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">限制免单数</label>
+                <div class="layui-input-inline" style="width: 140px">
+                    <input type="text" name="lim_free_cnt" autocomplete="off" class="layui-input">
+                </div>
+                <label class="layui-form-label" style="width: 90px">免单完成数</label>
+                <div class="layui-input-inline" style="width: 140px">
+                    <input type="text" name="done_free_cnt" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">公司给予数</label>
+                <div class="layui-input-inline" style="width: 140px">
+                    <input type="text" name="give_free_cnt" autocomplete="off" class="layui-input">
+                </div>
+                <label class="layui-form-label" style="width: 90px">添加微信数</label>
+                <div class="layui-input-inline" style="width: 140px">
+                    <input type="text" name="wx_cnt" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">总扣除金额</label>
+                <div class="layui-input-inline" style="width: 140px">
+                    <input type="text" name="cashAmount" autocomplete="off" class="layui-input">
+                </div>
+                <label class="layui-form-label" style="width: 90px">提现扣除比例</label>
+                <div class="layui-input-inline" style="width: 140px">
+                    <input type="text" name="cashRatio" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">免单奖励</label>
+                <div class="layui-input-inline" style="width: 145px">
+                    <select name="is_free" lay-filter="is_free">
+                        <option value="">选择状态</option>
+                        <option value="1">是</option>
+                        <option value="0">否</option>
+                    </select>
+                </div>
+                <label class="layui-form-label">选择状态</label>
+                <div class="layui-input-inline" style="width: 145px">
+                    <select name="status" lay-filter="status">
+                        <option value="">选择状态</option>
+                        <option value="0">待生效</option>
+                        <option value="1">正式</option>
+                        <option value="2">意向</option>
+                        <option value="3">体验</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">加盟商等级</label>
+                <div class="layui-input-inline" style="width: 145px">
+                    <select name="pre_agent_lvl" lay-filter="pre_agent_lvl">
+                        <option value="">选择等级</option>
+                        <option value="2">分公司</option>
+                        <option value="4">服务商</option>
+                        <option value="6">总监</option>
+                    </select>
+                </div>
+                <label class="layui-form-label">服务商类型</label>
+                <div class="layui-input-inline" style="width: 145px">
+                    <select name="type" lay-filter="type">
+                        <option value="">选择类型</option>
+                        <option value="0">线上</option>
+                        <option value="1">线下</option>
+                        <option value="2">线上、线下</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="layui-form-item" style="text-align: center">
+                <div class="layui-input-block" style="margin-left: 0">
+                    <label for="submit_btn">
+                        <input type="submit" id="submit_btn" style="display: none"/>
+                        <button class="layui-btn" style="margin-top: 30px">立即提交</button>
+                    </label>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="../layui/layui.js"></script>
+    <script src="../pubJS/area.js"></script>
+    <script src="../pubJS/jquery-1.9.0.min.js"></script>
+    <script src="../pubJS/public.js"></script>
+    <script src="config.js"></script>
+    <script src="../pubJS/jquery.form.js"></script>
+    <script src="js/addOrEditAlliance.js?v=201811031555"></script>
+</body>
+</html>

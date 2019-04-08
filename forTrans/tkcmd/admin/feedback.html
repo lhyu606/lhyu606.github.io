@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>用户反馈信息</title>
+    <link rel="stylesheet" href="../layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="css/public.css">
+</head>
+<body>
+<fieldset class="layui-elem-field layui-field-title"><legend>反馈信息列表</legend></fieldset>
+<!--小二标签-->
+<div class="feedList">
+    <table class="layui-table" id="feedList">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>账号</th>
+            <th>简述</th>
+            <th>内容</th>
+            <th>图片组</th>
+            <th>反馈时间</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+
+<!--放大图片-->
+<div id="outerdiv">
+    <img id="bigimg" src=""/>
+</div>
+
+<!--分页-->
+<div id="Pagination" class="pagination"><!-- 这里显示分页 --></div>
+
+
+<script src="../layui/layui.js"></script>
+<script src="../pubJS/jquery-2.1.4.min.js"></script>
+<script src="../pubJS/jquery.pagination.js"></script>
+<script src="../pubJS/public.js"></script>
+<script src="config.js"></script>
+<script src="js/feedList.js?v=201901091555"></script>
+</body>
+</html>

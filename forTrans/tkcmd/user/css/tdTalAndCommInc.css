@@ -1,0 +1,45 @@
+body {
+    background: #eee;
+    min-width: 1180px;
+}
+.fl {float: left;}
+.fr {float: right;}
+.hide {display: none;}
+.dataGather{
+    height: 74px;
+    line-height: 74px;
+    font-size: 22px;
+    color: #333;
+    padding-left: 35px;
+    margin-bottom: 25px;
+    background: #fff;
+}
+.search {
+    margin-right: 2%;
+}
+
+.tdTal_peak,.commInc_peak {
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+}
+.tdTal_peak p,.commInc_peak p {
+    font-size: 22px;
+    color: #4C5E70;
+    line-height: 65px;
+}
+.tdTal_peakNum,.commInc_peakNum {
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    margin: 0 auto;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 50%;
+}
+.tdTal_peakNum {
+    background: #FF4C79;
+}
+.commInc_peakNum {
+    background: #2DC0E8;
+}

@@ -1,0 +1,51 @@
+body {
+    background: #eee;
+    min-width: 1180px;
+}
+.fl {float: left;}
+.fr {float: right;}
+.hide {display: none;}
+.dataGather{
+    height: 74px;
+    line-height: 74px;
+    font-size: 22px;
+    color: #333;
+    padding-left: 35px;
+    margin-bottom: 25px;
+    background: #fff;
+}
+.search {
+    margin-right: 2%;
+}
+
+.peak{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+.peak p {
+    font-size: 18px;
+    color: #4C5E70;
+    line-height: 60px;
+}
+.fzyhzs_peakNum,.fzptyh_peakNum,.fzwtk_peakNum,.jywtk_peakNum {
+    width: 146px;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 auto;
+    font-size: 22px;
+    color: #fff;
+    border-radius: 5px;
+}
+.fzyhzs_peakNum {
+    background: #EC1E1E;
+}
+.fzptyh_peakNum {
+    background: #AC8FEF;
+}
+.fzwtk_peakNum {
+    background: #00B215;
+}
+.jywtk_peakNum {
+    background: #EFD600;
+}

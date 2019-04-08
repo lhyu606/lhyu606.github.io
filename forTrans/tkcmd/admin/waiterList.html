@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>小二管理</title>
+    <link rel="stylesheet" href="../layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="css/public.css">
+</head>
+<body>
+<fieldset class="layui-elem-field layui-field-title"><legend>小二列表</legend></fieldset>
+<!--小二标签-->
+<form class="layui-form" action="">
+    <div class="layui-form-item">
+        <label class="layui-form-label">小二类型</label>
+        <div class="layui-input-inline">
+            <select name="type" lay-filter="type">
+                <option value="">全部</option>
+                <option value="0">拉新</option>
+                <option value="1">每日爆款</option>
+                <option value="2">早安签</option>
+                <option value="3">商学院</option>
+            </select>
+        </div>
+
+        <label class="layui-form-label">状态</label>
+        <div class="layui-input-inline">
+            <select name="status" lay-filter="status">
+                <option value="">全部</option>
+                <option value="0">失效</option>
+                <option value="1">有效</option>
+            </select>
+        </div>
+        <button class="layui-btn fr deleteWaiter">删除选中</button>
+        <button class="layui-btn fr addWaiter" style="margin-right:10px;" onclick="return false">新建</button>
+    </div>
+</form>
+<div class="waiterList">
+    <table class="layui-table" id="waiterList">
+        <thead>
+        <tr>
+            <th style="width: 20px">
+                <input type="checkbox" id="checkAll"/>
+                <label for="checkAll">
+                    <div class="allClick layui-unselect layui-form-checkbox" lay-skin="primary">
+                        <i class="layui-icon"></i>
+                    </div>
+                </label>
+            </th>
+            <th>ID</th>
+            <th>主图</th>
+            <th>标题</th>
+            <th>auctionId</th>
+            <th>url</th>
+            <th>内容</th>
+            <th>生效时间</th>
+            <th>结束时间</th>
+            <th>分享次数</th>
+            <th>交互类型</th>
+            <th>状态</th>
+            <th style="width: 34px">操作</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        </tbody>
+    </table>
+</div>
+
+<!--分页-->
+<div id="Pagination" class="pagination"><!-- 这里显示分页 --></div>
+
+
+<script src="../layui/layui.js"></script>
+<script src="../pubJS/jquery-2.1.4.min.js"></script>
+<script src="../pubJS/jquery.pagination.js"></script>
+<script src="../pubJS/public.js"></script>
+<script src="config.js"></script>
+<script src="js/waiterList.js?v=201901091555"></script>
+</body>
+</html>

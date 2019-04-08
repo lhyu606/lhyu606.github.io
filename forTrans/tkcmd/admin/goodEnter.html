@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>单品录入</title>
+    <link rel="stylesheet" href="../layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="css/public.css">
+</head>
+
+<body>
+    <fieldset class="layui-elem-field layui-field-title">
+        <legend>单品录入</legend>
+    </fieldset>
+
+    <form class="layui-form" action="" id='myupload' method='post' enctype='multipart/form-data'>
+        <div class="layui-form-item">
+            <label class="layui-form-label">商品链接</label>
+            <div class="layui-input-inline" style="width: 620px">
+                <input type="text" id="auctionUrl" autocomplete="off" placeholder="商品链接" class="layui-input">
+                <input type="hidden" id="hideId"/>
+            </div>
+            <div class="layui-input-inline">
+                <button type="button" class="layui-btn jiexi">解析</button>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">商品主图</label>
+            <div class="layui-input-block">
+                <img width="160" height="160" id="imageUrl" src="img/add_img.png"/>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">图片地址</label>
+            <div class="layui-input-inline" style="width: 620px">
+                <input type="text" id="pictUrl" autocomplete="off" placeholder="图片地址" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">商品标题</label>
+            <div class="layui-input-inline" style="width: 620px">
+                <input type="text" id="title" autocomplete="off" readonly placeholder="商品标题" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">推荐语</label>
+            <div class="layui-input-inline" style="width: 620px">
+                <textarea type="text" id="adTitle" autocomplete="off" placeholder="推荐语" class="layui-textarea"></textarea>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">商品ID</label>
+            <div class="layui-input-inline">
+                <input type="text" id="auctionId" autocomplete="off" readonly placeholder="商品ID" class="layui-input">
+            </div>
+            <label class="layui-form-label">店铺名</label>
+            <div class="layui-input-inline">
+                <input type="text" id="shopTitle" autocomplete="off" readonly placeholder="店铺名" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">卖家ID</label>
+            <div class="layui-input-inline">
+                <input type="text" id="sellerId" autocomplete="off" readonly placeholder="卖家ID" class="layui-input">
+            </div>
+            <label class="layui-form-label">月销</label>
+            <div class="layui-input-inline">
+                <input type="text" id="biz30day" autocomplete="off" readonly placeholder="月销" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">价格(￥)</label>
+            <div class="layui-input-inline">
+                <input type="text" id="zkPrice" autocomplete="off" readonly placeholder="价格" class="layui-input">
+            </div>
+            <label class="layui-form-label">商品原价(￥)</label>
+            <div class="layui-input-inline">
+                <input type="text" id="reservePrice" autocomplete="off" readonly placeholder="商品原价" class="layui-input">
+            </div>
+        </div>
+
+        <!--<div class="layui-form-item">-->
+            <!--<label class="layui-form-label">商品总数</label>-->
+            <!--<div class="layui-input-inline">-->
+                <!--<input type="text" id="totalNum" autocomplete="off" readonly placeholder="商品总数" class="layui-input">-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">优惠券链接</label>
+            <div class="layui-input-inline" style="width: 500px">
+                <input type="text" id="hiddenActivityId" autocomplete="off" placeholder="优惠券链接" class="layui-input">
+            </div>
+            <div class="layui-input-inline">
+                <button type="button" class="layui-btn getCouponInfo">解析</button>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">优惠券标题</label>
+            <div class="layui-input-inline">
+                <input type="text" id="couponInfo" autocomplete="off" readonly placeholder="优惠券标题" class="layui-input">
+            </div>
+            <label class="layui-form-label">优惠券(￥)</label>
+            <div class="layui-input-inline">
+                <input type="text" id="couponAmount" autocomplete="off" readonly placeholder="优惠券￥" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">佣金(￥)</label>
+            <div class="layui-input-inline">
+                <input type="text" id="tkCommFee" autocomplete="off" placeholder="佣金" class="layui-input">
+            </div>
+            <label class="layui-form-label">比率(%)</label>
+            <div class="layui-input-inline">
+                <input type="text" id="tkRate" autocomplete="off" placeholder="比率" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item selectTime">
+            <div class="layui-inline">
+                <label class="layui-form-label">开始时间</label>
+                <div class="layui-input-inline">
+                    <input type="text" class="layui-input" id="couponEffectiveStartTime" readonly placeholder="yyyy-MM-dd" autocomplete="off">
+                </div>
+                <label class="layui-form-label">结束时间</label>
+                <div class="layui-input-inline">
+                    <input type="text" class="layui-input" id="couponEffectiveEndTime" readonly placeholder="yyyy-MM-dd" autocomplete="off">
+                </div>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">剩余/总数</label>
+            <div class="layui-input-inline" style="width: 90px">
+                <input type="text" id="couponLeftCount" autocomplete="off" readonly placeholder="剩余" class="layui-input">
+            </div>
+            <div class="layui-input-inline" style="width: 90px">
+                <input type="text" id="couponTotalCount" autocomplete="off" readonly placeholder="总数" class="layui-input">
+            </div>
+        </div>
+
+        <!--商品标签-->
+        <div class="good_list" style="margin: 20px 0;line-height: 38px">
+            <label class="layui-form-label">标签：</label>
+            <a class="layui-btn layui-btn-xs" tagKey="全部">全部</a>
+            <a class="layui-btn layui-btn-xs layui-btn-primary" tagKey="居家日用">居家日用</a>
+            <a class="layui-btn layui-btn-xs layui-btn-primary" tagKey="美食">美食</a>
+            <a class="layui-btn layui-btn-xs layui-btn-primary" tagKey="母婴">母婴</a>
+            <a class="layui-btn layui-btn-xs layui-btn-primary" tagKey="美妆">美妆</a>
+            <a class="layui-btn layui-btn-xs layui-btn-primary" tagKey="女装">女装</a>
+            <a class="layui-btn layui-btn-xs layui-btn-primary" tagKey="数码家电">数码家电</a>
+            <a class="layui-btn layui-btn-xs layui-btn-primary" tagKey="文娱车品">文娱车品</a>
+            <a class="layui-btn layui-btn-xs layui-btn-primary" tagKey="内衣">内衣</a>
+            <a class="layui-btn layui-btn-xs layui-btn-primary" tagKey="家装家纺">家装家纺</a>
+            <a class="layui-btn layui-btn-xs layui-btn-primary" tagKey="鞋品">鞋品</a>
+            <a class="layui-btn layui-btn-xs layui-btn-primary" tagKey="男装">男装</a>
+            <a class="layui-btn layui-btn-xs layui-btn-primary" tagKey="配饰">配饰</a>
+            <a class="layui-btn layui-btn-xs layui-btn-primary" tagKey="户外运动">户外运动</a>
+            <a class="layui-btn layui-btn-xs layui-btn-primary" tagKey="箱包">箱包</a>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">自定义标签</label>
+            <div class="layui-input-inline">
+                <input type="text" id="tag" autocomplete="off" placeholder="自定义标签" class="layui-input">
+            </div>
+        </div>
+
+
+        <!--相关操作按钮-->
+        <div class="layui-form-item" style="margin-top: 30px">
+            <div class="layui-input-block" style="width: 50%">
+                <button type="button" class="layui-btn sure" lay-submit="">立即提交</button>
+                <button type="reset" class="layui-btn layui-btn-primary reset">重置</button>
+            </div>
+        </div>
+    </form>
+
+
+    <script src="../layui/layui.js"></script>
+    <script src="../pubJS/jquery.min.js"></script>
+    <script src="../pubJS/jquery.form.js"></script>
+    <script src="config.js"></script>
+    <!--<script src="./js/render/ali_helper.js"></script>-->
+    <script src="../pubJS/public.js"></script>
+    <script src="js/goodEnter.js?v=201811031452"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+body{
+    margin: 20px;
+}
+.fl {float: left;}
+.fr {float: right;}
+#goodsInfo input[type='checkbox'] {
+    display: none;
+}
+.padding0 {
+    padding: 0 !important;
+}
+.remainWtkNum {
+    margin-left: 60px;
+    line-height: 38px;
+}
+.remainWtkNum span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #009688;
+    padding: 7px;
+}
+.tableList {
+    clear: both;
+}
+.apply {
+    margin-right: 60px;
+}
+
+.comment,.click_url {
+    width: 88% !important;
+}
+.addImg {
+    display: inline-block;
+    float: left;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid #e1e1e1;
+}
+.addImg img {
+    width: 60px;
+    height: 60px;
+}
+.layui-form-item .layui-input-inline {
+    width: 160px !important;
+}
+
+
+.margin11 {
+    margin: 11px !important;
+}
+.delete_img {
+    position: absolute;
+    top: 43px;
+    left: 1px;
+    width: 60px;
+    height: 18px;
+    line-height: 18px;
+    background: #009688;
+    color: #fff;
+    text-align:  center;
+    font-size: 12px;
+    cursor:  pointer;
+}
+.label {
+    height: 70px;
+}
+.uploadfile {
+    display: none;
+}
+
+/*视频上传*/
+.uploadVideo {
+    width: 240px;
+    height: 16px;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+    margin-bottom: 6px;
+}
+#progressNumber {
+    width: 0;
+    height: 16px;
+    line-height: 16px;
+    background: #009688;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.row {
+    width: 100%;
+    clear: both;
+}
+.w50 {
+    width: 50%;
+}
+.w50 video{
+    max-width: 100%;
+}
+

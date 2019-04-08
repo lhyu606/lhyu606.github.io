@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>聚合推送</title>
+    <link rel="stylesheet" href="../layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="css/public.css">
+</head>
+<body>
+    <fieldset class="layui-elem-field layui-field-title"><legend>聚合推送列表</legend></fieldset>
+
+    <form class="layui-form" action="">
+        <div class="layui-form-item">
+            <label class="layui-form-label">状态</label>
+            <div class="layui-input-inline">
+                <select name="status" lay-filter="status">
+                    <option value="">全部</option>
+                    <option value="0">失效</option>
+                    <option value="1">有效</option>
+                </select>
+            </div>
+            <input type="text" id="push" value="3" hidden />
+            <button class="layui-btn fr delNewspaper">删除选中</button>
+            <button class="layui-btn fr addNewspaper" style="margin-right:10px;" onclick="return false">新建</button>
+        </div>
+    </form>
+    <div class="newspaperList">
+        <table class="layui-table" id="newspaperList">
+            <thead>
+            <tr>
+                <th style="width: 20px">
+                    <input type="checkbox" id="checkAll"/>
+                    <label for="checkAll">
+                        <div class="allClick layui-unselect layui-form-checkbox" lay-skin="primary">
+                            <i class="layui-icon"></i>
+                        </div>
+                    </label>
+                </th>
+                <th>ID</th>
+                <th width="300px">文章名</th>
+                <th>主图</th>
+                <th>文章标签</th>
+                <th>描述</th>
+                <th>浏览量(次)</th>
+                <th>开始时间</th>
+                <th>结束时间</th>
+                <th>发布状态</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <!--分页-->
+    <div id="Pagination" class="pagination"><!-- 这里显示分页 --></div>
+
+    <script src="../layui/layui.js"></script>
+    <script src="../pubJS/jquery-2.1.4.min.js"></script>
+    <script src="../pubJS/jquery.pagination.js"></script>
+    <script src="../pubJS/public.js"></script>
+    <script src="config.js"></script>
+    <script src="js/newspaperList.js?v=201901091555"></script>
+</body>
+</html>

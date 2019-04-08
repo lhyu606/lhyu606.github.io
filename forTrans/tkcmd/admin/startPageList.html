@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>启动页榜单</title>
+    <link rel="stylesheet" href="../layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="css/public.css">
+    <style>
+        img {
+            width: 290px;
+            background: #eeeeee;
+            margin: 20px 15px 20px 0;text-align: center;
+            line-height: 145px;color: #393D49;border: 1px solid #eeeeee;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset class="layui-elem-field layui-field-title"><legend>榜单详情</legend></fieldset>
+
+    <div class="layui-form-item">
+        <button class="layui-btn newList">新建榜单</button>
+    </div>
+
+    <div class="listTitle"></div>
+
+    <div class="listImg" title="点击修改榜单信息">
+        <img src="" alt="主banner图">
+    </div>
+
+    <button class="layui-btn newGroup">新建组</button>
+
+    <div>
+        <span>选择组别</span>
+        <span class="groupList hide"></span>
+    </div>
+
+    <div class="bannerImg" title="点击修改组信息">
+        <img src="" alt="组banner图" class="groupBan">
+    </div>
+
+    <!--批量删除-->
+    <div> <!--批量删除-->
+        <button class="layui-btn fr delete_check">删除选中</button>
+    </div>
+
+    <div class="goodsList">
+        <table class="layui-table" id="goodsInfo">
+            <thead>
+                <tr>
+                    <th style="width: 20px">
+                        <input type="checkbox" id="checkAll"/>
+                        <label for="checkAll">
+                            <div class="allClick layui-unselect layui-form-checkbox" lay-skin="primary">
+                                <i class="layui-icon"></i>
+                            </div>
+                        </label>
+                    </th>
+                    <th>库ID</th>
+                    <th>商品ID</th>
+                    <th>商品主图</th>
+                    <th>商品短标题</th>
+                    <th>商品描述</th>
+                    <th>销量</th>
+                    <th>商品价格</th>
+                    <th>券面额</th>
+                    <th style="width: 34px">操作</th>
+                </tr>
+            </thead>
+
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <!--分页-->
+    <div id="Pagination" class="pagination"></div>
+
+
+    <script src="../layui/layui.js"></script>
+    <script src="../pubJS/jquery-1.9.0.min.js"></script>
+    <script src="../pubJS/jquery.form.js"></script>
+    <script src="../pubJS/jquery.pagination.js"></script>
+    <script src="../pubJS/public.js"></script>
+    <script src="config.js"></script>
+    <script src="js/startPageList.js?v=201811031555"></script>
+</body>
+</html>

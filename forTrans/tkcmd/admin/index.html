@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>【搜省】管理后台系统</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body class="layui-layout-body">
+    <div class="layui-layout layui-layout-admin">
+        <!-- 头部区域 -->
+        <div class="layui-header">
+            <div class="layui-logo">【搜省】后台管理系统</div>
+            <ul class="layui-nav layui-layout-right">
+                <li class="layui-nav-item">
+                    <a href="javascript:">
+                        <img src="img/admin_icon.png" class="layui-nav-img">
+                        <span id="adminAccount"></span>
+                    </a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="#" id="adminLogout">退出</a></dd>
+                    </dl>
+                </li>
+                <!--<li class="layui-nav-item"><a>退出</a></li>-->
+            </ul>
+        </div>
+
+        <!-- 左侧导航区域 -->
+        <div class="layui-side layui-bg-black">
+            <div class="layui-side-scroll">
+                <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                    <li class="layui-nav-item">
+                        <a href="javascript:">管理员模块</a>
+                        <dl class="layui-nav-child">
+                            <dd class="adminMessage"><a href="javascript:">管理员信息</a></dd>
+                            <dd class="userMessage"><a href="javascript:">用户信息</a></dd>
+                            <dd class="feedback"><a href="javascript:">用户反馈</a></dd>
+                            <dd class="dataReport"><a href="javascript:">数据报表</a></dd>
+                            <dd class="orderDetail"><a href="javascript:">订单明细</a></dd>
+                            <!--<dd class="buyRecord"><a href="javascript:">购买记录</a></dd>-->
+                            <dd class="cashCheck"><a href="javascript:">提现记录</a></dd>
+                            <dd class="searchFlow"><a href="javascript:">资金流水查询</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a href="javascript:">商品管理模块</a>
+                        <dl class="layui-nav-child">
+                            <dd class="allGoodsList layui-this"><a href="javascript:">商品列表</a></dd>
+                            <dd class="goodEnter"><a href="javascript:">单品录入</a></dd>
+                            <!--<dd class="batchEnter"><a href="javascript:">批量录入</a></dd>-->
+                            <dd class="freeGoodEnter"><a href="javascript:">免单录入</a></dd>
+                            <dd class="goodsInfo"><a href="javascript:">商品管理</a></dd>
+                            <dd class="jpku"><a href="javascript:">榜单管理</a></dd>
+
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a href="javascript:">内容管理模块</a>
+                        <dl class="layui-nav-child">
+                            <dd class="waiterList layui-this"><a href="javascript:">小二管理</a></dd>
+                            <dd class="newspaperList"><a href="javascript:">号外管理</a></dd>
+                            <dd class="pushList"><a href="javascript:">聚合推送管理</a></dd>
+                            <dd class="notice"><a href="javascript:">公告/自定义url管理</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:">APP相关配置模块</a>
+                        <dl class="layui-nav-child">
+                            <dd class="startPageList"><a href="javascript:">榜单管理</a></dd>
+                            <dd class="appInterfaceManage"><a href="javascript:">APP界面管理</a></dd>
+                            <dd class="frdCrlManage"><a href="javascript:">朋友圈配置</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:">设置模块</a>
+                        <dl class="layui-nav-child">
+                            <dd class="editionManage"><a href="javascript:">版本管理</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 内容主体区域 -->
+        <div class="layui-body">
+            <div class="content">
+                <iframe id="mainx_frm" name='mainx_frm' src="" width="100%" height="100%" frameborder="0"><!--iframe加载页--></iframe>
+            </div>
+        </div>
+
+        <!-- 底部固定区域 -->
+        <div class="layui-footer">厦门淘客联盟软件有限公司</div>
+    </div>
+
+
+    <script src="../layui/layui.js"></script>
+    <script src="../pubJS/jquery-1.9.0.min.js"></script>
+    <script src="../pubJS/public.js"></script>
+    <script src="config.js"></script>
+    <script src="js/index.js?v=201810251042"></script>
+</body>
+</html>

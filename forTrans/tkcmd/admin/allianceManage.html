@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>加盟商管理</title>
+    <link rel="stylesheet" href="../layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="css/public.css">
+</head>
+
+<body id="fwsBody">
+    <fieldset class="layui-elem-field layui-field-title"><legend>加盟商管理</legend></fieldset>
+
+    <!--加盟商管理-->
+    <form class="layui-form" action="">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <input class="layui-input" name="id" id="searchInfo" autocomplete="off" placeholder="请输入账号">
+            </div>
+            <button class="layui-inline layui-btn search" data-type="reload" onclick="return false;">搜索</button>
+
+            <div class="layui-inline">
+                <label class="layui-form-label">选择地区</label>
+                <div class="layui-input-inline">
+                    <select name="province" lay-filter="province" id="provinceSel">
+                        <option value="">选择省份</option>
+                    </select>
+                </div>
+                <div class="layui-input-inline" style="display: none">
+                    <select name="city" lay-filter="city" id="citySel">
+                        <option value="">选择城市</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="layui-inline">
+                <label class="layui-form-label">选择状态</label>
+                <div class="layui-input-inline">
+                    <select name="status" lay-filter="status" id="statusSel">
+                        <option value="">选择状态</option>
+                        <option value="0">待生效</option>
+                        <option value="1">正式</option>
+                        <option value="2">意向</option>
+                        <option value="3">临时协议</option>
+                    </select>
+                </div>
+            </div>
+
+            <!--搜索框-->
+            <div class="layui-inline fr">
+                <button class="layui-btn addServicer" onclick="return false;">添加加盟商</button>
+                <button class="layui-btn" id="table2excel" onclick="return false;">导出Excel</button>
+            </div>
+        </div>
+    </form>
+
+
+    <div class="tableList cl">
+        <table class="layui-table" id="staffInfo">
+            <thead>
+                <tr>
+                    <th>账号</th>
+                    <th>代理等级</th>
+                    <!--<th>公司名称</th>-->
+                    <th>公司法人</th>
+                    <!--<th>联系人</th>-->
+                    <!--<th>联系电话</th>-->
+                    <!--<th>所属省份</th>-->
+                    <!--<th>所属城市</th>-->
+                    <th>限制免单数量</th>
+                    <th>免单完成数量</th>
+                    <th>公司给予数量</th>
+                    <th>添加微信数量</th>
+                    <th>总扣除金额</th>
+                    <th>提现扣除比例</th>
+                    <th>免单奖励</th>
+                    <th>二维码图片</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <!--分页-->
+    <div id="Pagination" class="pagination"></div>
+
+    <table class="layui-table" id="excelList" style="display: none">
+        <thead>
+            <tr>
+                <th>账号</th>
+                <th>代理等级</th>
+                <th>公司名称</th>
+                <th>公司法人</th>
+                <th>联系人</th>
+                <th>联系电话</th>
+                <th>所属省份</th>
+                <th>所属城市</th>
+                <th>限制免单数量</th>
+                <th>免单完成数量</th>
+                <th>公司给予数量</th>
+                <th>添加微信数量</th>
+                <th>总扣除金额</th>
+                <th>提现扣除比例</th>
+                <th>免单奖励</th>
+                <th>状态</th>
+            </tr>
+        </thead>
+
+        <tbody>
+        </tbody>
+    </table>
+
+
+    <script src="../layui/layui.js"></script>
+    <script src="../pubJS/area.js"></script>
+    <script src="../pubJS/jquery-1.9.0.min.js"></script>
+    <script src="../pubJS/jquery.table2excel.js"></script>
+    <script src="../pubJS/jquery.pagination.js"></script>
+    <script src="../pubJS/jquery.form.js"></script>
+    <script src="../pubJS/public.js"></script>
+    <script src="../pubJS/qrcode.js"></script>
+    <script src="config.js"></script>
+    <script src="js/allianceManage.js?v=201811031555"></script>
+</body>
+</html>

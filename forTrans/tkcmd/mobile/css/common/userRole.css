@@ -1,0 +1,51 @@
+.title {
+    height: .88rem;
+    line-height: .88rem;
+    text-align: center;
+    color: #FE4A2A;
+    font-size: .32rem;
+    font-family: "PingFangSC-Semibold";
+    font-weight: 600;
+}
+
+.roleTab {
+    width: 100%;
+    text-align: center;
+    font-family:"PingFangSC-Semibold";
+    font-weight:600;
+    color:rgba(51,51,51,1);
+}
+.roleTab tr {
+    height: 0.62rem;
+    line-height: 0.62rem;
+}
+.roleTab th {
+    color: #ffffff;
+    font-size: 0.28rem;
+}
+.roleTab tr:nth-child(even) {
+    background: #fff;
+}
+.roleTab tr:nth-child(odd) {
+    background: #F6F6F6;
+}
+.roleTab tbody td {
+    font-size: .24rem;
+    font-weight: 500;
+}
+
+.benefit {
+    width: 46.8%;
+    background: #fff;
+    color: #333!important;
+}
+.user {
+    width: 26.6%;
+    background: #F57761;
+    color: #fff;
+}
+.xiaoer {
+    width: 26.6%;
+    background: #FE4A2A;
+    color: #fff;
+}

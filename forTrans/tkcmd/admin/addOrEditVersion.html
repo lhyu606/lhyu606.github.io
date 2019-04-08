@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>编辑或修改版本</title>
+    <link rel="stylesheet" href="../layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="css/public.css">
+</head>
+
+<body>
+    <div class="fl" style="width: 100%;margin: 10px 0;">
+        <!--添加赠予-->
+        <input type="text" name="token" hidden>
+        <div class="layui-form-item">
+            <label class="layui-form-label">版本号</label>
+            <div class="layui-input-block">
+                <input type="text" id="version" autocomplete="off" placeholder="请输入版本号" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">安卓更新日志</label>
+            <div class="layui-input-block">
+                <textarea type="text" id="androidLog" autocomplete="off" placeholder="安卓更新日志" class="layui-textarea"></textarea>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">iOS更新日志</label>
+            <div class="layui-input-block">
+                <textarea type="text" id="iosLog" autocomplete="off" placeholder="iOS更新日志" class="layui-textarea"></textarea>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">安卓更新包下载地址</label>
+            <div class="layui-input-block">
+                <input type="text" id="androidDW" autocomplete="off" placeholder="安卓更新包下载地址" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">iOS更新包下载地址</label>
+            <div class="layui-input-block">
+                <input type="text" id="iosDW" autocomplete="off" placeholder="ios更新包下载地址" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button class="layui-btn sure" style="margin-top: 20px">确定</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../layui/layui.js"></script>
+    <script src="../pubJS/jquery-1.9.0.min.js"></script>
+    <script src="../pubJS/public.js"></script>
+    <script src="config.js"></script>
+    <script src="js/addOrEditVersion.js?v=201811031555"></script>
+</body>
+</html>

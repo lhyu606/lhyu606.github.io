@@ -1,0 +1,61 @@
+body{
+    margin: 20px;
+}
+#goodsInfo input[type='checkbox'] {
+    display: none;
+}
+.padding0 {
+    padding: 0 !important;
+}
+.remainWtkNum {
+    margin-left: 60px;
+    line-height: 38px;
+}
+.remainWtkNum span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #009688;
+    padding: 7px;
+}
+.tableList {
+    clear: both;
+}
+.apply {
+    margin-right: 60px;
+}
+.user_account {
+    color: #1E9FFF;
+}
+.fl { float: left;}
+.fr { float: right;}
+.hide {display: none !important;}
+
+.goBack {
+    background: url(../img/back_ico_n.png)no-repeat;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 2%;
+    bottom: 10%;
+    z-index: 10;
+    cursor: pointer;
+}
+.teamNum,.realNum{
+    font-size: 16px;
+    color: #999999;
+    margin-right: 20px;
+}
+.teamNum i,.realNum i{
+    font-size: 20px;
+    color: #2293fd;
+    font-style: normal;
+}
+
+/*分页*/
+.pagination {text-align: center;margin: 60px auto;font-size: 14px;}
+.pagination a {text-decoration: none;border: 1px solid #d0d0d0;}
+.pagination a, .pagination span {display: inline-block;padding: 7px 12px;margin-right: 12px;border-radius: 4px;}
+.pagination a:hover, .pagination span:hover {background: #3899E8;color: #fff}
+.pagination .current {background: #3899E8;color: #fff;border: 1px solid #3899E8;}
+.pagination .current.prev, .pagination .current.next,.pagination a {color:#555;border-color:#ddd;background:#fff;}
+#pagevalue {width: 28px;padding: 8px;position: relative;top: -1px;border: 1px solid #d0d0d0;border-radius: 4px;}

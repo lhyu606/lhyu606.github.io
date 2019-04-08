@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>直推奖金收益</title>
+    <link rel="stylesheet" href="../layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="css/driveBonusInc.css">
+</head>
+
+<body>
+    <!--标题-->
+    <div class="dataGather">数据汇总-直推奖金收益</div>
+
+    <!--内容-->
+    <div class="layui-fluid" style="padding: 0 48px 0 20px;">
+        <div class="layui-row" style="background: #fff;">
+            <div class="fl" style="width: 100%;margin: 30px 0;text-align: center;">
+                <!--<form class="layui-form fl" action="">-->
+                    <!--<div class="layui-form-item">-->
+                        <!--&lt;!&ndash;按日期搜索&ndash;&gt;-->
+                        <!--<div class="layui-inline">-->
+                            <!--<label class="layui-form-label">日期选择</label>-->
+                            <!--<div class="layui-btn-group timeUnit fl" style="padding-right: 8px;">-->
+                                <!--<a class="layui-btn" tagKey="day" tp="date">按日</a>-->
+                                <!--<a class="layui-btn layui-btn-primary" tagKey="month" tp="month">按月</a>-->
+                                <!--<a class="layui-btn layui-btn-primary" tagKey="year" tp="year">按年</a>-->
+                            <!--</div>-->
+                            <!--<div class="layui-input-inline timeRange">-->
+                                <!--<input type="text" class="layui-input" id="timeRange_day" placeholder="yyyy-MM-dd">-->
+                                <!--<input type="text" class="layui-input hide" id="timeRange_month" placeholder="yyyy-MM">-->
+                                <!--<input type="text" class="layui-input hide" id="timeRange_year" placeholder="yyyy">-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</form>-->
+                <!--快捷时间段-->
+                <div class="layui-btn-group dateType">
+                    <a class="layui-btn">近7天</a>
+                    <a class="layui-btn layui-btn-primary" tagKey="2day">近48小时</a>
+                    <a class="layui-btn layui-btn-primary" tagKey="30day">近30天</a>
+                    <a class="layui-btn layui-btn-primary" tagKey="6month">近6个月</a>
+                </div>
+                <!--按手机号搜索-->
+                <!--<div class="search fr">-->
+                    <!--<div class="layui-inline">-->
+                        <!--<input class="layui-input" name="id" id="searchInfo" autocomplete="off" placeholder="手机号搜索">-->
+                    <!--</div>-->
+                    <!--<button class="layui-btn search_btn">搜索</button>-->
+                <!--</div>-->
+            </div>
+
+            <!--报表显示-->
+            <div class="fl" style="width: 100%">
+                <div id="main" class="fl" style="height:600px;width: 82%"></div>
+                <div class="fr" style="width: 18%;height:600px;padding-top: 110px;box-sizing: border-box;">
+                    <div class="peak">
+                        <div class="bonusTal_peakNum"></div>
+                        <p>奖金总数峰值</p>
+                    </div>
+                    <div class="peak">
+                        <div class="wtkBonus_peakNum"></div>
+                        <p>微淘客奖金峰值</p>
+                    </div>
+                    <div class="peak">
+                        <div class="jywtkBonus_peakNum"></div>
+                        <p>精英微淘客奖金峰值</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../layui/layui.js"></script>
+    <script src="../pubJS/jquery-1.9.0.min.js"></script>
+    <script src="../pubJS/public.js"></script>
+    <script src="../pubJS/echarts/echarts.min.js"></script>
+    <script src="../pubJS/echarts/macarons.js"></script>
+    <script src="config.js"></script>
+    <script src="js/driveBonusInc.js"></script>
+</body>
+</html>

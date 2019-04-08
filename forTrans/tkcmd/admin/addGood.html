@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>单品录入</title>
+    <link rel="stylesheet" href="../layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="css/public.css">
+</head>
+
+<body>
+    <!--新增榜单-->
+    <form class="layui-form" action="" id='myupload' method='post' enctype='multipart/form-data' onsubmit="return create();" style="width: 60%;">
+        <input type="text" name="token" hidden>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">商品标题</label>
+            <div class="layui-input-block">
+                <input type="text" name="title" autocomplete="off" placeholder="请输入文章标题" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">商品主图</label>
+            <label>
+                <div class="goodMainImg">
+                    <img src="img/add_img.png"/>
+                    <input type="file" class="good_mainImg" style="display: none;"/>
+                </div>
+            </label>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">店铺名</label>
+            <div class="layui-input-block">
+                <input type="text" name="shopTitle" autocomplete="off" placeholder="请输入文章标题" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">商品价格</label>
+            <div class="layui-input-inline wid130">
+                <input type="text" id="zkPrice" name="zkPrice" autocomplete="off" placeholder="请输入商品价格" class="layui-input">
+            </div>
+            <label class="layui-form-label">总库存</label>
+            <div class="layui-input-inline wid130">
+                <input type="text" id="totalNum" name="totalNum" autocomplete="off" placeholder="请输入总库存" class="layui-input">
+            </div>
+            <label class="layui-form-label">佣金比率(%)</label>
+            <div class="layui-input-inline wid130">
+                <input type="text" id="tkRate" name="tkRate" autocomplete="off" placeholder="请输入佣金比率" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">推广长图</label>
+            <label>
+                <div class="expLongImg">
+                    <img src="img/add_img.png"/>
+                    <input type="file" class="exp_longImg" style="display: none;"/>
+                </div>
+            </label>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">视频地址</label>
+            <div class="layui-input-block">
+                <input type="text" name="mp4" autocomplete="off" placeholder="请输入备注" class="layui-input"/>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">轮播图</label>
+            <div class="swiper_img">
+                <div class="label">
+                    <label>
+                        <div class="addImg">
+                            <img src="img/add_img.png"/>
+                            <input type="file" class="uploadfile" accept="image/*"/>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">详情图</label>
+            <div class="detail_img">
+                <div class="label2">
+                    <label>
+                        <div class="addImg2">
+                            <img src="img/add_img.png"/>
+                            <input type="file" class="uploadfile2" accept="image/*"/>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">是否选择商品规格</label>
+            <div class="layui-input-block">
+                <input type="radio" name="" value="yes" title="是">
+                <input type="radio" name="" value="no" title="否" checked>
+            </div>
+        </div>
+
+        <!--商品 sku-->
+        <div class="allGroup">
+
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">商品状态</label>
+            <div class="layui-input-inline">
+                <select name="is_publish" lay-filter="isPublish">
+                    <option value="0" selected>仅保存</option>
+                    <option value="1">立即上架</option>
+                </select>
+            </div>
+        </div>
+
+
+        <div class="layui-form-item" style="text-align: center;padding-top: 60px">
+            <button type="button" class="layui-btn addSubClass hide">添加具体规格商品</button>
+            <label for="submit_btn">
+                <input type="submit" id="submit_btn" style="display: none"/>
+                <button class="layui-btn">确定</button>
+            </label>
+        </div>
+    </form>
+
+
+    <script src="../layui/layui.js"></script>
+    <script src="../pubJS/jquery-1.9.0.min.js"></script>
+    <script src="../pubJS/jquery.form.js"></script>
+    <script src="../pubJS/public.js"></script>
+    <script src="config.js"></script>
+    <script src="js/addGood.js?v=201811031555"></script>
+</body>
+</html>

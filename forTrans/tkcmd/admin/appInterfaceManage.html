@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>APP界面管理</title>
+    <link rel="stylesheet" href="../layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="css/public.css">
+</head>
+
+<body id="fwsBody">
+    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+        <legend>APP界面管理</legend>
+    </fieldset>
+
+    <div class="fl" style="width: 100%;margin: 10px 0;">
+        <form class="layui-form fl" action="">
+            <div class="layui-form-item">
+                <label class="layui-form-label">按类型搜索</label>
+                <div class="layui-input-inline">
+                    <select name="type" lay-filter="type">
+                        <option value="">选择类型</option>
+                        <option value="0">首页轮播图</option>
+                        <option value="1">按钮</option>
+                        <option value="2">banner活动</option>
+                        <option value="3">号外轮播图</option>
+                        <option value="4">免单banner</option>
+                        <option value="5">榜单扩展图</option>
+                        <option value="6">二维码海报图</option>
+                        <option value="7">我的底部轮播图</option>
+                    </select>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">按日期搜索</label>
+                    <div class="layui-input-inline">
+                        <input type="text" class="layui-input" id="startTime" placeholder="yyyy-MM-dd">
+                    </div>
+                    <div class="layui-input-inline">
+                        <input type="text" class="layui-input" id="endTime" placeholder="yyyy-MM-dd">
+                    </div>
+                </div>
+            </div>
+        </form>
+        <button class="layui-btn addLabInfo fr">新增条目</button>
+    </div>
+
+    <div class="tableList cl">
+        <table class="layui-table" id="labInfo">
+            <thead>
+            <tr>
+                <th>类型名称</th>
+                <th>图片</th>
+                <th>跳转地址</th>
+                <th>备注</th>
+                <th>开始时间</th>
+                <th>结束时间</th>
+                <th>类型</th>
+                <th>是否生效</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <!--分页-->
+    <div id="Pagination" class="pagination"></div>
+
+
+    <script src="../layui/layui.js"></script>
+    <script src="../pubJS/jquery-1.9.0.min.js"></script>
+    <script src="../pubJS/jquery.pagination.js"></script>
+    <script src="../pubJS/public.js"></script>
+    <script src="config.js"></script>
+    <script src="js/appInterfaceManage.js?v=201811031555"></script>
+</body>
+</html>

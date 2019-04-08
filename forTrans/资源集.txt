@@ -1,0 +1,6 @@
+跨域集合：【涉及请求头，cookie，】
+	https://juejin.im/post/5c9c38e2e51d452db7007f66#heading-8
+
+http://www.680.com【网上接项目，目的：了解项目需求】
+微信开发：https://www.cnblogs.com/kenshinobiy/p/4961482.html
+

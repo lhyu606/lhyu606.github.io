@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>添加子类</title>
+    <link rel="stylesheet" href="../layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="css/public.css">
+</head>
+
+<body>
+    <!--添加子类-->
+    <form class="layui-form" action="" id='myupload' method='post' enctype='multipart/form-data' onsubmit="return create();">
+        <input type="text" name="token" hidden>
+        <input type="text" name="attr_ids" hidden>
+        <input type="text" name="sku_value" hidden>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">商品主图</label>
+            <label>
+                <div class="goodMainImg">
+                    <img src="img/add_img.png"/>
+                    <input type="file" name="pictUrl" class="good_mainImg" style="display: none;"/>
+                </div>
+            </label>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">商品状态</label>
+            <div class="layui-input-inline">
+                <select name="is_publish" lay-filter="isPublish">
+                    <option value="0" selected>仅保存</option>
+                    <option value="1">立即上架</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">商品价格</label>
+            <div class="layui-input-inline">
+                <input type="text" id="zkPrice" name="zkPrice" autocomplete="off" placeholder="请输入商品价格" class="layui-input">
+            </div>
+            <label class="layui-form-label">总库存</label>
+            <div class="layui-input-inline">
+                <input type="text" id="totalNum" name="totalNum" autocomplete="off" placeholder="请输入总库存" class="layui-input">
+            </div>
+        </div>
+
+        <!--获取商品规格-->
+        <div class="allSku">
+
+        </div>
+
+
+        <div class="layui-form-item" style="text-align: center;position: fixed;left: 0;right: 0;bottom: 30px">
+            <label for="submit_btn">
+                <input type="submit" id="submit_btn" style="display: none"/>
+                <button class="layui-btn">提交</button>
+            </label>
+        </div>
+    </form>
+
+
+    <script src="../layui/layui.js"></script>
+    <script src="../pubJS/jquery-1.9.0.min.js"></script>
+    <script src="../pubJS/public.js"></script>
+    <script src="config.js"></script>
+    <script src="../pubJS/jquery.form.js"></script>
+    <script src="js/addSub.js?v=201811031555"></script>
+</body>
+</html>

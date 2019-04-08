@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>批量录入商品</title>
+    <link rel="stylesheet" href="../layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="css/public.css">
+</head>
+
+<body>
+    <fieldset class="layui-elem-field layui-field-title"><legend>批量录入商品</legend></fieldset>
+
+    <div class="">
+        <input type="text" id="token" hidden>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">商品链接</label>
+            <div class="layui-input-inline" style="width: 800px;">
+                <textarea type="text" id="batchData" autocomplete="off" placeholder="请输入商品链接" class="layui-textarea" style="min-height: 280px"></textarea>
+            </div>
+        </div>
+
+        <!--相关操作按钮-->
+        <div class="layui-form-item">
+            <div class="layui-input-block" style="width:800px;">
+                <button type="button" class="layui-btn parse">解析</button>
+                <div class="layui-input-inline fr">
+                    <button class="layui-btn sure" lay-submit="">立即提交</button>
+                    <button type="reset" class="layui-btn layui-btn-primary reset">重置</button>
+                </div>
+            </div>
+        </div>
+
+        <fieldset class="layui-elem-field layui-field-title"><legend>解析后的商品信息</legend></fieldset>
+        <!--解析后的商品列表-->
+        <div class="tableList">
+            <table class="layui-table" id="accessGoods">
+                <thead>
+                    <tr>
+                        <th>商品链接</th><th>商品标题</th><th>店铺名</th><th>当前价格</th>
+                        <th>商品总数</th><th>优惠券</th><th>佣金</th><th>比率</th><th>类型</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div class="batchGoodsUrl">解析结果如下：<span></span></div>
+    </div>
+
+
+    <script src="../layui/layui.js"></script>
+    <script src="../pubJS/jquery.min.js"></script>
+    <script src="../pubJS/jquery.form.js"></script>
+    <script src="config.js"></script>
+    <script src="../pubJS/public.js"></script>
+    <script src="js/batchEnter.js?v=201811111509"></script>
+</body>
+</html>

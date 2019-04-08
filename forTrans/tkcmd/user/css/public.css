@@ -1,0 +1,27 @@
+/** 初始化 **/
+.fl { float: left;}
+.fr { float: right;}
+.hide {display: none !important;}
+
+.color1 {color: #FF4C79;}
+.color2 {color: #59C2E6;}
+.color3 {color: #FE974B;}
+.color4 {color: #4BCF99;}
+.color5 {color: #AC8FEF;}
+
+.bgColor1 {background: #FF4C79;}
+.bgColor2 {background: #59C2E6;}
+.bgColor3 {background: #FE974B;}
+.bgColor4 {background: #4BCF99;}
+.bgColor5 {background: #AC8FEF;}
+.dp {color: #4C5E70;font-size: 30px;}
+
+
+/*分页*/
+.pagination {text-align: center;margin: 60px auto 0;font-size: 14px;}
+.pagination a {text-decoration: none;border: 1px solid #d0d0d0;}
+.pagination a, .pagination span {display: inline-block;padding: 7px 12px;margin-right: 12px;border-radius: 4px;}
+.pagination a:hover, .pagination span:hover {background: #009688;color: #fff}
+.pagination .current {background: #009688;color: #fff;border: 1px solid #009688;}
+.pagination .current.prev, .pagination .current.next,.pagination a {color:#555;border-color:#ddd;background:#fff;}
+#pagevalue {width: 28px;padding: 8px;position: relative;top: -1px;border: 1px solid #d0d0d0;border-radius: 4px;}

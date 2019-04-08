@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>服务商详情列表</title>
+    <link rel="stylesheet" href="../layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="css/lookLower.css">
+</head>
+
+<body id="fwsBody">
+    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+        <legend><span class="user_account"></span> 的下级列表</legend>
+    </fieldset>
+
+    <div class="fl" style="width: 100%;margin: 10px 0;">
+        <form class="layui-form" action="">
+            <div class="layui-form-item selectType fl">
+                <div class="layui-input-inline">
+                    <select name="roleType" lay-filter="roleType">
+                        <option value="">选择类型</option>
+                        <option value="2">直属下级</option>
+                        <option value="0">总监</option>
+                        <option value="1">搜省会员</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+
+        <div style="display: inline-block;line-height: 38px">
+            <span class="teamNum">团队人数：<i></i>人</span>
+            <span class="realNum">有效团队人数：<i></i>人</span>
+        </div>
+
+        <div class="demoTable fr">
+            <button class="layui-btn" id="table2excel" style="margin: 0 20px">导出Excel</button>
+            <div class="layui-inline">
+                <input class="layui-input" name="id" id="searchInfo" autocomplete="off" placeholder="请输入账号">
+            </div>
+            <button class="layui-btn layui-btn-normal search" data-type="reload">搜索</button>
+        </div>
+    </div>
+
+    <div class="tableList cl">
+        <table class="layui-table" id="staffInfo">
+            <thead>
+            <tr>
+                <th>账号</th>
+                <th>身份</th>
+                <th>团队人数</th>
+                <th>有效团队人数</th>
+                <th>一级下线人数</th>
+                <th>推荐奖金</th>
+                <th>是否员工</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <!--分页-->
+    <div id="Pagination" class="pagination"><!-- 这里显示分页 --></div>
+    <!--分页 end-->
+
+    <table class="layui-table" id="excelList" style="display: none">
+        <thead>
+        <tr>
+            <th>账号</th>
+            <th>身份</th>
+            <th>团队人数</th>
+            <th>有效团队人数</th>
+            <th>一级下线人数</th>
+            <th>推荐奖金</th>
+            <th>是否员工</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        </tbody>
+    </table>
+
+    <script src="../layui/layui.js"></script>
+    <script src="../pubJS/jquery-1.9.0.min.js"></script>
+    <script src="../pubJS/jquery.pagination.js"></script>
+    <script src="../pubJS/jquery.table2excel.js"></script>
+    <script src="../pubJS/public.js"></script>
+    <script src="config.js"></script>
+    <script src="js/lookDetail.js?v=201811031555"></script>
+</body>
+</html>

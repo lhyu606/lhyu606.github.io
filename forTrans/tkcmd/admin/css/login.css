@@ -1,0 +1,39 @@
+/* login */
+body {background: url(../img/login-bg.jpg) no-repeat center center fixed;background-size:100% 100%;}
+.login-box {width: 450px;height: 330px;margin: 10% auto;background-color: rgba(255, 255, 255, 0.407843);border-radius: 10px;color: aliceblue;}
+.login-box header {height: 39px;padding: 10px;border-bottom: 1px solid aliceblue;}
+.login-box header h1 {text-align: center;font-size: 25px;line-height: 40px;}
+.login-box .login-main {height: 185px;padding: 30px 90px 0;}
+.login-main .layui-form-item {position: relative;}
+.login-main .layui-form-item .login-icon {position: absolute;color: #ccc;top: 10px;left: 10px;}
+.login-main .layui-form-item input {padding-left: 34px;}
+.login-box footer {height: 35px;padding: 10px 10px 0 10px;}
+.login-box footer p {line-height: 35px;text-align: center;}
+.pull-left {float: left !important;}
+.pull-right {float: right !important;}
+.clear {clear: both;}
+.login-remember {line-height: 38px;}
+.login-remember .layui-form-switch {margin-top: 0px;}
+.login-code-box {position: relative;padding:10px;}
+.login-code-box input {position: absolute;width: 100px;}
+.login-code-box img {cursor: pointer;position: absolute;left: 115px;height: 38px;}
+
+/** 动画 **/
+@-webkit-keyframes icon-rotate { /* 旋转360 */
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+@keyframes icon-rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+.icon-anim-rotate {
+    -webkit-animation-name: icon-rotate;
+    animation-name: icon-rotate;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+
