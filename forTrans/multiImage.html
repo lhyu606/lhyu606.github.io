@@ -1,0 +1,73 @@
+
+<!doctype html>
+<head>
+    <title>多个文件上传表单</title>
+    <meta charset="utf-8">
+</head>
+<body>
+<style>
+    form{
+        margin: 20px;
+        padding: 10px;
+    }
+
+    #picInput>input{
+        display: block;
+        margin: 10px;
+    }
+
+
+</style>
+<form action="./multiImage.php" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="MAX_FILE_SIZE" value="1000000">
+    <div id="picInput">
+        上传图片：<input type="file" name='myfile[]' id="file" multiple>
+    </div>
+    <input id="addBtn" type="button" onclick="addPic1()" value="继续添加图片"><br/><br/>
+    <input type="submit" value="上传文件" id="btn">
+</form>
+
+<script>
+    function addPic1(){
+        var addBtn =  document.getElementById('addBtn');
+        var input = document.createElement("input");
+        input.type = 'file';
+        input.name = 'myfile[]';
+        var picInut = document.getElementById('picInput');
+        picInut.appendChild(input);
+        if(picInut.children.length == 3){
+            addBtn.disabled = 'disabled';
+        }
+    }
+
+    document.getElementById('btn').onclick = function (e) {
+        // e.preventDefault();
+        var file = document.getElementById('file');
+        file.pop();
+        console.log(file.files)
+        // return false;
+    }
+</script>
+</body>
+</html>
+林鸿宇 你好，现替星网视易 就web前端 相关职位与你预约 本周五 4月26日下午3点半到公司面谈，届时负责人会就职位与你做交流，请准时到达，如有特殊情况请务必提前知悉。 
+联系人：刘娜 13799395709
+地址：仓山区金山大道618号星网锐捷科技园20#4F（贤士达Song）
+
+
+
+
+1、结合H5和JS能够完成功能的前端研发；
+2、根据产品和UI方面需求，了解后端技术实施，分析并给出最优的前台技术实现方案；
+3、负责与后端开发人员进行接口联调工作；
+4、对项目的中存在问题，能够积极主动查找和改正；
+5、参与产品的前端性能优化、故障排查和解决、安全加固等工作；
+6、参与负责前端开发标准规范的制定、升级和维护。
+
+1、精通各种Web前端技术（HTML/CSS/Javascript等)，熟练跨浏览器、跨终端的开发；
+2、有大中型网站前端架构、前端性能、可访问性、可维护性等方面的实践经验；
+3、精通至少一种主流JS框架（如：VUE、Angular、React等），并具有相关项目经验，了解原理，精通多种主流JS框架者优先。
+4、具备微信公众号，小程序开发能力，有经验者优先。
+5、熟练掌握HTML5、CSS3，熟悉UI框架（如：element,Ant Design等），了解CSS预编译知识，有响应式布局和移动端开发能力者优先；
+6、熟悉模块化、前端编译和构建工具（如：grunt、gulp、webpack等），熟练运用主流的框架，并深入理解其设计原理；
+7、注重页面性能的优化，熟悉chrome等开发调试工具。

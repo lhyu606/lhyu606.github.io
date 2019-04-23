@@ -12,6 +12,16 @@
 // 1、 父子间通信： 子【 $emit('event', args); 】, 父【 $on('event', function(args) { /* dosomething */ }; 】
 
 // 2、 非父子间通信： eventBus
+// event-bus.js
+// import Vue from 'vue'
+// const EventBus = new Vue();
+// export default EventBus;
+
+// import EventBus from 'event-bus.js';
+// EventBus.$on('event1', function( ...param ) { ...operation });
+
+// import EventBus from 'event-bus.js';
+// EventBus.$emit('event1', ...param);
 
 // 3、 vuex 【 state、 mutation、 action、 getter、 module 】
 
