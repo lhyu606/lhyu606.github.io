@@ -271,3 +271,48 @@ ar.join = ar.shift;
 if (ar==1 && ar==2 && ar==3) {
 	console.log(ar) // [join: ƒ]
 }
+
+
+// arguments 
+// callee	length	constructor		hasOwnProperty	isPrototypeOf	propertyIsEnumerabale
+// toLocaleString	roString	valueOf		__defineGetter__	__defineSetter__
+// __lookupGetter__		__lookupSetter__	__proto__
+
+// var args = Array.prototype.slice.call(arguments)		=>  转为标准数组
+
+// 继承
+// ES 5
+function Parent (value) {
+	this.val = value;
+}
+Parent.prototype.getValue = function () {
+	console.log(this.val);
+}
+function Child (value) {
+	Parent.call(this, value);
+}
+Child.prototype = new Parent();
+
+let child = new Child(1);
+child.getValue();	// 1
+child instanceof Parent;	// true
+
+// ES 6
+class Life {
+	constructor (value) {
+		this.val = value;
+	}
+	getValue() {
+		console.log(this.val);
+	}
+}
+class Animal extends Life {
+	constructor(value) {
+		super(value);
+		this.val = value;
+	}
+}
+let dog = new Animal('dog');
+dog.getValue();		// 'dog'
+dog instanceof Life;	// true
+
