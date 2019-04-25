@@ -118,14 +118,37 @@ Sub.prototype.sayAge = function() {
 	console.log(this.age);
 }
 
+// ES 6
+class Life {
+	constructor (value) {
+		this.val = value;
+	}
+	getValue() {
+		console.log(this.val);
+	}
+}
+class Animal extends Life {
+	constructor(value) {
+		super(value);
+		this.val = value;
+	}
+}
+let dog = new Animal('dog');
+dog.getValue();		// 'dog'
+dog instanceof Life;	// true
+
+
 
 // 深 copy
 function deepCopy(obj) {
 	if (obj == null) {
 		return null;
 	}
-	if(obj instanceof Date || obj instanceof RegExp) {
+	if(obj instanceof Date) {
 		return new Date(obj);
+	}
+	if(obj instanceof RegExp) {
+		return new RegExp(obj);
 	}
 	// let t = new obj.constructor();
 	var type = Object.prototype.toString.call(obj).slice(8, -1);
@@ -221,6 +244,13 @@ Math.max(...[14, 2, 6, 3, 5]);
 // macro-task(宏任务)：setTimeout、 setInterval、 setImmediate
 // micro-task(微任务)：Promise、 process.nextTick
 
+// requestAnimationFrame	采用系统时间间隔
+function step() {
+	// ... codes
+	window.requestAnimationFrame(step);
+}
+window.requestAnimationFrame(step);
+
 
 // 函数柯里化
 
@@ -280,39 +310,4 @@ if (ar==1 && ar==2 && ar==3) {
 
 // var args = Array.prototype.slice.call(arguments)		=>  转为标准数组
 
-// 继承
-// ES 5
-function Parent (value) {
-	this.val = value;
-}
-Parent.prototype.getValue = function () {
-	console.log(this.val);
-}
-function Child (value) {
-	Parent.call(this, value);
-}
-Child.prototype = new Parent();
-
-let child = new Child(1);
-child.getValue();	// 1
-child instanceof Parent;	// true
-
-// ES 6
-class Life {
-	constructor (value) {
-		this.val = value;
-	}
-	getValue() {
-		console.log(this.val);
-	}
-}
-class Animal extends Life {
-	constructor(value) {
-		super(value);
-		this.val = value;
-	}
-}
-let dog = new Animal('dog');
-dog.getValue();		// 'dog'
-dog instanceof Life;	// true
 
