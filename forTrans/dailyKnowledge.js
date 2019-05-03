@@ -72,7 +72,7 @@
 // 四种绑定：默认，隐式，显示， new 
 // call 枚举式
 // apply 数组形式
-// bind 返回一个函数，该函数里 return apply（context, args）
+// bind 返回一个函数，该函数里 return function (){ return context.apply(...args);}
 // => 函数指向上一层 this 
 
 
@@ -180,7 +180,7 @@ var obj2 = deepCopy(obj)
 console.log(obj2)
 
 
-// 防抖
+// 防抖,例如 百度搜索
 function debounce(fun, wait) {
 	let timer;
 	let later = () => {
@@ -206,7 +206,7 @@ function clk() {
 }
 // document.onclick = debounce(clk, 500);
 
-// 节流
+// 节流，canvas 画图，鼠标滚动
 function throttle(fun, wait) {
 	let timer = null;
 	let flag = false;
@@ -262,6 +262,7 @@ window.requestAnimationFrame(step);
 
 
 // parseInt(string, radix) //string 被处理的值，radix 解析时的基数（进制，string 不以 0x  0  开头的 10 进制处理）
+// 最终都 解析为 10 进制数
 // 故 ['1', '2', '3'].map(parseInt) // ==> [1, NaN, NaN]
 
 {}

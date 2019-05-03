@@ -3,7 +3,7 @@
 
 
 // computed 和 watch 都是用于监听数据变化
-// computed 声明 的 函数名【comp】 机作为 vm data 的一部分，组件内可以直接 this.comp 引用，用于监听所依赖的 数据（一个或多个）变化， 简单处理，返回新值
+// computed 声明 的 函数名【comp】 机作为 vm data 的一部分，组件内可以直接 {{ comp }} 引用，用于监听所依赖的 数据（一个或多个）变化， 简单处理，返回新值
 
 // watch 监听 单个数据变化，适合较 computed 更复杂的处理，进行 data 更新
 
@@ -78,7 +78,7 @@ axios.intercetors.request.use(
 	config => {
 		loading = Loading.service({
 			text: '正在加载中....',
-			follscreen: true
+			fullscreen: true
 		});
 		if (store.state.token) {
 			config.headers.['Authorization'] = 'Bearer' + store.state.token;
@@ -155,3 +155,16 @@ axios.intercetors.response.use(
 );
 
 // vuex-persistedstate   vuex 数据持久化插件
+
+Object.definedProperty(boj, {
+	getter: function() {
+		// dosomething
+		// 建立依赖
+	},
+	setter: function () {
+		// 拦截，重新建立依赖
+	}
+})
+// Observe 观察者，【dep】		dep.depend();
+// 通知订阅者，==> 执行 compiler 进行 diff 计算，修改视图
+
