@@ -1,0 +1,1696 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ea023a65-8f1e-4cff-99e9-8836c52cdb2e" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="choiceKTV.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/choiceKTV/choiceKTV.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="121" column="45" lean-forward="false" selection-start-line="121" selection-start-column="41" selection-end-line="121" selection-end-column="45" />
+              <folding>
+                <element signature="e#2751#2786#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pay_list.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/pay_list/pay_list.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="149">
+              <caret line="828" column="0" lean-forward="false" selection-start-line="828" selection-start-column="0" selection-end-line="870" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="selectCity.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/selectCity/selectCity.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="77" column="60" lean-forward="false" selection-start-line="77" selection-start-column="60" selection-end-line="77" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webpack.base.conf.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build/webpack.base.conf.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1978">
+              <caret line="86" column="6" lean-forward="false" selection-start-line="86" selection-start-column="6" selection-end-line="86" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Stylus File" />
+        <option value="JavaScript File" />
+        <option value="Vue Component" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>selectCity-wrapper-in-title</find>
+      <find>selectCity-wrapper-in-right</find>
+      <find>selectCity-GPS-top</find>
+      <find>selectCity-wrapper-in-left</find>
+      <find>KTVlist</find>
+      <find>selectCity-GPS</find>
+      <find>province</find>
+      <find>geolocation</find>
+      <find>reserve_service/Wechat/Destine/getShops</find>
+      <find>selectCity-wrapper-in-wrapper</find>
+      <find>selectCity-wrapper-out</find>
+      <find>returnCancelMemo</find>
+      <find>reason</find>
+      <find>this.$store.dispatch('setNowToast'</find>
+      <find>Bmap</find>
+      <find>B</find>
+      <find>BMAP</find>
+      <find>BMA</find>
+      <find>BMa</find>
+      <find>BM</find>
+      <find>this.$store.</find>
+      <find>cityName</find>
+      <find>getStatus</find>
+      <find>toTime</find>
+      <find>city</find>
+      <find>BMap</find>
+      <find>cityList</find>
+      <find>cardDetail-view-center-word</find>
+      <find>cardDetail-view-mask</find>
+      <find>cardDetail-view-center</find>
+    </findStrings>
+    <dirStrings>
+      <dir>E:\tatakuni_workspace\vue_test\娱加点单系统-工作区\点单demo - 6超市点单第一版（开始添加后端接口）\src\components</dir>
+      <dir>E:\tatakuni_workspace\vue_test\娱加点单系统-工作区\点单demo - 6超市点单第一版（除支付，获取OPENID和扫码外全部完成）\dist\static</dir>
+      <dir>E:\tatakuni_workspace\vue_test\娱加点单系统-工作区\点单demo - 6超市点单第一版（除支付，获取OPENID和扫码外全部完成）\dist\xxx</dir>
+      <dir>E:\tatakuni_workspace\vue_test\娱加点单系统-工作区\点单demo - 6超市点单第一版（除支付，获取OPENID和扫码外全部完成）\dist\新建文件夹</dir>
+      <dir>E:\tatakuni_workspace\vue_test\娱加点单系统-工作区\点单demo - 6超市点单第一版（除支付，获取OPENID和扫码外全部完成）\dist\新建文件夹\static</dir>
+      <dir>E:\tatakuni_workspace\vue_test\娱加点单系统-工作区\点单demo - 6超市点单第一版（除支付，获取OPENID和扫码外全部完成）\dist</dir>
+      <dir>E:\tatakuni_workspace\vue_test\娱加点单系统-工作区\点单demo - 6超市点单第一版（除支付，获取OPENID和扫码外全部完成）\src\components\good_all</dir>
+      <dir>E:\tatakuni_workspace\vue_test\娱加点单系统-工作区\点单demo - 6超市点单第一版（除支付，获取OPENID和扫码外全部完成）</dir>
+      <dir>E:\tatakuni_workspace\vue_test\娱加点单系统-工作区\点单demo - 6超市点单第一版（除支付，获取OPENID和扫码外全部完成）\src\components</dir>
+      <dir>E:\tatakuni_workspace\vue_test\娱加点单系统-工作区\点单demo - 6超市点单第一版（除实际支付外全部完成，完成模拟支付和解绑）</dir>
+      <dir>E:\tatakuni_workspace\vue_test\娱加点单系统-工作区\点单demo - 8超市点单第一版(最终完成版)\src\components</dir>
+      <dir>E:\tatakuni_workspace\vue_test\娱加点单系统-工作区\点单demo - 10超市点单第一版(修改历史订单列表)\src</dir>
+      <dir>E:\tatakuni_workspace\vue_test\娱加点单系统-工作区\点单demo - 10超市点单第一版(修改历史订单列表)\src\components</dir>
+      <dir>E:\tatakuni_workspace\vue_test\娱加点单系统-工作区\点单demo - 11超市点单第一版(修改页面刷新)\src\components</dir>
+      <dir>E:\tatakuni_workspace\vue_test\娱加点单系统-工作区\点单demo - 12超市点单第一版(修改套餐选择逻辑)\src\components</dir>
+      <dir>E:\tatakuni_workspace\vue_test\娱加点单系统-工作区\点单demo - 13超市点单第一版(修改后退和刷新逻辑)\src\components</dir>
+      <dir>E:\tatakuni_workspace\vue_test\娱加点单系统-工作区\点单demo - 14超市点单第一版(每种商品只能选一个)\src</dir>
+      <dir>E:\tatakuni_workspace\vue_test\娱加点单系统-工作区\点单demo - 14超市点单第一版(每种商品只能选一个)\src\components</dir>
+      <dir>E:\tatakuni_workspace\vue_test\娱加点单系统-工作区\点单demo - 14超市点单第一版(每种商品只能选一个)</dir>
+      <dir>E:\tatakuni_workspace\vue_test\娱加点单系统-工作区\点单demo - 14超市点单第一版(会员加在线超市版)\src</dir>
+      <dir>E:\tatakuni_workspace\vue_test\娱加点单系统-工作区\预定demo-3（布置到开发环境）</dir>
+      <dir>E:\tatakuni_workspace\vue_test\娱加点单系统-工作区\预定demo-3（布置到开发环境）\src\components</dir>
+      <dir>E:\tatakuni_workspace\vue_test\娱加点单系统-工作区\预定demo-3（布置到开发环境）\src</dir>
+      <dir>E:\tatakuni_workspace\娱加项目工作区\预订V2.0.0\dist</dir>
+      <dir>E:\tatakuni_workspace\娱加项目工作区\预订V2.0.1\src\components</dir>
+      <dir>E:\tatakuni_workspace\娱加项目工作区\预订V2.0.1\src</dir>
+      <dir>E:\tatakuni_workspace\娱加项目工作区\预订V2.0.2\src\components</dir>
+      <dir>E:\tatakuni_workspace\娱加项目工作区\预订V2.0.3\src</dir>
+      <dir>E:\tatakuni_workspace\娱加项目工作区\预订V2.0.3</dir>
+      <dir>E:\tatakuni_workspace\娱加项目工作区\预订V2.0.3\build</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/build/dev-server.js" />
+        <option value="$PROJECT_DIR$/data.json" />
+        <option value="$PROJECT_DIR$/src/components/order_history/order_history_second_route/order_history_no_comment.vue" />
+        <option value="$PROJECT_DIR$/src/components/common/cartcontrol/cartcontrol_combo.vue" />
+        <option value="$PROJECT_DIR$/dist/xxx/index.html" />
+        <option value="$PROJECT_DIR$/src/common/js/util.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/components/common/TEST/TEST.vue" />
+        <option value="$PROJECT_DIR$/src/components/common/shop_cart/xxx.vue" />
+        <option value="$PROJECT_DIR$/src/components/common/cartcontrol/cartcontrol_good_list.vue" />
+        <option value="$PROJECT_DIR$/src/components/good_all/shop_cart_bottom/shop_cart_bottom.vue" />
+        <option value="$PROJECT_DIR$/src/components/common/shop_cart/shop_cart_center.vue" />
+        <option value="$PROJECT_DIR$/src/components/common/shop_cart/shop_cart_bottom.vue" />
+        <option value="$PROJECT_DIR$/src/components/common/cartcontrol/cartcontrol_shop_cart.vue" />
+        <option value="$PROJECT_DIR$/src/components/combo/combo.vue" />
+        <option value="$PROJECT_DIR$/src/components/good_all/search_food/search_food.vue" />
+        <option value="$PROJECT_DIR$/src/components/good_all/food_detail/food_detail.vue" />
+        <option value="$PROJECT_DIR$/src/components/good_all/choice_good/choice_good.vue" />
+        <option value="$PROJECT_DIR$/src/components/combo/comboSub/comboSub.vue" />
+        <option value="$PROJECT_DIR$/src/components/good_all/choice_good/good_list/goods_list.vue" />
+        <option value="$PROJECT_DIR$/src/components/good_all/choice_card/choice_card.vue" />
+        <option value="$PROJECT_DIR$/src/components/good_all/good_all.vue" />
+        <option value="$PROJECT_DIR$/src/components/QRcode/QRcode.vue" />
+        <option value="$PROJECT_DIR$/src/App.vue" />
+        <option value="$PROJECT_DIR$/src/components/pay_ready/pay_ready.vue" />
+        <option value="$PROJECT_DIR$/src/components/commentOfOrder/commentShow.vue" />
+        <option value="$PROJECT_DIR$/src/store/index.js" />
+        <option value="$PROJECT_DIR$/src/store/actions.js" />
+        <option value="$PROJECT_DIR$/src/components/order_history/order_history_second_route/order_history_comment.vue" />
+        <option value="$PROJECT_DIR$/src/store/mutations.js" />
+        <option value="$PROJECT_DIR$/src/components/order_history/order_history_second_route/order_history_all.vue" />
+        <option value="$PROJECT_DIR$/src/components/order_history/order_history_second_route/order_history_return.vue" />
+        <option value="$PROJECT_DIR$/src/components/order_history/order_history_second_route/order_history_no_use.vue" />
+        <option value="$PROJECT_DIR$/src/components/order_history/order_history_second_route/order_history_wait_pay.vue" />
+        <option value="$PROJECT_DIR$/src/components/order_history/order_history.vue" />
+        <option value="$PROJECT_DIR$/src/components/commentOfActive/commentOfActive.vue" />
+        <option value="$PROJECT_DIR$/src/components/pay_success/pay_success.vue" />
+        <option value="$PROJECT_DIR$/src/components/order_detail/order_detail.vue" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/config/index.js" />
+        <option value="$PROJECT_DIR$/src/components/choiceTable/choiceTableListMode.vue" />
+        <option value="$PROJECT_DIR$/src/components/choiceTime/choiceTime.vue" />
+        <option value="$PROJECT_DIR$/src/components/choiceTable/choiceTable.vue" />
+        <option value="$PROJECT_DIR$/src/components/pay_list/pay_list.vue" />
+        <option value="$PROJECT_DIR$/build/webpack.base.conf.js" />
+        <option value="$PROJECT_DIR$/src/components/selectCity/selectCity.vue" />
+        <option value="$PROJECT_DIR$/src/components/pay_abandon/pay_abandon.vue" />
+        <option value="$PROJECT_DIR$/src/components/choiceDetail/choiceDetail.vue" />
+        <option value="$PROJECT_DIR$/src/router/index.js" />
+        <option value="$PROJECT_DIR$/src/main.js" />
+        <option value="$PROJECT_DIR$/src/components/choiceKTV/choiceKTV.vue" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>false</other-services-enabled>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1456" />
+    <option name="height" value="876" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Internationalization issues</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>LossyEncoding</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="预订V2.0.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="预订V2.0.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="预订V2.0.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="预订V2.0.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="预订V2.0.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="预订V2.0.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="router" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="预订V2.0.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="预订V2.0.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="selectCity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="预订V2.0.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="预订V2.0.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pay_success" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="预订V2.0.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="预订V2.0.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pay_ready" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="预订V2.0.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="预订V2.0.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pay_list" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="预订V2.0.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="预订V2.0.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pay_abandon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="预订V2.0.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="预订V2.0.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="order_history" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="预订V2.0.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="预订V2.0.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="order_history" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="order_history_second_route" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="预订V2.0.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="预订V2.0.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="order_detail" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="预订V2.0.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="预订V2.0.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commentOfOrder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="预订V2.0.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="预订V2.0.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commentOfActive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="预订V2.0.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="预订V2.0.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="choiceTime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="预订V2.0.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="预订V2.0.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="choiceTable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="预订V2.0.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="预订V2.0.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="choiceKTV" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="预订V2.0.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="预订V2.0.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="choiceDetail" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="预订V2.0.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="预订V2.0.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="预订V2.0.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="预订V2.0.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="预订V2.0.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="预订V2.0.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="预订V2.0.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="预订V2.0.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="点单demo - 6超市点单第一版（除支付，获取OPENID和扫码外全部完成）">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="点单demo - 6超市点单第一版（除支付，获取OPENID和扫码外全部完成）">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="点单demo - 6超市点单第一版（除支付，获取OPENID和扫码外全部完成）">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="components">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="点单demo - 6超市点单第一版（除支付，获取OPENID和扫码外全部完成）">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="components">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="pay_ready">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
+    <property name="nodejs_interpreter_path" value="E:/tatakuni_Myinstall/node/node" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../超市V2.0.4" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="node.js.path.for.package.eslint" value="D:/RUANJIANANZHUANGBAO/node-v6.10.0-win-x64/node" />
+    <property name="node.js.selected.package.eslint" value="D:\vue_project\vue2.0\4月31号的饿了吗点单实践\node_modules\eslint" />
+    <property name="standardjs.codestyle.accepted" value="true" />
+    <property name="node.js.path.for.package.standard" value="D:/RUANJIANANZHUANGBAO/node-v6.10.0-win-x64/node" />
+    <property name="node.js.selected.package.standard" value="D:\vue_project\vue2.0\4月31号的饿了吗点单实践\node_modules\eslint" />
+    <property name="list.type.of.created.stylesheet" value="Stylus" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.selected.package.stylelint" value="" />
+    <property name="SearchEverywhereHistoryKey" value="port&#9;null&#9;null&#10;rou&#9;FILE&#9;file://E:/tatakuni_workspace/vue_test/vue.2.0/酒水点单页面结合ui的测试，页面不动，只添加UI/myMuseuiTest/h5_order_组件集合demo/src/components/layout/layout/routeMenu.vue" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\tatakuni_workspace\vue_test\娱加点单系统-工作区\预定demo-1\src\components" />
+      <recent name="E:\tatakuni_workspace\vue_test\娱加点单系统-工作区\点单demo - 3超市点单第一版（还原所有UI组件库的内容）\src\common\pic" />
+      <recent name="E:\tatakuni_workspace\vue_test\娱加点单系统-工作区\点单demo - 3超市点单第一版（还原所有UI组件库的内容）\src" />
+      <recent name="E:\tatakuni_workspace\vue_test\娱加点单系统-工作区\点单demo - 3超市点单第一版（还原所有UI组件库的内容）\src\components" />
+      <recent name="E:\tatakuni_workspace\vue_test\娱加点单系统-工作区\点单demo - 3超市点单第一版（还原所有UI组件库的内容）\src\components\good_all\food_detail" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\tatakuni_workspace\娱加项目工作区\预订V2.0.1\src\components\order_history\order_history_second_route" />
+      <recent name="E:\tatakuni_workspace\娱加项目工作区\预订V2.0.0\src\common\pic" />
+      <recent name="E:\tatakuni_workspace\vue_test\娱加点单系统-工作区\预定demo-3（布置到开发环境）\src\components\pay_list" />
+      <recent name="E:\tatakuni_workspace\vue_test\娱加点单系统-工作区\预定demo-3（布置到开发环境）\src\common\pic" />
+      <recent name="E:\tatakuni_workspace\vue_test\娱加点单系统-工作区\预定demo-2（接入接口）\src\common\pic" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ea023a65-8f1e-4cff-99e9-8836c52cdb2e" name="Default" comment="" />
+      <created>1490926305729</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1490926305729</updated>
+      <workItem from="1490926307385" duration="16534000" />
+      <workItem from="1490944490328" duration="8489000" />
+      <workItem from="1491009433112" duration="13089000" />
+      <workItem from="1491028240678" duration="8141000" />
+      <workItem from="1491057128573" duration="1170000" />
+      <workItem from="1491058599793" duration="6361000" />
+      <workItem from="1491199674733" duration="8797000" />
+      <workItem from="1491221438183" duration="9227000" />
+      <workItem from="1491231287504" duration="10646000" />
+      <workItem from="1491280872176" duration="4961000" />
+      <workItem from="1491354870384" duration="9065000" />
+      <workItem from="1491391601222" duration="8114000" />
+      <workItem from="1491400551060" duration="1493000" />
+      <workItem from="1491441061460" duration="29000" />
+      <workItem from="1491441161759" duration="7304000" />
+      <workItem from="1491448517000" duration="11833000" />
+      <workItem from="1491472620542" duration="75000" />
+      <workItem from="1491527815036" duration="3731000" />
+      <workItem from="1491546353126" duration="12060000" />
+      <workItem from="1491786931234" duration="13602000" />
+      <workItem from="1491816342419" duration="26000" />
+      <workItem from="1491818740306" duration="27000" />
+      <workItem from="1491873566806" duration="2155000" />
+      <workItem from="1491959138587" duration="1325000" />
+      <workItem from="1491967357190" duration="171000" />
+      <workItem from="1491979259869" duration="223000" />
+      <workItem from="1491990284835" duration="1166000" />
+      <workItem from="1492045848123" duration="1557000" />
+      <workItem from="1492132885365" duration="5974000" />
+      <workItem from="1492393155058" duration="13017000" />
+      <workItem from="1492419904230" duration="847000" />
+      <workItem from="1492479785105" duration="21031000" />
+      <workItem from="1492564400265" duration="30950000" />
+      <workItem from="1492596214547" duration="406000" />
+      <workItem from="1492650467389" duration="14969000" />
+      <workItem from="1492740290847" duration="19989000" />
+      <workItem from="1492996139331" duration="22388000" />
+      <workItem from="1493082451426" duration="12216000" />
+      <workItem from="1493101568400" duration="5113000" />
+      <workItem from="1493111367463" duration="2829000" />
+      <workItem from="1493169122182" duration="25366000" />
+      <workItem from="1493256041355" duration="25962000" />
+      <workItem from="1493347269890" duration="20632000" />
+      <workItem from="1493686427418" duration="21602000" />
+      <workItem from="1493772932452" duration="10266000" />
+      <workItem from="1493784972954" duration="75000" />
+      <workItem from="1493861791961" duration="21489000" />
+      <workItem from="1493947243244" duration="22479000" />
+      <workItem from="1494212485995" duration="630000" />
+      <workItem from="1494314521802" duration="2560000" />
+      <workItem from="1494400119936" duration="9654000" />
+      <workItem from="1494465983529" duration="16437000" />
+      <workItem from="1494551978475" duration="981000" />
+      <workItem from="1494570963915" duration="7378000" />
+      <workItem from="1494580033510" duration="3097000" />
+      <workItem from="1494811373584" duration="20930000" />
+      <workItem from="1495101380036" duration="484000" />
+      <workItem from="1495156351696" duration="21112000" />
+      <workItem from="1495415625807" duration="22670000" />
+      <workItem from="1495501932029" duration="27211000" />
+      <workItem from="1495588480177" duration="18532000" />
+      <workItem from="1495674193371" duration="24487000" />
+      <workItem from="1495761188718" duration="23522000" />
+      <workItem from="1495848994709" duration="23977000" />
+      <workItem from="1496192937011" duration="19610000" />
+      <workItem from="1496278692544" duration="30032000" />
+      <workItem from="1496366917165" duration="22776000" />
+      <workItem from="1496626261231" duration="11946000" />
+      <workItem from="1496646404488" duration="7769000" />
+      <workItem from="1496710801837" duration="3851000" />
+      <workItem from="1496719736716" duration="15606000" />
+      <workItem from="1496797989757" duration="20202000" />
+      <workItem from="1496884506385" duration="16665000" />
+      <workItem from="1496910912329" duration="4383000" />
+      <workItem from="1496971386808" duration="21611000" />
+      <workItem from="1497229529989" duration="23505000" />
+      <workItem from="1497316763105" duration="12442000" />
+      <workItem from="1497403974098" duration="17959000" />
+      <workItem from="1497431575816" duration="3173000" />
+      <workItem from="1497489148744" duration="23307000" />
+      <workItem from="1497576177815" duration="18347000" />
+      <workItem from="1497603047805" duration="4941000" />
+      <workItem from="1497835068738" duration="18379000" />
+      <workItem from="1497927088269" duration="13723000" />
+      <workItem from="1498038688500" duration="678000" />
+      <workItem from="1498202356227" duration="597000" />
+      <workItem from="1498469041234" duration="2552000" />
+      <workItem from="1498716072202" duration="2121000" />
+      <workItem from="1498817766117" duration="410000" />
+      <workItem from="1499061993910" duration="599000" />
+      <workItem from="1499071039286" duration="4741000" />
+      <workItem from="1499130605751" duration="24758000" />
+      <workItem from="1499216176091" duration="25728000" />
+      <workItem from="1499308816329" duration="21424000" />
+      <workItem from="1499390382915" duration="24436000" />
+      <workItem from="1499649380390" duration="29074000" />
+      <workItem from="1499735170854" duration="22245000" />
+      <workItem from="1499822280634" duration="26693000" />
+      <workItem from="1499909065830" duration="20461000" />
+      <workItem from="1499939032864" duration="706000" />
+      <workItem from="1499995088618" duration="7515000" />
+      <workItem from="1500011237626" duration="15302000" />
+      <workItem from="1500253812474" duration="21570000" />
+      <workItem from="1500340208792" duration="23795000" />
+      <workItem from="1500426050853" duration="23478000" />
+      <workItem from="1500513426482" duration="16043000" />
+      <workItem from="1500600061361" duration="18200000" />
+      <workItem from="1500858569946" duration="22855000" />
+      <workItem from="1500944638443" duration="21584000" />
+      <workItem from="1501032544831" duration="881000" />
+      <workItem from="1501033689655" duration="22674000" />
+      <workItem from="1501118510892" duration="24215000" />
+      <workItem from="1501205202015" duration="21754000" />
+      <workItem from="1501463352140" duration="12050000" />
+      <workItem from="1501490274520" duration="3332000" />
+      <workItem from="1501551186066" duration="4162000" />
+      <workItem from="1501569067231" duration="5222000" />
+      <workItem from="1501636974149" duration="22126000" />
+      <workItem from="1501722830036" duration="28588000" />
+      <workItem from="1501810465727" duration="17309000" />
+      <workItem from="1502069423448" duration="15790000" />
+      <workItem from="1502155528214" duration="21499000" />
+      <workItem from="1502242115484" duration="23841000" />
+      <workItem from="1502328303413" duration="24182000" />
+      <workItem from="1502415511746" duration="21941000" />
+      <workItem from="1502673233736" duration="2737000" />
+      <workItem from="1502679662411" duration="6767000" />
+      <workItem from="1502691707974" duration="12441000" />
+      <workItem from="1502775918522" duration="1261000" />
+      <workItem from="1502778755503" duration="6482000" />
+      <workItem from="1502785278797" duration="14057000" />
+      <workItem from="1502845173028" duration="19589000" />
+      <workItem from="1502870865576" duration="9144000" />
+      <workItem from="1503042735053" duration="2515000" />
+      <workItem from="1503105905576" duration="3017000" />
+      <workItem from="1503109103852" duration="58000" />
+      <workItem from="1503109741354" duration="4332000" />
+      <workItem from="1503313711930" duration="11132000" />
+      <workItem from="1503454140194" duration="4002000" />
+      <workItem from="1503472562934" duration="10000" />
+      <workItem from="1503481532215" duration="205000" />
+      <workItem from="1503488020239" duration="1817000" />
+      <workItem from="1503554740911" duration="457000" />
+      <workItem from="1503562247278" duration="1694000" />
+      <workItem from="1503567055495" duration="2379000" />
+      <workItem from="1503626254392" duration="652000" />
+      <workItem from="1503646453601" duration="683000" />
+      <workItem from="1503713131078" duration="3500000" />
+      <workItem from="1503741458424" duration="332000" />
+      <workItem from="1503741889378" duration="82000" />
+      <workItem from="1503747192196" duration="5628000" />
+      <workItem from="1503885250257" duration="8242000" />
+      <workItem from="1503928801897" duration="1025000" />
+      <workItem from="1503969524084" duration="4603000" />
+      <workItem from="1504055109326" duration="3190000" />
+      <workItem from="1504079449842" duration="6927000" />
+      <workItem from="1504150051440" duration="2193000" />
+      <workItem from="1504228382924" duration="6455000" />
+      <workItem from="1504235689865" duration="31703000" />
+      <workItem from="1504314561569" duration="14432000" />
+      <workItem from="1504354452934" duration="7172000" />
+      <workItem from="1504401223408" duration="6512000" />
+      <workItem from="1504489943813" duration="20896000" />
+      <workItem from="1504532615229" duration="52000" />
+      <workItem from="1504573291492" duration="16201000" />
+      <workItem from="1504755426481" duration="659000" />
+      <workItem from="1504767831772" duration="12010000" />
+      <workItem from="1504836742750" duration="3288000" />
+      <workItem from="1504854569046" duration="1188000" />
+      <workItem from="1504857150873" duration="10580000" />
+      <workItem from="1504939850927" duration="11149000" />
+      <workItem from="1505095194214" duration="12150000" />
+      <workItem from="1505183814351" duration="6363000" />
+      <workItem from="1505217448871" duration="4539000" />
+      <workItem from="1505266055284" duration="6355000" />
+      <workItem from="1505291522748" duration="5311000" />
+      <workItem from="1505296847596" duration="6396000" />
+      <workItem from="1505353946963" duration="12096000" />
+      <workItem from="1505376024830" duration="4846000" />
+      <workItem from="1505440070478" duration="118000" />
+      <workItem from="1505440323000" duration="998000" />
+      <workItem from="1505441404789" duration="690000" />
+      <workItem from="1505443295695" duration="1235000" />
+      <workItem from="1505523619436" duration="9262000" />
+      <workItem from="1505551016331" duration="1725000" />
+      <workItem from="1505703275225" duration="1286000" />
+      <workItem from="1505722613749" duration="5371000" />
+      <workItem from="1505784660582" duration="9895000" />
+      <workItem from="1505875037679" duration="386000" />
+      <workItem from="1505876566547" duration="3577000" />
+      <workItem from="1505964232811" duration="615000" />
+      <workItem from="1505983809951" duration="2137000" />
+      <workItem from="1506061269853" duration="3076000" />
+      <workItem from="1506325050139" duration="1776000" />
+      <workItem from="1506389591792" duration="924000" />
+      <workItem from="1506410155518" duration="690000" />
+      <workItem from="1506501661005" duration="623000" />
+      <workItem from="1506512217582" duration="150000" />
+      <workItem from="1506512432911" duration="613000" />
+      <workItem from="1507527443049" duration="507000" />
+      <workItem from="1507528697840" duration="1192000" />
+      <workItem from="1507601358668" duration="2553000" />
+      <workItem from="1507684493439" duration="865000" />
+      <workItem from="1507687508397" duration="717000" />
+      <workItem from="1507771242753" duration="626000" />
+      <workItem from="1507798411097" duration="1601000" />
+      <workItem from="1507857262743" duration="1460000" />
+      <workItem from="1508319855636" duration="618000" />
+      <workItem from="1508399359156" duration="1991000" />
+      <workItem from="1508746044866" duration="2262000" />
+      <workItem from="1508983610298" duration="1351000" />
+      <workItem from="1509066169847" duration="136000" />
+      <workItem from="1509417994523" duration="2370000" />
+      <workItem from="1509931778921" duration="5956000" />
+      <workItem from="1510041624350" duration="2411000" />
+      <workItem from="1510107781600" duration="13772000" />
+      <workItem from="1510191065364" duration="17826000" />
+      <workItem from="1510277167943" duration="22852000" />
+      <workItem from="1510536109166" duration="10966000" />
+      <workItem from="1510622547158" duration="2385000" />
+      <workItem from="1510708315566" duration="8806000" />
+      <workItem from="1510794906318" duration="1818000" />
+      <workItem from="1510882854899" duration="1218000" />
+      <workItem from="1511142878216" duration="3053000" />
+      <workItem from="1511832086989" duration="1280000" />
+      <workItem from="1511833625056" duration="1701000" />
+      <workItem from="1511917529940" duration="14067000" />
+      <workItem from="1512009791696" duration="15381000" />
+      <workItem from="1512092344804" duration="17119000" />
+      <workItem from="1512122832430" duration="573000" />
+      <workItem from="1512350772860" duration="81000" />
+      <workItem from="1512352011831" duration="19795000" />
+      <workItem from="1512436966786" duration="17848000" />
+      <workItem from="1512522473128" duration="2394000" />
+      <workItem from="1512609853734" duration="599000" />
+      <workItem from="1512617412823" duration="596000" />
+      <workItem from="1512627977457" duration="8354000" />
+      <workItem from="1512696146063" duration="15178000" />
+      <workItem from="1512956300416" duration="11485000" />
+      <workItem from="1513041540938" duration="14716000" />
+      <workItem from="1513133179603" duration="10630000" />
+      <workItem from="1513216427324" duration="15871000" />
+      <workItem from="1513301024053" duration="12775000" />
+      <workItem from="1513562119496" duration="9108000" />
+      <workItem from="1513647022196" duration="12601000" />
+      <workItem from="1513734310795" duration="15211000" />
+      <workItem from="1513819562382" duration="5019000" />
+      <workItem from="1513906614811" duration="1194000" />
+      <workItem from="1514944695030" duration="1197000" />
+      <workItem from="1515027470262" duration="11229000" />
+      <workItem from="1515136771922" duration="6189000" />
+      <workItem from="1515391505553" duration="9941000" />
+      <workItem from="1515460376438" duration="20544000" />
+      <workItem from="1515549085892" duration="13127000" />
+      <workItem from="1515632451035" duration="11962000" />
+      <workItem from="1515720096611" duration="18939000" />
+      <workItem from="1515979942006" duration="18064000" />
+      <workItem from="1516065401105" duration="21311000" />
+      <workItem from="1516151773598" duration="12956000" />
+      <workItem from="1516172851830" duration="9071000" />
+      <workItem from="1516239543912" duration="15402000" />
+      <workItem from="1516325052095" duration="13104000" />
+      <workItem from="1516583974943" duration="12353000" />
+      <workItem from="1516611973403" duration="649000" />
+      <workItem from="1516613831422" duration="610000" />
+      <workItem from="1516671353494" duration="14672000" />
+      <workItem from="1516758597869" duration="12460000" />
+      <workItem from="1516843688186" duration="13076000" />
+      <workItem from="1516930293321" duration="7502000" />
+      <workItem from="1517189527307" duration="11508000" />
+      <workItem from="1517276898441" duration="16502000" />
+      <workItem from="1517377854193" duration="9559000" />
+      <workItem from="1517448520303" duration="15821000" />
+      <workItem from="1517535711152" duration="7698000" />
+      <workItem from="1517794441412" duration="15043000" />
+      <workItem from="1517880691863" duration="10325000" />
+      <workItem from="1517967929417" duration="5866000" />
+      <workItem from="1518053190478" duration="10364000" />
+      <workItem from="1518138868636" duration="6364000" />
+      <workItem from="1519612094154" duration="2990000" />
+      <workItem from="1519625303856" duration="929000" />
+      <workItem from="1519630130292" duration="3272000" />
+      <workItem from="1519700026324" duration="3380000" />
+      <workItem from="1519796843517" duration="7256000" />
+      <workItem from="1519871760869" duration="7105000" />
+      <workItem from="1519954276731" duration="2391000" />
+      <workItem from="1520212662710" duration="5482000" />
+      <workItem from="1520300455134" duration="980000" />
+      <workItem from="1520301675908" duration="1293000" />
+      <workItem from="1520303933572" duration="78000" />
+      <workItem from="1520304040347" duration="75000" />
+      <workItem from="1520304123686" duration="12217000" />
+      <workItem from="1520385482568" duration="20179000" />
+      <workItem from="1520489689582" duration="11606000" />
+      <workItem from="1520559049908" duration="21065000" />
+      <workItem from="1520820574175" duration="19179000" />
+      <workItem from="1520904511143" duration="11721000" />
+      <workItem from="1521012613531" duration="5509000" />
+      <workItem from="1521096369972" duration="12121000" />
+      <workItem from="1521164080731" duration="4563000" />
+      <workItem from="1521193145149" duration="14000" />
+      <workItem from="1521429619688" duration="10149000" />
+      <workItem from="1521509932967" duration="6732000" />
+      <workItem from="1523157362907" duration="269000" />
+      <workItem from="1523157778089" duration="3176000" />
+      <workItem from="1523239603750" duration="608000" />
+      <workItem from="1523261516378" duration="631000" />
+      <workItem from="1523324217161" duration="5934000" />
+      <workItem from="1523409933004" duration="1781000" />
+      <workItem from="1523495800388" duration="4086000" />
+      <workItem from="1523519949624" duration="1210000" />
+      <workItem from="1523583212840" duration="18000" />
+      <workItem from="1524204340510" duration="2133000" />
+      <workItem from="1525253634425" duration="611000" />
+      <workItem from="1525310398763" duration="245000" />
+      <workItem from="1525336817178" duration="1286000" />
+      <workItem from="1526008344776" duration="685000" />
+      <workItem from="1526350183441" duration="2295000" />
+      <workItem from="1526434342603" duration="846000" />
+      <workItem from="1526519656058" duration="2851000" />
+      <workItem from="1526604941262" duration="1192000" />
+      <workItem from="1526893663001" duration="1072000" />
+      <workItem from="1526951102481" duration="998000" />
+      <workItem from="1527038222759" duration="1577000" />
+      <workItem from="1527488218466" duration="1411000" />
+      <workItem from="1527575416159" duration="8447000" />
+      <workItem from="1527645515012" duration="302000" />
+      <workItem from="1527653299121" duration="16689000" />
+      <workItem from="1527728573314" duration="27179000" />
+      <workItem from="1527817312917" duration="16722000" />
+      <workItem from="1528075022178" duration="12746000" />
+      <workItem from="1528161414615" duration="11840000" />
+      <workItem from="1528248457575" duration="19332000" />
+      <workItem from="1528342086203" duration="2995000" />
+      <workItem from="1528421181483" duration="1255000" />
+      <workItem from="1528681763798" duration="1650000" />
+      <workItem from="1528765881344" duration="7743000" />
+      <workItem from="1528853958330" duration="9894000" />
+      <workItem from="1528940154035" duration="4537000" />
+      <workItem from="1529393902934" duration="738000" />
+      <workItem from="1529458601139" duration="1840000" />
+      <workItem from="1529481322662" duration="310000" />
+      <workItem from="1529654974786" duration="1480000" />
+      <workItem from="1529890219640" duration="1203000" />
+      <workItem from="1530154105389" duration="2539000" />
+      <workItem from="1530235982410" duration="1733000" />
+      <workItem from="1530671675830" duration="639000" />
+      <workItem from="1530753954831" duration="627000" />
+      <workItem from="1530773787066" duration="655000" />
+      <workItem from="1530780514954" duration="616000" />
+      <workItem from="1530859672831" duration="2458000" />
+      <workItem from="1531382663418" duration="3617000" />
+      <workItem from="1531445262618" duration="2414000" />
+      <workItem from="1531722985672" duration="633000" />
+      <workItem from="1531819901979" duration="648000" />
+      <workItem from="1531992663943" duration="805000" />
+      <workItem from="1532915136678" duration="994000" />
+      <workItem from="1533108061474" duration="649000" />
+      <workItem from="1533174908409" duration="2280000" />
+      <workItem from="1533259343194" duration="591000" />
+      <workItem from="1533518749927" duration="595000" />
+      <workItem from="1533605833514" duration="591000" />
+      <workItem from="1533692191047" duration="4139000" />
+      <workItem from="1533777751261" duration="1306000" />
+      <workItem from="1534141597266" duration="1904000" />
+      <workItem from="1534754105958" duration="1222000" />
+      <workItem from="1534814362157" duration="1803000" />
+      <workItem from="1534901220906" duration="2064000" />
+      <workItem from="1535697142900" duration="505000" />
+      <workItem from="1535955624973" duration="1362000" />
+      <workItem from="1536024519291" duration="2186000" />
+      <workItem from="1536218948947" duration="646000" />
+      <workItem from="1536298308067" duration="37000" />
+      <workItem from="1536300029267" duration="8945000" />
+      <workItem from="1536546421658" duration="9740000" />
+      <workItem from="1536629777526" duration="834000" />
+      <workItem from="1536716439397" duration="3185000" />
+      <workItem from="1536908501806" duration="830000" />
+      <workItem from="1538018969492" duration="621000" />
+      <workItem from="1538027290340" duration="2219000" />
+      <workItem from="1538981706288" duration="634000" />
+      <workItem from="1538982712622" duration="2116000" />
+      <workItem from="1538987986711" duration="151000" />
+      <workItem from="1539072045890" duration="677000" />
+      <workItem from="1539153367010" duration="1244000" />
+      <workItem from="1540792184462" duration="148000" />
+      <workItem from="1541412152540" duration="593000" />
+      <workItem from="1541483935075" duration="79000" />
+      <workItem from="1547110853276" duration="79000" />
+      <workItem from="1547111720437" duration="2790000" />
+      <workItem from="1547169925168" duration="5322000" />
+      <workItem from="1547446360123" duration="991000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3146499000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22496474" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884097" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2496474" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46091643" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884097" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19181946" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46091643" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="46" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/common/pic/blueBlock.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../点单demo - 14超市点单第一版(会员加在线超市版)/src/components/pay_ready/pay_ready_destine.vue" />
+    <entry file="file://$PROJECT_DIR$/src/common/pic/room_icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/pic/KTVlogo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/order_history/order_history_second_route/order_history_no_use.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3036">
+          <caret line="132" column="50" lean-forward="false" selection-start-line="132" selection-start-column="50" selection-end-line="132" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/pic/jtr.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/pic/pull_down.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/pic/pullDown.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/pic/pullTop.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/pic/pullUp.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/order_history/order_history_second_route/order_history_comment.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/order_history/order_history_second_route/order_history_all.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2047">
+          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="91" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="989">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="45" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/mutations.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1518">
+          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="68" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/vue-resource/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/order_history/order_history.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-736">
+          <caret line="145" column="39" lean-forward="false" selection-start-line="145" selection-start-column="33" selection-end-line="145" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/order_history/order_history_second_route/order_history_wait_pay.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2507">
+          <caret line="98" column="56" lean-forward="false" selection-start-line="98" selection-start-column="56" selection-end-line="98" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/order_history/order_history_second_route/order_history_return.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-296">
+          <caret line="132" column="51" lean-forward="false" selection-start-line="132" selection-start-column="51" selection-end-line="132" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/commentOfOrder/commentShow.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3634">
+          <caret line="159" column="56" lean-forward="false" selection-start-line="159" selection-start-column="56" selection-end-line="159" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/choiceDetail/choiceDetail.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17388">
+          <caret line="756" column="40" lean-forward="false" selection-start-line="756" selection-start-column="40" selection-end-line="756" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="19" column="37" lean-forward="false" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pay_success/pay_success.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1334">
+          <caret line="58" column="52" lean-forward="false" selection-start-line="58" selection-start-column="52" selection-end-line="58" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/order_detail/order_detail.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5014">
+          <caret line="218" column="96" lean-forward="false" selection-start-line="218" selection-start-column="96" selection-end-line="218" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/choiceTable/choiceTable.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13432">
+          <caret line="586" column="47" lean-forward="false" selection-start-line="586" selection-start-column="47" selection-end-line="586" selection-end-column="47" />
+          <folding>
+            <element signature="e#15506#15589#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/choiceTable/choiceTableListMode.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3174">
+          <caret line="138" column="60" lean-forward="false" selection-start-line="138" selection-start-column="60" selection-end-line="138" selection-end-column="102" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/choiceTime/choiceTime.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2599">
+          <caret line="115" column="52" lean-forward="false" selection-start-line="115" selection-start-column="52" selection-end-line="115" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/commentOfActive/commentOfActive.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3105">
+          <caret line="136" column="56" lean-forward="false" selection-start-line="136" selection-start-column="56" selection-end-line="136" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pay_abandon/pay_abandon.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4002">
+          <caret line="174" column="24" lean-forward="false" selection-start-line="174" selection-start-column="24" selection-end-line="174" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pay_ready/pay_ready.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7222">
+          <caret line="314" column="21" lean-forward="false" selection-start-line="314" selection-start-column="21" selection-end-line="314" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/build.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1055">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/dev-server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2484">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/dev-client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/check-versions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-457">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/vue-loader.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/webpack.dev.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-227">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/webpack.prod.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2182">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-112">
+          <caret line="9" column="46" lean-forward="false" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/prod.env.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="e#140#161#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2260">
+          <caret line="2" column="26" lean-forward="true" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/dev.env.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/js/util.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/webpack.base.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1978">
+          <caret line="86" column="6" lean-forward="false" selection-start-line="86" selection-start-column="6" selection-end-line="86" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/choiceKTV/choiceKTV.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="121" column="45" lean-forward="false" selection-start-line="121" selection-start-column="41" selection-end-line="121" selection-end-column="45" />
+          <folding>
+            <element signature="e#2751#2786#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/selectCity/selectCity.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="77" column="60" lean-forward="false" selection-start-line="77" selection-start-column="60" selection-end-line="77" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pay_list/pay_list.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="828" column="0" lean-forward="false" selection-start-line="828" selection-start-column="0" selection-end-line="870" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

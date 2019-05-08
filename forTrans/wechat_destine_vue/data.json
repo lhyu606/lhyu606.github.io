@@ -1,0 +1,1320 @@
+{
+  "menu": [
+    {
+      "name": "热销榜",
+      "types": [
+        {"type": ["加皮蛋", "加瘦肉", "加粥", "加葱", "加脆皮", "加胡椒"], "name": "加料"},
+        {"type": ["加辣", "加盐", "加糖"], "name": "味道"},
+        {"type": ["常温", "加热", "保温", "放凉"], "name": "温度"},
+        {"type": ["多拿筷子", "多拿勺子", "多拿碗"], "name": "餐具"}
+      ]
+    },
+    {
+      "name": "单人精彩套餐",
+      "types": [
+        {"type": ["加皮蛋", "加瘦肉", "加粥", "加葱", "加脆皮", "加胡椒"], "name": "加料"},
+        {"type": ["加辣", "加盐", "加糖"], "name": "味道"},
+        {"type": ["常温", "加热", "保温", "放凉"], "name": "温度"},
+        {"type": ["多拿筷子", "多拿勺子", "多拿碗"], "name": "餐具"}
+      ]
+    },
+    {
+      "name": "冰爽饮品限时特惠",
+      "types": [
+        {"type": ["加皮蛋", "加瘦肉", "加粥", "加葱", "加脆皮", "加胡椒"], "name": "加料"},
+        {"type": ["加辣", "加盐", "加糖"], "name": "味道"},
+        {"type": ["常温", "加热", "保温", "放凉"], "name": "温度"},
+        {"type": ["多拿筷子", "多拿勺子", "多拿碗"], "name": "餐具"}
+      ]
+    },
+    {
+      "name": "精选热菜",
+      "types": [
+        {"type": ["加皮蛋", "加瘦肉", "加粥", "加葱", "加脆皮", "加胡椒"], "name": "加料"},
+        {"type": ["加辣", "加盐", "加糖"], "name": "味道"},
+        {"type": ["常温", "加热", "保温", "放凉"], "name": "温度"},
+        {"type": ["多拿筷子", "多拿勺子", "多拿碗"], "name": "餐具"}
+      ]
+    },
+    {
+      "name": "爽口凉菜",
+      "types": [
+        {"type": ["加皮蛋", "加瘦肉", "加粥", "加葱", "加脆皮", "加胡椒"], "name": "加料"},
+        {"type": ["加辣", "加盐", "加糖"], "name": "味道"},
+        {"type": ["常温", "加热", "保温", "放凉"], "name": "温度"},
+        {"type": ["多拿筷子", "多拿勺子", "多拿碗"], "name": "餐具"}
+      ]
+    },
+    {
+      "name": "精选套餐",
+      "types": [
+        {"type": ["加皮蛋", "加瘦肉", "加粥", "加葱", "加脆皮", "加胡椒"], "name": "加料"},
+        {"type": ["加辣", "加盐", "加糖"], "name": "味道"},
+        {"type": ["常温", "加热", "保温", "放凉"], "name": "温度"},
+        {"type": ["多拿筷子", "多拿勺子", "多拿碗"], "name": "餐具"}
+      ]
+    },
+    {
+      "name": "果拼果汁",
+      "types": [
+        {"type": ["加皮蛋", "加瘦肉", "加粥", "加葱", "加脆皮", "加胡椒"], "name": "加料"},
+        {"type": ["加辣", "加盐", "加糖"], "name": "味道"},
+        {"type": ["常温", "加热", "保温", "放凉"], "name": "温度"},
+        {"type": ["多拿筷子", "多拿勺子", "多拿碗"], "name": "餐具"}
+      ]
+    },
+    {
+      "name": "小吃主食",
+      "types": [
+        {"type": ["加皮蛋", "加瘦肉", "加粥", "加葱", "加脆皮", "加胡椒"], "name": "加料"},
+        {"type": ["加辣", "加盐", "加糖"], "name": "味道"},
+        {"type": ["常温", "加热", "保温", "放凉"], "name": "温度"},
+        {"type": ["多拿筷子", "多拿勺子", "多拿碗"], "name": "餐具"}
+      ]
+    },
+    {
+      "name": "特色粥品",
+      "types": [
+        {"type": ["加皮蛋", "加瘦肉", "加粥", "加葱", "加脆皮", "加胡椒"], "name": "加料"},
+        {"type": ["加辣", "加盐", "加糖"], "name": "味道"},
+        {"type": ["常温", "加热", "保温", "放凉"], "name": "温度"},
+        {"type": ["多拿筷子", "多拿勺子", "多拿碗"], "name": "餐具"}
+      ]
+    }
+  ],
+  "foods": [
+    {
+      "name": "热销榜",
+      "list": [
+        {
+          "name": "皮蛋瘦肉粥",
+          "price": 10,
+          "oldPrice": "",
+          "icon": "http://fuss10.elemecdn.com/c/cd/c12745ed8a5171e13b427dbc39401jpeg.jpeg?imageView2/1/w/114/h/114",
+          "image": "http://fuss10.elemecdn.com/c/cd/c12745ed8a5171e13b427dbc39401jpeg.jpeg?imageView2/1/w/750/h/750"
+        },
+        {
+          "name": "扁豆焖面",
+          "price": 14,
+          "oldPrice": "",
+          "icon": "http://fuss10.elemecdn.com/c/6b/29e3d29b0db63d36f7c500bca31d8jpeg.jpeg?imageView2/1/w/114/h/114",
+          "image": "http://fuss10.elemecdn.com/c/6b/29e3d29b0db63d36f7c500bca31d8jpeg.jpeg?imageView2/1/w/750/h/750"
+        },
+        {
+          "name": "葱花饼",
+          "price": 10,
+          "oldPrice": "",
+          "icon": "http://fuss10.elemecdn.com/f/28/a51e7b18751bcdf871648a23fd3b4jpeg.jpeg?imageView2/1/w/114/h/114",
+          "image": "http://fuss10.elemecdn.com/f/28/a51e7b18751bcdf871648a23fd3b4jpeg.jpeg?imageView2/1/w/750/h/750"
+        },
+        {
+          "name": "牛肉馅饼",
+          "price": 14,
+          "oldPrice": "",
+          "description": "",
+          "icon": "http://fuss10.elemecdn.com/d/b9/bcab0e8ad97758e65ae5a62b2664ejpeg.jpeg?imageView2/1/w/114/h/114",
+          "image": "http://fuss10.elemecdn.com/d/b9/bcab0e8ad97758e65ae5a62b2664ejpeg.jpeg?imageView2/1/w/750/h/750"
+        },
+        {
+          "name": "招牌猪肉白菜锅贴/10个",
+          "price": 17,
+          "oldPrice": "",
+          "icon": "http://fuss10.elemecdn.com/7/72/9a580c1462ca1e4d3c07e112bc035jpeg.jpeg?imageView2/1/w/114/h/114",
+          "image": "http://fuss10.elemecdn.com/7/72/9a580c1462ca1e4d3c07e112bc035jpeg.jpeg?imageView2/1/w/750/h/750"
+        },
+        {
+          "name": "南瓜粥",
+          "price": 9,
+          "oldPrice": "",
+          "icon": "http://fuss10.elemecdn.com/8/a6/453f65f16b1391942af11511b7a90jpeg.jpeg?imageView2/1/w/114/h/114",
+          "image": "http://fuss10.elemecdn.com/8/a6/453f65f16b1391942af11511b7a90jpeg.jpeg?imageView2/1/w/750/h/750"
+        },
+        {
+          "name": "红豆薏米美肤粥",
+          "price": 12,
+          "oldPrice": "",
+          "icon": "http://fuss10.elemecdn.com/d/22/260bd78ee6ac6051136c5447fe307jpeg.jpeg?imageView2/1/w/114/h/114",
+          "image": "http://fuss10.elemecdn.com/d/22/260bd78ee6ac6051136c5447fe307jpeg.jpeg?imageView2/1/w/750/h/750"
+        },
+        {
+          "name": "八宝酱菜",
+          "price": 4,
+          "oldPrice": "",
+          "icon": "http://fuss10.elemecdn.com/9/b5/469d8854f9a3a03797933fd01398bjpeg.jpeg?imageView2/1/w/114/h/114",
+          "image": "http://fuss10.elemecdn.com/9/b5/469d8854f9a3a03797933fd01398bjpeg.jpeg?imageView2/1/w/750/h/750"
+        },
+        {
+          "name": "红枣山药糙米粥",
+          "price": 10,
+          "oldPrice": "",
+          "icon": "http://fuss10.elemecdn.com/9/b5/469d8854f9a3a03797933fd01398bjpeg.jpeg?imageView2/1/w/114/h/114",
+          "image": "http://fuss10.elemecdn.com/9/b5/469d8854f9a3a03797933fd01398bjpeg.jpeg?imageView2/1/w/750/h/750"
+        },
+        {
+          "name": "糊塌子",
+          "price": 10,
+          "oldPrice": "",
+          "icon": "http://fuss10.elemecdn.com/0/05/097a2a59fd2a2292d08067e16380cjpeg.jpeg?imageView2/1/w/114/h/114",
+          "image": "http://fuss10.elemecdn.com/0/05/097a2a59fd2a2292d08067e16380cjpeg.jpeg?imageView2/1/w/750/h/750"
+        }
+      ]
+    },
+    {
+      "name": "单人精彩套餐",
+      "list": [
+        {
+          "name": "红枣山药粥套餐(非套餐)",
+          "price": 29,
+          "oldPrice": 36,
+          "icon": "http://fuss10.elemecdn.com/6/72/cb844f0bb60c502c6d5c05e0bddf5jpeg.jpeg?imageView2/1/w/114/h/114",
+          "image": "http://fuss10.elemecdn.com/6/72/cb844f0bb60c502c6d5c05e0bddf5jpeg.jpeg?imageView2/1/w/750/h/750"
+        },
+        {
+          "name": "红枣山药粥套餐(固定版)",
+          "price": 29,
+          "oldPrice": 36,
+          "icon": "http://fuss10.elemecdn.com/6/72/cb844f0bb60c502c6d5c05e0bddf5jpeg.jpeg?imageView2/1/w/114/h/114",
+          "image": "http://fuss10.elemecdn.com/6/72/cb844f0bb60c502c6d5c05e0bddf5jpeg.jpeg?imageView2/1/w/750/h/750",
+          "isCombo": true,
+          "combo": [
+            {
+              "subName": "A餐",
+              "fixedPart": [
+                {
+                  "name": "鸡排大亨",
+                  "count": 2
+                },
+                {
+                  "name": "小薯条",
+                  "count": 3
+                },
+                {
+                  "name": "可口可乐",
+                  "count": 4
+                }
+              ],
+              "selectPart": []
+            },
+            {
+              "subName": "B餐",
+              "fixedPart": [
+                {
+                  "name": "吮指原味鸡",
+                  "count": 2
+                },
+                {
+                  "name": "中薯条",
+                  "count": 3
+                },
+                {
+                  "name": "七喜",
+                  "count": 4
+                }
+              ],
+              "selectPart": []
+            },
+            {
+              "subName": "C餐",
+              "fixedPart": [
+                {
+                  "name": "麦乐鸡",
+                  "count": 2
+                },
+                {
+                  "name": "大薯条",
+                  "count": 3
+                },
+                {
+                  "name": "健力宝",
+                  "count": 4
+                }
+              ],
+              "selectPart": []
+            }
+          ]
+        },
+        {
+          "name": "皮蛋瘦肉粥套餐",
+          "price": 31,
+          "oldPrice": "",
+          "icon": "http://fuss10.elemecdn.com/8/96/f444a8087f0e940ef264617f9d98ajpeg.jpeg?imageView2/1/w/114/h/114",
+          "image": "http://fuss10.elemecdn.com/8/96/f444a8087f0e940ef264617f9d98ajpeg.jpeg?imageView2/1/w/750/h/750",
+          "isCombo": true,
+          "combo": [
+            {
+              "subName": "A餐",
+              "fixedPart": [
+                {
+                  "name": "鸡排大亨",
+                  "count": 2
+                },
+                {
+                  "name": "吮指原味鸡",
+                  "count": 3
+                },
+                {
+                  "name": "麦乐鸡",
+                  "count": 4
+                }
+              ],
+              "selectPart": [
+                {
+                  "countAllow": 4,
+                  "selectList": [
+                    {
+                      "name": "可口可乐",
+                      "default": 2
+                    },
+                    {
+                      "name": "辣鸡百事可乐",
+                      "default": 2
+                    },
+                    {
+                      "name": "美年达",
+                      "default": 2
+                    },
+                    {
+                      "name": "芬达",
+                      "default": 2
+                    },
+                    {
+                      "name": "雪碧",
+                      "default": 2
+                    },
+                    {
+                      "name": "七喜",
+                      "default": 2
+                    }
+                  ]
+                },
+                {
+                  "countAllow": 5,
+                  "selectList": [
+                    {
+                      "name": "叉烧包",
+                      "default": 2
+                    },
+                    {
+                      "name": "虾饺",
+                      "default": 2
+                    },
+                    {
+                      "name": "黑椒牛仔骨",
+                      "default": 2
+                    },
+                    {
+                      "name": "台湾香肠",
+                      "default": 2
+                    },
+                    {
+                      "name": "草莓培根巧克力披萨",
+                      "default": 2
+                    },
+                    {
+                      "name": "白灼七鳃鳗",
+                      "default": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "subName": "B餐",
+              "fixedPart": [
+                {
+                  "name": "上校鸡块",
+                  "count": 2
+                },
+                {
+                  "name": "霸王鸡条",
+                  "count": 3
+                },
+                {
+                  "name": "魔法鸡块",
+                  "count": 4
+                }
+              ],
+              "selectPart": [
+                {
+                  "countAllow": 2,
+                  "selectList": [
+                    {
+                      "name": "王老吉",
+                      "default": 2
+                    },
+                    {
+                      "name": "汾煌可乐",
+                      "default": 2
+                    },
+                    {
+                      "name": "胡椒博士",
+                      "default": 2
+                    },
+                    {
+                      "name": "醒目（水蜜桃味）",
+                      "default": 2
+                    },
+                    {
+                      "name": "喜之郎",
+                      "default": 2
+                    },
+                    {
+                      "name": "巧克力圣代",
+                      "default": 2
+                    }
+                  ]
+                },
+                {
+                  "countAllow": 3,
+                  "selectList": [
+                    {
+                      "name": "小笼包",
+                      "default": 2
+                    },
+                    {
+                      "name": "泰椒凤爪",
+                      "default": 2
+                    },
+                    {
+                      "name": "牛百叶",
+                      "default": 2
+                    },
+                    {
+                      "name": "伊比利亚香肠",
+                      "default": 2
+                    },
+                    {
+                      "name": "欧姆蛋",
+                      "default": 2
+                    },
+                    {
+                      "name": "英式早餐",
+                      "default": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "subName": "C餐",
+              "fixedPart": [
+                {
+                  "name": "鸡排大亨",
+                  "count": 2
+                },
+                {
+                  "name": "风云鸡排",
+                  "count": 3
+                },
+                {
+                  "name": "手撕鸡",
+                  "count": 4
+                }
+              ],
+              "selectPart": [
+                {
+                  "countAllow": 2,
+                  "selectList": [
+                    {
+                      "name": "手冲咖啡(肯亚)",
+                      "default": 2
+                    },
+                    {
+                      "name": "香草星冰乐",
+                      "default": 2
+                    },
+                    {
+                      "name": "椰清冷翠冰咖",
+                      "default": 2
+                    },
+                    {
+                      "name": "雪顶咖啡",
+                      "default": 2
+                    },
+                    {
+                      "name": "起司奶盖黑乌龙茶",
+                      "default": 2
+                    },
+                    {
+                      "name": "黑龙茶(加椰果)",
+                      "default": 2
+                    }
+                  ]
+                },
+                {
+                  "countAllow": 3,
+                  "selectList": [
+                    {
+                      "name": "天椒皇堡",
+                      "default": 2
+                    },
+                    {
+                      "name": "麦香鱼",
+                      "default": 2
+                    },
+                    {
+                      "name": "巨无霸",
+                      "default": 2
+                    },
+                    {
+                      "name": "双层起司堡",
+                      "default": 2
+                    },
+                    {
+                      "name": "和风炸鸡",
+                      "default": 2
+                    },
+                    {
+                      "name": "脆皮烤乳猪",
+                      "default": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "皮蛋瘦肉粥套餐（多方案）",
+          "price": 31,
+          "oldPrice": "",
+          "icon": "http://fuss10.elemecdn.com/8/96/f444a8087f0e940ef264617f9d98ajpeg.jpeg?imageView2/1/w/114/h/114",
+          "image": "http://fuss10.elemecdn.com/8/96/f444a8087f0e940ef264617f9d98ajpeg.jpeg?imageView2/1/w/750/h/750",
+          "isCombo": true,
+          "combo": [
+            {
+              "subName": "A餐",
+              "fixedPart": [
+                {
+                  "name": "鸡排大亨",
+                  "count": 2
+                },
+                {
+                  "name": "吮指原味鸡",
+                  "count": 3
+                },
+                {
+                  "name": "麦乐鸡",
+                  "count": 4
+                }
+              ],
+              "selectPart": [
+                {
+                  "countAllow": 2,
+                  "selectList": [
+                    {
+                      "name": "可口可乐",
+                      "default": 2
+                    },
+                    {
+                      "name": "辣鸡百事可乐",
+                      "default": 2
+                    },
+                    {
+                      "name": "美年达",
+                      "default": 2
+                    },
+                    {
+                      "name": "芬达",
+                      "default": 2
+                    },
+                    {
+                      "name": "雪碧",
+                      "default": 2
+                    },
+                    {
+                      "name": "七喜",
+                      "default": 2
+                    }
+                  ]
+                },
+                {
+                  "countAllow": 3,
+                  "selectList": [
+                    {
+                      "name": "叉烧包",
+                      "default": 2
+                    },
+                    {
+                      "name": "虾饺",
+                      "default": 2
+                    },
+                    {
+                      "name": "黑椒牛仔骨",
+                      "default": 2
+                    },
+                    {
+                      "name": "台湾香肠",
+                      "default": 2
+                    },
+                    {
+                      "name": "草莓培根巧克力披萨",
+                      "default": 2
+                    },
+                    {
+                      "name": "白灼七鳃鳗",
+                      "default": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "subName": "B餐",
+              "fixedPart": [
+                {
+                  "name": "鸡排大亨",
+                  "count": 2
+                },
+                {
+                  "name": "吮指原味鸡",
+                  "count": 3
+                },
+                {
+                  "name": "麦乐鸡",
+                  "count": 4
+                }
+              ],
+              "selectPart": [
+                {
+                  "countAllow": 2,
+                  "selectList": [
+                    {
+                      "name": "可口可乐",
+                      "default": 2
+                    },
+                    {
+                      "name": "辣鸡百事可乐",
+                      "default": 2
+                    },
+                    {
+                      "name": "美年达",
+                      "default": 2
+                    },
+                    {
+                      "name": "芬达",
+                      "default": 2
+                    },
+                    {
+                      "name": "雪碧",
+                      "default": 2
+                    },
+                    {
+                      "name": "七喜",
+                      "default": 2
+                    }
+                  ]
+                },
+                {
+                  "countAllow": 3,
+                  "selectList": [
+                    {
+                      "name": "叉烧包",
+                      "default": 2
+                    },
+                    {
+                      "name": "虾饺",
+                      "default": 2
+                    },
+                    {
+                      "name": "黑椒牛仔骨",
+                      "default": 2
+                    },
+                    {
+                      "name": "台湾香肠",
+                      "default": 2
+                    },
+                    {
+                      "name": "草莓培根巧克力披萨",
+                      "default": 2
+                    },
+                    {
+                      "name": "白灼七鳃鳗",
+                      "default": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "subName": "C餐",
+              "fixedPart": [
+                {
+                  "name": "鸡排大亨",
+                  "count": 2
+                },
+                {
+                  "name": "吮指原味鸡",
+                  "count": 3
+                },
+                {
+                  "name": "麦乐鸡",
+                  "count": 4
+                }
+              ],
+              "selectPart": [
+                {
+                  "countAllow": 2,
+                  "selectList": [
+                    {
+                      "name": "可口可乐",
+                      "default": 2
+                    },
+                    {
+                      "name": "辣鸡百事可乐",
+                      "default": 2
+                    },
+                    {
+                      "name": "美年达",
+                      "default": 2
+                    },
+                    {
+                      "name": "芬达",
+                      "default": 2
+                    },
+                    {
+                      "name": "雪碧",
+                      "default": 2
+                    },
+                    {
+                      "name": "七喜",
+                      "default": 2
+                    }
+                  ]
+                },
+                {
+                  "countAllow": 3,
+                  "selectList": [
+                    {
+                      "name": "叉烧包",
+                      "default": 2
+                    },
+                    {
+                      "name": "虾饺",
+                      "default": 2
+                    },
+                    {
+                      "name": "黑椒牛仔骨",
+                      "default": 2
+                    },
+                    {
+                      "name": "台湾香肠",
+                      "default": 2
+                    },
+                    {
+                      "name": "草莓培根巧克力披萨",
+                      "default": 2
+                    },
+                    {
+                      "name": "白灼七鳃鳗",
+                      "default": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "红枣山药粥套餐(套餐1)",
+          "price": 29,
+          "oldPrice": 36,
+          "icon": "http://fuss10.elemecdn.com/6/72/cb844f0bb60c502c6d5c05e0bddf5jpeg.jpeg?imageView2/1/w/114/h/114",
+          "image": "http://fuss10.elemecdn.com/6/72/cb844f0bb60c502c6d5c05e0bddf5jpeg.jpeg?imageView2/1/w/750/h/750",
+          "isCombo": true,
+          "combo": [
+            {
+              "subName": "A餐",
+              "fixedPart": [
+                {
+                  "name": "鸡排大亨",
+                  "count": 2
+                },
+                {
+                  "name": "吮指原味鸡",
+                  "count": 3
+                },
+                {
+                  "name": "麦乐鸡",
+                  "count": 4
+                }
+              ],
+              "selectPart": [
+                {
+                  "countAllow": 2,
+                  "selectList": [
+                    {
+                      "name": "可口可乐",
+                      "default": 2
+                    },
+                    {
+                      "name": "辣鸡百事可乐",
+                      "default": 2
+                    },
+                    {
+                      "name": "美年达",
+                      "default": 2
+                    },
+                    {
+                      "name": "芬达",
+                      "default": 2
+                    },
+                    {
+                      "name": "雪碧",
+                      "default": 2
+                    },
+                    {
+                      "name": "七喜",
+                      "default": 2
+                    }
+                  ]
+                },
+                {
+                  "countAllow": 3,
+                  "selectList": [
+                    {
+                      "name": "叉烧包",
+                      "default": 2
+                    },
+                    {
+                      "name": "虾饺",
+                      "default": 2
+                    },
+                    {
+                      "name": "黑椒牛仔骨",
+                      "default": 2
+                    },
+                    {
+                      "name": "台湾香肠",
+                      "default": 2
+                    },
+                    {
+                      "name": "草莓培根巧克力披萨",
+                      "default": 2
+                    },
+                    {
+                      "name": "白灼七鳃鳗",
+                      "default": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "subName": "B餐",
+              "fixedPart": [
+                {
+                  "name": "鸡排大亨",
+                  "count": 2
+                },
+                {
+                  "name": "吮指原味鸡",
+                  "count": 3
+                },
+                {
+                  "name": "麦乐鸡",
+                  "count": 4
+                }
+              ],
+              "selectPart": [
+                {
+                  "countAllow": 2,
+                  "selectList": [
+                    {
+                      "name": "可口可乐",
+                      "default": 2
+                    },
+                    {
+                      "name": "辣鸡百事可乐",
+                      "default": 2
+                    },
+                    {
+                      "name": "美年达",
+                      "default": 2
+                    },
+                    {
+                      "name": "芬达",
+                      "default": 2
+                    },
+                    {
+                      "name": "雪碧",
+                      "default": 2
+                    },
+                    {
+                      "name": "七喜",
+                      "default": 2
+                    }
+                  ]
+                },
+                {
+                  "countAllow": 3,
+                  "selectList": [
+                    {
+                      "name": "叉烧包",
+                      "default": 2
+                    },
+                    {
+                      "name": "虾饺",
+                      "default": 2
+                    },
+                    {
+                      "name": "黑椒牛仔骨",
+                      "default": 2
+                    },
+                    {
+                      "name": "台湾香肠",
+                      "default": 2
+                    },
+                    {
+                      "name": "草莓培根巧克力披萨",
+                      "default": 2
+                    },
+                    {
+                      "name": "白灼七鳃鳗",
+                      "default": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "subName": "C餐",
+              "fixedPart": [
+                {
+                  "name": "鸡排大亨",
+                  "count": 2
+                },
+                {
+                  "name": "吮指原味鸡",
+                  "count": 3
+                },
+                {
+                  "name": "麦乐鸡",
+                  "count": 4
+                }
+              ],
+              "selectPart": [
+                {
+                  "countAllow": 2,
+                  "selectList": [
+                    {
+                      "name": "可口可乐",
+                      "default": 2
+                    },
+                    {
+                      "name": "辣鸡百事可乐",
+                      "default": 2
+                    },
+                    {
+                      "name": "美年达",
+                      "default": 2
+                    },
+                    {
+                      "name": "芬达",
+                      "default": 2
+                    },
+                    {
+                      "name": "雪碧",
+                      "default": 2
+                    },
+                    {
+                      "name": "七喜",
+                      "default": 2
+                    }
+                  ]
+                },
+                {
+                  "countAllow": 3,
+                  "selectList": [
+                    {
+                      "name": "叉烧包",
+                      "default": 2
+                    },
+                    {
+                      "name": "虾饺",
+                      "default": 2
+                    },
+                    {
+                      "name": "黑椒牛仔骨",
+                      "default": 2
+                    },
+                    {
+                      "name": "台湾香肠",
+                      "default": 2
+                    },
+                    {
+                      "name": "草莓培根巧克力披萨",
+                      "default": 2
+                    },
+                    {
+                      "name": "白灼七鳃鳗",
+                      "default": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "红枣山药粥套餐(套餐2)",
+          "price": 29,
+          "oldPrice": 36,
+          "icon": "http://fuss10.elemecdn.com/6/72/cb844f0bb60c502c6d5c05e0bddf5jpeg.jpeg?imageView2/1/w/114/h/114",
+          "image": "http://fuss10.elemecdn.com/6/72/cb844f0bb60c502c6d5c05e0bddf5jpeg.jpeg?imageView2/1/w/750/h/750",
+          "isCombo": true,
+          "combo": [
+            {
+              "subName": "A餐",
+              "fixedPart": [
+                {
+                  "name": "鸡排大亨",
+                  "count": 2
+                },
+                {
+                  "name": "吮指原味鸡",
+                  "count": 3
+                },
+                {
+                  "name": "麦乐鸡",
+                  "count": 4
+                }
+              ],
+              "selectPart": [
+                {
+                  "countAllow": 2,
+                  "selectList": [
+                    {
+                      "name": "可口可乐",
+                      "default": 2
+                    },
+                    {
+                      "name": "辣鸡百事可乐",
+                      "default": 2
+                    },
+                    {
+                      "name": "美年达",
+                      "default": 2
+                    }
+                  ]
+                },
+                {
+                  "countAllow": 1,
+                  "selectList": [
+                    {
+                      "name": "叉烧包",
+                      "default": 1
+                    },
+                    {
+                      "name": "虾饺",
+                      "default": 1
+                    },
+                    {
+                      "name": "黑椒牛仔骨",
+                      "default": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "subName": "B餐",
+              "fixedPart": [
+                {
+                  "name": "鸡排大亨",
+                  "count": 2
+                },
+                {
+                  "name": "吮指原味鸡",
+                  "count": 3
+                },
+                {
+                  "name": "麦乐鸡",
+                  "count": 4
+                }
+              ],
+              "selectPart": [
+                {
+                  "countAllow": 2,
+                  "selectList": [
+                    {
+                      "name": "可口可乐",
+                      "default": 2
+                    },
+                    {
+                      "name": "辣鸡百事可乐",
+                      "default": 2
+                    },
+                    {
+                      "name": "美年达",
+                      "default": 2
+                    }
+                  ]
+                },
+                {
+                  "countAllow": 1,
+                  "selectList": [
+                    {
+                      "name": "叉烧包",
+                      "default": 1
+                    },
+                    {
+                      "name": "虾饺",
+                      "default": 1
+                    },
+                    {
+                      "name": "黑椒牛仔骨",
+                      "default": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "subName": "C餐",
+              "fixedPart": [
+                {
+                  "name": "鸡排大亨",
+                  "count": 2
+                },
+                {
+                  "name": "吮指原味鸡",
+                  "count": 3
+                },
+                {
+                  "name": "麦乐鸡",
+                  "count": 4
+                }
+              ],
+              "selectPart": [
+                {
+                  "countAllow": 2,
+                  "selectList": [
+                    {
+                      "name": "可口可乐",
+                      "default": 2
+                    },
+                    {
+                      "name": "辣鸡百事可乐",
+                      "default": 2
+                    },
+                    {
+                      "name": "美年达",
+                      "default": 2
+                    }
+                  ]
+                },
+                {
+                  "countAllow": 1,
+                  "selectList": [
+                    {
+                      "name": "叉烧包",
+                      "default": 1
+                    },
+                    {
+                      "name": "虾饺",
+                      "default": 1
+                    },
+                    {
+                      "name": "黑椒牛仔骨",
+                      "default": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "冰爽饮品限时特惠",
+      "list": [
+        {
+          "name": "VC无限橙果汁",
+          "price": 8,
+          "oldPrice": 10,
+          "icon": "http://fuss10.elemecdn.com/e/c6/f348e811772016ae24e968238bcbfjpeg.jpeg?imageView2/1/w/114/h/114",
+          "image": "http://fuss10.elemecdn.com/e/c6/f348e811772016ae24e968238bcbfjpeg.jpeg?imageView2/1/w/750/h/750"
+        }
+      ]
+    },
+    {
+      "name": "精选热菜",
+      "list": [
+        {
+          "name": "娃娃菜炖豆腐",
+          "price": 17,
+          "oldPrice": "",
+          "icon": "http://fuss10.elemecdn.com/d/2d/b1eb45b305635d9dd04ddf157165fjpeg.jpeg?imageView2/1/w/114/h/114",
+          "image": "http://fuss10.elemecdn.com/d/2d/b1eb45b305635d9dd04ddf157165fjpeg.jpeg?imageView2/1/w/750/h/750"
+        },
+        {
+          "name": "手撕包菜",
+          "price": 16,
+          "oldPrice": "",
+          "icon": "http://fuss10.elemecdn.com/9/c6/f3bc84468820121112e79583c24efjpeg.jpeg?imageView2/1/w/114/h/114",
+          "image": "http://fuss10.elemecdn.com/9/c6/f3bc84468820121112e79583c24efjpeg.jpeg?imageView2/1/w/750/h/750"
+        },
+        {
+          "name": "香酥黄金鱼/3条",
+          "price": 11,
+          "oldPrice": "",
+          "icon": "http://fuss10.elemecdn.com/4/e7/8277a6a2ea0a2e97710290499fc41jpeg.jpeg?imageView2/1/w/114/h/114",
+          "image": "http://fuss10.elemecdn.com/4/e7/8277a6a2ea0a2e97710290499fc41jpeg.jpeg?imageView2/1/w/750/h/750"
+        }
+      ]
+    },
+    {
+      "name": "爽口凉菜",
+      "list": [
+        {
+          "name": "八宝酱菜",
+          "price": 4,
+          "oldPrice": "",
+          "icon": "http://fuss10.elemecdn.com/9/b5/469d8854f9a3a03797933fd01398bjpeg.jpeg?imageView2/1/w/114/h/114",
+          "image": "http://fuss10.elemecdn.com/9/b5/469d8854f9a3a03797933fd01398bjpeg.jpeg?imageView2/1/w/750/h/750"
+        },
+        {
+          "name": "拍黄瓜",
+          "price": 9,
+          "oldPrice": "",
+          "icon": "http://fuss10.elemecdn.com/6/54/f654985b4e185f06eb07f8fa2b2e8jpeg.jpeg?imageView2/1/w/114/h/114",
+          "image": "http://fuss10.elemecdn.com/6/54/f654985b4e185f06eb07f8fa2b2e8jpeg.jpeg?imageView2/1/w/750/h/750"
+        }
+      ]
+    },
+    {
+      "name": "精选套餐",
+      "list": [
+        {
+          "name": "红豆薏米粥套餐",
+          "price": 37,
+          "oldPrice": "",
+          "icon": "http://fuss10.elemecdn.com/f/49/27f26ed00c025b2200a9ccbb7e67ejpeg.jpeg?imageView2/1/w/114/h/114",
+          "image": "http://fuss10.elemecdn.com/f/49/27f26ed00c025b2200a9ccbb7e67ejpeg.jpeg?imageView2/1/w/750/h/750"
+        },
+        {
+          "name": "皮蛋瘦肉粥套餐",
+          "price": 31,
+          "oldPrice": "",
+          "icon": "http://fuss10.elemecdn.com/8/96/f444a8087f0e940ef264617f9d98ajpeg.jpeg?imageView2/1/w/114/h/114",
+          "image": "http://fuss10.elemecdn.com/8/96/f444a8087f0e940ef264617f9d98ajpeg.jpeg?imageView2/1/w/750/h/750"
+        }
+      ]
+    },
+    {
+      "name": "果拼果汁",
+      "list": [
+        {
+          "name": "蜜瓜圣女萝莉杯",
+          "price": 6,
+          "oldPrice": "",
+          "icon": "http://fuss10.elemecdn.com/b/5f/b3b04c259d5ec9fa52e1856ee50dajpeg.jpeg?imageView2/1/w/114/h/114",
+          "image": "http://fuss10.elemecdn.com/b/5f/b3b04c259d5ec9fa52e1856ee50dajpeg.jpeg?imageView2/1/w/750/h/750"
+        },
+        {
+          "name": "加多宝",
+          "price": 6,
+          "oldPrice": "",
+          "icon": "http://fuss10.elemecdn.com/b/9f/5e6c99c593cf65229225c5661bcdejpeg.jpeg?imageView2/1/w/114/h/114",
+          "image": "http://fuss10.elemecdn.com/b/9f/5e6c99c593cf65229225c5661bcdejpeg.jpeg?imageView2/1/w/750/h/750"
+        },
+        {
+          "name": "VC无限橙果汁",
+          "price": 8,
+          "oldPrice": 10,
+          "icon": "http://fuss10.elemecdn.com/e/c6/f348e811772016ae24e968238bcbfjpeg.jpeg?imageView2/1/w/114/h/114",
+          "image": "http://fuss10.elemecdn.com/e/c6/f348e811772016ae24e968238bcbfjpeg.jpeg?imageView2/1/w/750/h/750"
+        }
+      ]
+    },
+    {
+      "name": "小吃主食",
+      "list": [
+        {
+          "name": "扁豆焖面",
+          "price": 14,
+          "oldPrice": "",
+          "icon": "http://fuss10.elemecdn.com/c/6b/29e3d29b0db63d36f7c500bca31d8jpeg.jpeg?imageView2/1/w/114/h/114",
+          "image": "http://fuss10.elemecdn.com/c/6b/29e3d29b0db63d36f7c500bca31d8jpeg.jpeg?imageView2/1/w/750/h/750"
+        },
+        {
+          "name": "葱花饼",
+          "price": 10,
+          "oldPrice": "",
+          "icon": "http://fuss10.elemecdn.com/f/28/a51e7b18751bcdf871648a23fd3b4jpeg.jpeg?imageView2/1/w/114/h/114",
+          "image": "http://fuss10.elemecdn.com/f/28/a51e7b18751bcdf871648a23fd3b4jpeg.jpeg?imageView2/1/w/750/h/750"
+        },
+        {
+          "name": "牛肉馅饼",
+          "price": 14,
+          "oldPrice": "",
+          "icon": "http://fuss10.elemecdn.com/d/b9/bcab0e8ad97758e65ae5a62b2664ejpeg.jpeg?imageView2/1/w/114/h/114",
+          "image": "http://fuss10.elemecdn.com/d/b9/bcab0e8ad97758e65ae5a62b2664ejpeg.jpeg?imageView2/1/w/750/h/750"
+        },
+        {
+          "name": "招牌猪肉白菜锅贴/10个",
+          "price": 17,
+          "oldPrice": "",
+          "icon": "http://fuss10.elemecdn.com/7/72/9a580c1462ca1e4d3c07e112bc035jpeg.jpeg?imageView2/1/w/114/h/114",
+          "image": "http://fuss10.elemecdn.com/7/72/9a580c1462ca1e4d3c07e112bc035jpeg.jpeg?imageView2/1/w/750/h/750"
+        },
+        {
+          "name": "糊塌子",
+          "price": 10,
+          "oldPrice": "",
+          "icon": "http://fuss10.elemecdn.com/0/05/097a2a59fd2a2292d08067e16380cjpeg.jpeg?imageView2/1/w/114/h/114",
+          "image": "http://fuss10.elemecdn.com/0/05/097a2a59fd2a2292d08067e16380cjpeg.jpeg?imageView2/1/w/750/h/750"
+        }
+      ]
+    },
+    {
+      "name": "特色粥品",
+      "list": [
+        {
+          "name": "皮蛋瘦肉粥",
+          "price": 10,
+          "oldPrice": "",
+          "icon": "http://fuss10.elemecdn.com/c/cd/c12745ed8a5171e13b427dbc39401jpeg.jpeg?imageView2/1/w/114/h/114",
+          "image": "http://fuss10.elemecdn.com/c/cd/c12745ed8a5171e13b427dbc39401jpeg.jpeg?imageView2/1/w/750/h/750"
+        },
+        {
+          "name": "南瓜粥",
+          "price": 9,
+          "oldPrice": "",
+          "icon": "http://fuss10.elemecdn.com/8/a6/453f65f16b1391942af11511b7a90jpeg.jpeg?imageView2/1/w/114/h/114",
+          "image": "http://fuss10.elemecdn.com/8/a6/453f65f16b1391942af11511b7a90jpeg.jpeg?imageView2/1/w/750/h/750"
+        },
+        {
+          "name": "红豆薏米美肤粥",
+          "price": 12,
+          "oldPrice": "",
+          "icon": "http://fuss10.elemecdn.com/d/22/260bd78ee6ac6051136c5447fe307jpeg.jpeg?imageView2/1/w/114/h/114",
+          "image": "http://fuss10.elemecdn.com/d/22/260bd78ee6ac6051136c5447fe307jpeg.jpeg?imageView2/1/w/750/h/750"
+        },
+        {
+          "name": "红枣山药糙米粥",
+          "price": 10,
+          "oldPrice": "",
+          "icon": "http://fuss10.elemecdn.com/9/b5/469d8854f9a3a03797933fd01398bjpeg.jpeg?imageView2/1/w/114/h/114",
+          "image": "http://fuss10.elemecdn.com/9/b5/469d8854f9a3a03797933fd01398bjpeg.jpeg?imageView2/1/w/750/h/750"
+        },
+        {
+          "name": "鲜蔬菌菇粥",
+          "price": 11,
+          "oldPrice": "",
+          "icon": "http://fuss10.elemecdn.com/e/a3/5317c68dd618929b6ac05804e429ajpeg.jpeg?imageView2/1/w/114/h/114",
+          "image": "http://fuss10.elemecdn.com/e/a3/5317c68dd618929b6ac05804e429ajpeg.jpeg?imageView2/1/w/750/h/750"
+        },
+        {
+          "name": "田园蔬菜粥",
+          "price": 10,
+          "oldPrice": "",
+          "icon": "http://fuss10.elemecdn.com/a/94/7371083792c19df00e546b29e344cjpeg.jpeg?imageView2/1/w/114/h/114",
+          "image": "http://fuss10.elemecdn.com/a/94/7371083792c19df00e546b29e344cjpeg.jpeg?imageView2/1/w/750/h/750"
+        }
+      ]
+    }
+  ]
+}
