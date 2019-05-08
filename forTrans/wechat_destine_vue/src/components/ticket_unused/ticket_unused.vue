@@ -13,7 +13,7 @@
                             <span class="text">积分</span>
                         </div>
                         <div class="btn-control">
-                            <btn />
+                            <btn  :ticket='item'/>
                         </div>
                     </div>
                 </div>
@@ -80,7 +80,7 @@
                 ]
             }
 		},
-        created () {console.log(this.ticketList)
+        created () {
 			//alert(this.$route.query.weChatId)
 	        // if (typeof WeixinJSBridge === 'undefined') {
 		    //     if (document.addEventListener) {
@@ -140,6 +140,11 @@
 .item
     display flex
     justify-content space-space-between
+    padding 4px 0
+    &:last-child
+        .right
+            &::after
+                display none
     .left 
         width 80px
         height 80px

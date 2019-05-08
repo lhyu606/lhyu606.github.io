@@ -186,27 +186,28 @@ export default new Router({
 				}
 			]
 		},
-		// {
-		// 	path: '/mall',
-		// 	name: 'mall',
-		// 	component: (resolve) => {
-		// 		require(['@/components/mall/mall'], resolve)
-		// 	},
-		// 	children: [
-		// 		{
-		// 			path: 'all',
-		// 			component: (resolve) => {
-		// 				require(['@/components/mall_all/mall_all'], resolve)
-		// 			}
-		// 		},
-		// 		{
-		// 			path: 'record',
-		// 			component: (resolve) => {
-		// 				require(['@/components/mall_record/mall_record'], resolve)
-		// 			}
-		// 		}
-		// 	]
-		// }
+		{
+			path: '/mall',
+			name: 'mall',
+			redirect: '/mall/all',
+			component: (resolve) => {
+				require(['@/components/mall/mall'], resolve)
+			},
+			children: [
+				{
+					path: 'all',
+					component: (resolve) => {
+						require(['@/components/mall_all/mall_all'], resolve)
+					}
+				},
+				{
+					path: 'record',
+					component: (resolve) => {
+						require(['@/components/mall_record/mall_record'], resolve)
+					}
+				}
+			]
+		}
 		// ********************** lhyu
 	],
 	// 定义激活路由的样式
