@@ -1,6 +1,6 @@
 <template>
     <div class="ticket-wrapper">
-        <div class="tabs">
+        <!-- <div class="tabs">
             <div class="tab">
                 <router-link class="text" :class="{ active: type == 0 }" to="/mall/all" @click="type=0">
                     <span>商品</span>
@@ -11,7 +11,9 @@
                     <span>我的订单</span>
                 </router-link>
             </div>
-        </div>
+            <div class="line"></div>
+        </div> -->
+        <tabs :list='tabs' />
         <router-view></router-view>
     </div>
 </template>
@@ -20,6 +22,7 @@
 	import BScroll from 'better-scroll'
     import Vue from 'vue'
 	import BMap from 'BMap'
+	import tabs from '@/components/tabs/tabs'
 	export default {
 		data: function () {
 			return {
@@ -27,7 +30,19 @@
                 city: '',
                 lng: 0,
                 lat: 0,
-                type: 0
+                type: 0,
+                tabs: [
+                    {
+                        type: 0,
+                        to: '/mall/all',
+                        text: '商品'
+                    },
+                    {
+                        type: 1,
+                        to: '/mall/record',
+                        text: '我的订单'
+                    }
+                ]
             }
 		},
         created () {
@@ -51,12 +66,17 @@
             // 百度的API中获取经纬度的方法
         },
         methods: {
-	        
+	        checkTab (type) {
+                console.log(type)
+            }
         },
         computed: {
 	        cityName () {
 			    return this.$store.state.cityName
             },
+        },
+        components: {
+            tabs
         }
 	}
 </script>
@@ -76,7 +96,7 @@
                 display inline-block
                 width 50%
                 height 48px
-                font-size 18px
+                font-size 16px
                 line-height 48px
                 text-align center
                 vertical-align top

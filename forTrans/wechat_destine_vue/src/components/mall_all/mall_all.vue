@@ -51,67 +51,67 @@
                         id: 1,
                         title: 'RAVE套装-发光臂环',
                         price: 368,
-                        pic: 'https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=2635372762,3311529239&fm=179&app=42&f=JPEG?w=56&h=56'
+                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
                     },
                     {
                         id: 2,
                         title: 'RAVE套装-发光臂环',
                         price: 368,
-                        pic: 'https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=2635372762,3311529239&fm=179&app=42&f=JPEG?w=56&h=56'
+                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
                     },
                     {
                         id: 2,
                         title: 'RAVE套装-发光臂环',
                         price: 368,
-                        pic: 'https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=2635372762,3311529239&fm=179&app=42&f=JPEG?w=56&h=56'
+                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
                     },
                     {
                         id: 3,
                         title: 'RAVE套装-发光臂环',
                         price: 368,
-                        pic: 'https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=2635372762,3311529239&fm=179&app=42&f=JPEG?w=56&h=56'
+                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
                     },
                     {
                         id: 4,
                         title: 'RAVE套装-发光臂环',
                         price: 368,
-                        pic: 'https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=2635372762,3311529239&fm=179&app=42&f=JPEG?w=56&h=56'
+                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
                     },
                     {
                         id: 5,
                         title: 'RAVE套装-发光臂环',
                         price: 368,
-                        pic: 'https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=2635372762,3311529239&fm=179&app=42&f=JPEG?w=56&h=56'
+                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
                     },
                     {
                         id: 6,
                         title: 'RAVE套装-发光臂环',
                         price: 368,
-                        pic: 'https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=2635372762,3311529239&fm=179&app=42&f=JPEG?w=56&h=56'
+                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
                     },
                     {
                         id: 7,
                         title: 'RAVE套装-发光臂环',
                         price: 368,
-                        pic: 'https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=2635372762,3311529239&fm=179&app=42&f=JPEG?w=56&h=56'
+                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
                     },
                     {
                         id: 8,
                         title: 'RAVE套装-发光臂环',
                         price: 368,
-                        pic: 'https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=2635372762,3311529239&fm=179&app=42&f=JPEG?w=56&h=56'
+                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
                     },
                     {
                         id: 9,
                         title: 'RAVE套装-发光臂环',
                         price: 368,
-                        pic: 'https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=2635372762,3311529239&fm=179&app=42&f=JPEG?w=56&h=56'
+                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
                     },
                     {
                         id: 10,
                         title: 'RAVE套装-发光臂环',
                         price: 368,
-                        pic: 'https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=2635372762,3311529239&fm=179&app=42&f=JPEG?w=56&h=56'
+                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
                     }
                 ]
             }
@@ -162,7 +162,6 @@
                         continue;
                     }
                     price += this.ticketList[i].price * this.ticketList[i].count;
-                    console.log(this.ticketList[i].price , this.ticketList[i].count)
                 }
                 return price;
             },
@@ -257,4 +256,7 @@
                 text-align center
                 background #666666
                 border-radius 3px
+                &.active
+                    background #e9c088
+                    color #666666
 </style>

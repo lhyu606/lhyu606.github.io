@@ -1,6 +1,6 @@
 <template>
     <div class="ticket-wrapper">
-        <div class="tabs">
+        <!-- <div class="tabs">
             <div class="tab">
                 <router-link class="text" :class="{ active: type == 0 }" to="/ticket/unused" @click="type=0">
                     <span>未使用</span>
@@ -16,7 +16,8 @@
                     <span>已过期</span>
                 </router-link>
             </div>
-        </div>
+        </div> -->
+        <tabs :list='tabs'/>
         <router-view></router-view>
     </div>
 </template>
@@ -24,7 +25,8 @@
 <script type="text/ecmascript-6">
 	import BScroll from 'better-scroll'
     import Vue from 'vue'
-	import BMap from 'BMap'
+    import BMap from 'BMap'
+    import tabs from '@/components/tabs/tabs'
 	export default {
 		data: function () {
 			return {
@@ -32,10 +34,27 @@
                 city: '',
                 lng: 0,
                 lat: 0,
-                type: 0
+                type: 0,
+                tabs: [
+                    {
+                        type: 0,
+                        to: '/ticket/unused',
+                        text: '未使用'
+                    },
+                    {
+                        type: 1,
+                        to: '/ticket/record',
+                        text: '使用记录'
+                    },
+                    {
+                        type: 2,
+                        to: '/ticket/invalid',
+                        text: '已过期'
+                    }
+                ]
             }
 		},
-        created () {console.log(window.devicePixelRatio)
+        created () {return false;
 			//alert(this.$route.query.weChatId)
 	        // if (typeof WeixinJSBridge === 'undefined') {
 		    //     if (document.addEventListener) {
@@ -274,6 +293,9 @@
 	        cityName () {
 			    return this.$store.state.cityName
             },
+        },
+        components: {
+            tabs
         }
 	}
 </script>
@@ -293,7 +315,7 @@
                 display inline-block
                 width 33.3%
                 height 48px
-                font-size 18px
+                font-size 16px
                 line-height 48px
                 text-align center
                 vertical-align top

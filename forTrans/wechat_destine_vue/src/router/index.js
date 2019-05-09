@@ -207,6 +207,13 @@ export default new Router({
 					}
 				}
 			]
+		},
+		{
+			path: '/tabs',
+			name: 'tabs',
+			component: (resolve) => {
+				require(['@/components/tabs/tabs'], resolve)
+			}
 		}
 		// ********************** lhyu
 	],

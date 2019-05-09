@@ -46,35 +46,35 @@
                         id: 1,
                         title: 'RAVE套装-发光臂环',
                         price: 368,
-                        pic: 'https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=2635372762,3311529239&fm=179&app=42&f=JPEG?w=56&h=56',
+                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg',
                         createTime: this.ranTime()
                     },
                     {
                         id: 2,
                         title: 'RAVE套装-发光臂环',
                         price: 368,
-                        pic: 'https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=2635372762,3311529239&fm=179&app=42&f=JPEG?w=56&h=56',
+                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg',
                         createTime: this.ranTime()
                     },
                     {
                         id: 2,
                         title: 'RAVE套装-发光臂环',
                         price: 368,
-                        pic: 'https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=2635372762,3311529239&fm=179&app=42&f=JPEG?w=56&h=56',
+                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg',
                         createTime: this.ranTime()
                     },
                     {
                         id: 3,
                         title: 'RAVE套装-发光臂环',
                         price: 368,
-                        pic: 'https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=2635372762,3311529239&fm=179&app=42&f=JPEG?w=56&h=56',
+                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg',
                         createTime: this.ranTime()
                     },
                     {
                         id: 4,
                         title: 'RAVE套装-发光臂环',
                         price: 368,
-                        pic: 'https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=2635372762,3311529239&fm=179&app=42&f=JPEG?w=56&h=56',
+                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg',
                         createTime: this.ranTime()
                     }
                 ]
@@ -115,7 +115,7 @@
             },
             ranTime() {
                 var time = new Date();
-                time += parseInt(Math.random() * 10) * 3600 * 24;console.log(new Date(time))
+                time += parseInt(Math.random() * 10) * 3600 * 24;
                 return new Date(time); 
             }
         },

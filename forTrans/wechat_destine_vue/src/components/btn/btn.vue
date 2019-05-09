@@ -23,7 +23,7 @@
             }
 		},
         created () {
-            console.log(this.ticket)
+            // console.log(this.ticket)
         },
         methods: {
 	        addCart (event) {

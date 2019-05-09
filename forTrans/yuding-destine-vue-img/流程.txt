@@ -1,0 +1,50 @@
+
+0 - 账号，地址
+	IP 地址		192.168.73.147
+	svn 账号		用户名：linhongyu	密码:linhongyu5066
+	
+
+1 - 用于测试流程
+
+App.vue 和 项目首页 里面 created  微信 JSBridge 部分注释
+
+store/index.js 下选择		 IP: 'http://yf.evideocloud.com.cn/'
+
+npm run dev   上传  /mnt/data/yjcloudSystem/cloudSystem/php/  对应目录
+
+微信打开，复制地址，截取   ?openid=o8TkNtxbodnKMSQwJDo_WBCxu288&weChatId=gh_8f8b01d7b157   部分
+拼接到本地地址后面
+
+最后，代码完成上传  /mnt/data/yjcloudSystem/cloudSystem/php/  对应目录，svn 也上传一份，注释修改新增内容
+
+2 - 项目目录类
+	svn://192.168.73.132/yjyun/YJcode/V3.0/php  	娱加的提测目录
+
+	/mnt/data/yjcloudSystem/cloudSystem/php/	测试服务器路径( ftp )
+	网页端【=====
+	研发环境的svn目录 	=>
+	http://192.168.84.198/repos3/SVNDB/娱加IDC系统/business_web/yjCloudsystemmanage/云管前端
+	svn://192.168.73.132/yunguan/YGcode/易通云V1.0/Web/php
+	svn://192.168.73.132/yunguan/YGcode/易通云V1.0/Web/wx
+	=====】
+	小程序【======
+	http://192.168.84.198/repos3/SVNDB/娱加IDC系统/business_web
+	=====】
+	http://yf.evideocloud.com.cn	11001  489111 研发环境
+	
+	39.108.231.200	port 21	账号：yj	密码：1234@cloud
+
+3 - 工具类
+	取色器：http://www.jiniannet.com/page/allcolor
+
+4 - 预定
+choiceKTV	
+choiceTime
+choiceTableListMode
+choiceDetail
+pay_list
+http://yf.evideocloud.com.cn/wechat_order_service/#/pay_ready_destine
+	
+
+
+
