@@ -35,14 +35,14 @@
                 } else {
                     this.ticket.count++;
                 }
-                this.$emit('addCart',event.target);
+                this.$emit('addCart',this.ticket);
             },
             decreaseCart (event) {
                 // if (!event._constructed) {
                 //     return;
                 // }
                 this.ticket.count--;
-                this.$emit('decreaseCart', event.target)
+                this.$emit('decreaseCart', this.ticket)
             }
         },
         computed: {
