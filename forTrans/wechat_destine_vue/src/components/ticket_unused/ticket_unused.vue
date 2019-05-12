@@ -1,33 +1,22 @@
 <template>
-    <div class="list-wrapper">
-        <ul class="list">
-            <li class="item" v-for="(item, idx) in ticketList" :key="idx">
-                <div class="left">
-                    <img :src="item.pic" alt="">
-                </div>
-                <div class="right">
-                    <div class="title">{{ item.title }}</div>
-                    <div class="footer">
-                        <div class="price">
-                            <span class="num">{{ item.price }}</span>
-                            <span class="text">积分</span>
-                        </div>
-                        <div class="btn-control">
-                            <btn  :ticket='item'/>
-                        </div>
+    <div class="ticket-contain">
+        <div class="goodCard-contain">
+            <goodCard 
+                :ticketList="ticketList" 
+                v-on:addCart='addCart' 
+                v-on:decreaseCart='decreaseCart'
+                :hasControl="hasControl"></goodCard>
+        </div>
+        <div class="getMore-contain">
+            <div class="getMore">
+                <div v-if="isNone" class="none-box">
+                    <div class="none-img"></div>
+                    <div class="none-text">
+                        <span>暂无数据</span><br/><span>点击下方按钮去获得票券</span>
                     </div>
                 </div>
-            </li>
-        </ul>
-
-        <div class="getMore">
-            <div v-if="isNone" class="none-box">
-                <div class="none-img"></div>
-                <div class="none-text">
-                    <span>暂无数据</span><br/><span>点击下方按钮去获得票券</span>
-                </div>
+                <router-link class="get-btn" to="/mall">去获得</router-link>
             </div>
-            <router-link class="get-btn" to="/mall">去获得</router-link>
         </div>
     </div>
 </template>
@@ -37,6 +26,7 @@
     import Vue from 'vue'
     import BMap from 'BMap'
     import btn from '@/components/btn/btn'
+    import goodCard from '@/components/good_card/good_card'
 	export default {
 		data: function () {
 			return {
@@ -46,38 +36,71 @@
                         id: 1,
                         title: 'RAVE套装-发光臂环',
                         price: 368,
-                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg',
-                        createTime: this.ranTime()
+                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
                     },
                     {
                         id: 2,
                         title: 'RAVE套装-发光臂环',
                         price: 368,
-                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg',
-                        createTime: this.ranTime()
-                    },
-                    {
-                        id: 2,
-                        title: 'RAVE套装-发光臂环',
-                        price: 368,
-                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg',
-                        createTime: this.ranTime()
+                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
                     },
                     {
                         id: 3,
                         title: 'RAVE套装-发光臂环',
                         price: 368,
-                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg',
-                        createTime: this.ranTime()
+                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
                     },
                     {
                         id: 4,
                         title: 'RAVE套装-发光臂环',
                         price: 368,
-                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg',
-                        createTime: this.ranTime()
+                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
+                    },
+                    {
+                        id: 5,
+                        title: 'RAVE套装-发光臂环',
+                        price: 368,
+                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
+                    },
+                    {
+                        id: 6,
+                        title: 'RAVE套装-发光臂环',
+                        price: 368,
+                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
+                    },
+                    {
+                        id: 7,
+                        title: 'RAVE套装-发光臂环',
+                        price: 368,
+                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
+                    },
+                    {
+                        id: 8,
+                        title: 'RAVE套装-发光臂环',
+                        price: 368,
+                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
+                    },
+                    {
+                        id: 9,
+                        title: 'RAVE套装-发光臂环',
+                        price: 368,
+                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
+                    },
+                    {
+                        id: 10,
+                        title: 'RAVE套装-发光臂环',
+                        price: 368,
+                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
+                    },
+                    {
+                        id: 11,
+                        title: 'RAVE套装-发光臂环',
+                        price: 368,
+                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
                     }
-                ]
+                ],
+                hasControl: true,
+
             }
 		},
         created () {
@@ -129,66 +152,54 @@
         },
         components: {
             btn,
+            goodCard
         }
 	}
 </script>
 
-<style lang="stylus" rel="stylesheet/stylus">
+<style lang="stylus" rel="stylesheet/stylus" scoped>
 @import "../../common/stylus/index.styl";
-.list  
-    margin-bottom 20px
-.item
-    display flex
-    justify-content space-space-between
-    padding 4px 0
-    &:last-child
-        .right
-            &::after
-                display none
-    .left 
-        width 80px
-        height 80px
+.ticket-contain
+    position absolute
+    top 48px
+    bottom 0px
+    padding-bottom 48px
+    overflow hidden
+    width 100%
+    .goodCard-contain
+        position absolute 
+        top 0
+        right 0
+        bottom 48px
+        left 0
+    .getMore-contain
+        width 100%
+        height 48px
+        position absolute
+        left 0
+        bottom 0
+        background #333
+    .getMore
         text-align center
-        line-height 64px
-        img
-            width 56px
-            height 56px
-            margin 12px
-    .right
-        padding 10px 0
-        flex 1 1 auto
-        display flex
-        flex-direction: column;
-        justify-content space-between
-        line-height 30px
-        border-1px(rgba(255,255,255,0.7))
-        .title
-            white-space nowrap
-        .footer
-            display flex 
-            justify-content space-between
-            padding-right 16px
-.getMore
-    text-align center
-    color #cea16a
-    .none-box
-        margin-top 28px
-        .none-img
-            margin 0 auto
-            width 100px
-            height 100px
-            background url("../../common/pic/noKtvPic.png") no-repeat center center
-            background-size cover
-        .none-text
-            line-height 24px
-    .get-btn
-        display block
-        margin 10px auto
-        width 100px 
-        height 30px
-        line-height 28px
-        font-size 14px
-        background #cea16a
-        color #201c19
-        border-radius 4px
+        color #cea16a
+        .none-box
+            margin-top 28px
+            .none-img
+                margin 0 auto
+                width 100px
+                height 100px
+                background url("../../common/pic/noKtvPic.png") no-repeat center center
+                background-size cover
+            .none-text
+                line-height 24px
+        .get-btn
+            display block
+            margin 10px auto
+            width 100px 
+            height 30px
+            line-height 28px
+            font-size 14px
+            background #cea16a
+            color #201c19
+            border-radius 4px
 </style>

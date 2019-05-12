@@ -1,26 +1,10 @@
 <template>
     <div class="list-box">
-        <div class="list-wrapper" ref="listWrapper">
-            <ul class="list">
-                <li class="item" v-for="(item, idx) in ticketList" :key="idx">
-                    <div class="left">
-                        <img :src="item.pic" alt="">
-                    </div>
-                    <div class="right">
-                        <div class="title">{{ item.title }}</div>
-                        <div class="footer">
-                            <div class="price">
-                                <span class="num">{{ item.price }}</span>
-                                <span class="text">积分</span>
-                            </div>
-                            <div class="btn-control">
-                                <btn :ticket='item' v-on:addCart='addCart' v-on:decreaseCart='decreaseCart'/>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
+        <goodCard 
+            :ticketList="ticketList" 
+            v-on:addCart='addCart' 
+            v-on:decreaseCart='decreaseCart'
+            :hasControl="hasControl"></goodCard>
         <div class="cart">
             <div class="cartlist">
                 <div class="listnone" v-show='cartList.length == 0 && showCartList'>暂时还没有商品哦</div>
@@ -56,6 +40,7 @@
     import Vue from 'vue'
     import BMap from 'BMap'
     import btn from '@/components/btn/btn'
+    import goodCard from '@/components/good_card/good_card'
 	export default {
 		data: function () {
 			return {
@@ -130,7 +115,8 @@
                 ],
                 cartList: [],
                 showCartList: false,
-                cartBs: null
+                cartBs: null,
+                hasControl: true,
             }
 		},
         created () {
@@ -150,11 +136,11 @@
 		        let reqUrl = href.substring(0, href.indexOf('wechat_destine/#'))
 		        this.$store.dispatch('setIp', reqUrl)
 	        }
-			this.$nextTick(()=>{
-                this.listScroll = new BScroll(this.$refs.listWrapper,{
-					click: true
-				});
-            });
+			// this.$nextTick(()=>{
+            //     this.listScroll = new BScroll(this.$refs.listWrapper,{
+			// 		click: true
+			// 	});
+            // });
         },
         methods: {
 	        addCart (ticket) {
@@ -242,12 +228,13 @@
             }
         },
         components: {
-           btn
+           btn,
+           goodCard
         }
 	}
 </script>
 
-<style lang="stylus" rel="stylesheet/stylus">
+<style lang="stylus" rel="stylesheet/stylus" scoped>
 @import "../../common/stylus/index.styl";
 .list-box
     position absolute
@@ -255,43 +242,6 @@
     bottom 48px
     overflow hidden
     width 100%
-    .list-wrapper
-        height 100%
-        width 100%
-        overflow hidden       
-        .list
-            margin-bottom 20px
-            .item
-                display flex
-                justify-content space-between
-                padding 4px 0s
-                &:last-child
-                    .right
-                        &::after
-                            display none
-                .left 
-                    width 80px
-                    height 80px
-                    text-align center
-                    line-height 64px
-                    img
-                        width 56px
-                        height 56px
-                        margin 12px
-                .right
-                    padding 10px 0
-                    flex 1 1 auto
-                    display flex
-                    flex-direction: column;
-                    justify-content space-between
-                    line-height 30px
-                    border-1px(rgba(255,255,255,0.7))
-                    .title
-                        white-space nowrap
-                    .footer
-                        display flex 
-                        justify-content space-between
-                        padding-right 16px
     .cart
         position fixed
         bottom 0
