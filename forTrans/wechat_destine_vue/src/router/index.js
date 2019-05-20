@@ -7,7 +7,8 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 // 编程式跳转使用this.$router.push()
-export default new Router({
+
+const router = new Router({
 	routes: [
 		{
 			path: '/',
@@ -170,18 +171,27 @@ export default new Router({
 					path: 'unused',
 					component: (resolve) => {
 						require(['@/components/ticket_unused/ticket_unused'], resolve)
+					},
+					meta: {
+						title: '未使用票券'
 					}
 				},
 				{
 					path: 'record',
 					component: (resolve) => {
 						require(['@/components/ticket_record/ticket_record'], resolve)
+					},
+					meta: {
+						title: '使用记录'
 					}
 				},
 				{
 					path: 'invalid',
 					component: (resolve) => {
 						require(['@/components/ticket_invalid/ticket_invalid'], resolve)
+					},
+					meta: {
+						title: '已过期'
 					}
 				}
 			]
@@ -198,12 +208,18 @@ export default new Router({
 					path: 'all',
 					component: (resolve) => {
 						require(['@/components/mall_all/mall_all'], resolve)
+					},
+					meta: {
+						title: '票券列表'
 					}
 				},
 				{
 					path: 'record',
 					component: (resolve) => {
 						require(['@/components/mall_record/mall_record'], resolve)
+					},
+					meta: {
+						title: '我的订单'
 					}
 				}
 			]
@@ -214,9 +230,24 @@ export default new Router({
 			component: (resolve) => {
 				require(['@/components/tabs/tabs'], resolve)
 			}
+		},
+		// test
+		{
+			path: '/scan',
+			name: 'scan',
+			component: (resolve) => {
+				require(['@/components/test/test'], resolve)
+			}
 		}
 		// ********************** lhyu
 	],
 	// 定义激活路由的样式
 	linkActiveClass: 'active'
 })
+
+router.beforeEach((to, from, next) => {
+	
+	next()
+})
+
+export default router

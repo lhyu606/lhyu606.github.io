@@ -1,7 +1,7 @@
 <template>
     <div class="list-wrapper">
         我的订单
-        <router-link class="get-btn" to="/ticket">去票券</router-link>
+        <router-link class="get-btn" :to="to">去票券</router-link>
     </div>
 </template>
 
@@ -45,7 +45,8 @@
                         price: 368,
                         pic: 'https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=2635372762,3311529239&fm=179&app=42&f=JPEG?w=56&h=56'
                     }
-                ]
+                ],
+                to: '/ticket/unused'
             }
 		},
         created () {
@@ -65,10 +66,16 @@
 		        let reqUrl = href.substring(0, href.indexOf('wechat_destine/#'))
 		        this.$store.dispatch('setIp', reqUrl)
 	        }
-			
+			this._initTo ()
         },
         methods: {
-	        
+	        _initTo () {
+                this.to += '?openid=' + this.$route.query.openid
+                this.to += '&shopNo=' + this.$route.query.shopNo
+                this.to += '&weChatId=' + this.$route.query.weChatId
+                this.to += '&companyId=' + this.$route.query.companyId
+                console.log(this.tabs)
+            },
         },
         computed: {
 	        isNone () {

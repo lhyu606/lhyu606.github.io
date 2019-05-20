@@ -1,0 +1,83 @@
+-- ----------------------------
+-- Table structure for yj_tbl_virtual_good 虚拟商品表
+-- ----------------------------
+CREATE TABLE  IF NOT EXISTS `yj_tbl_virtual_good`(
+  `VirtualGoodId` int(11) NOT NULL AUTO_INCREMENT COMMENT '虚拟物品Id',
+  `HeadShopNo` int(10) unsigned NOT NULL COMMENT '商家id（总店）',
+  `ShopNo` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '分店号',
+  `GoodType` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT '商品类型：0 门票券',
+  `GradeId` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '购买人员等级，默认非会员状态下为0',
+  `SellNum` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '可购买数据量',
+  `LeftNum` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '剩余数量',
+  `IconUrl` varchar(255) CHARACTER SET utf8mb4 NOT NULL DEFAULT '' COMMENT '卡券图片url',
+  `BeginTime` datetime NOT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '可购买开始时间',
+  `EndTime` datetime NOT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '可购买结束时间',
+  `PayType` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT '支付方式：0 现金支付，1积分支付，2现金+积分混合支付',
+  `CashPrice` decimal(10,2) unsigned NOT NULL DEFAULT '0.00' COMMENT '现金支付金额 单位分',
+  `IntegralPrice` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '积分价格',
+  `GoodName` varchar(100) CHARACTER SET utf8mb4 NOT NULL DEFAULT '' COMMENT '商品名称',
+  `GoodNum` int(255) unsigned NOT NULL DEFAULT '0' COMMENT '剩余数量',
+  `Remark` varchar(255) CHARACTER SET utf8mb4 NOT NULL DEFAULT '' COMMENT '备注信息，默认无空字符串',
+  PRIMARY KEY (`VirtualGoodId`),
+  KEY `IDX_YJ_TBL_VIRTURAL_GOOD_ShopNo_ GoodType_ PayType` (`HeadShopNo`,`GoodType`,`PayType`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Table structure for yj_tbl_virtual_good_order 虚拟商品订单表
+-- ----------------------------
+CREATE TABLE  IF NOT EXISTS`yj_tbl_virtual_good_order` (
+  `VirturalOrderId` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '商品订单ID',
+  `HeadShopNo` int(10) unsigned NOT NULL COMMENT '商家id（总店）',
+  `ShopNo` int(10) unsigned NOT NULL COMMENT '订单归属分店号',
+  `OpenId` varchar(100) NOT NULL COMMENT '微信openid',
+  `PayOrderId` varchar(100) NOT NULL COMMENT '付款单号',
+  `GoodNum` int(10) unsigned NOT NULL COMMENT '购买商品数量',
+  `OrderStatus` tinyint(3) unsigned NOT NULL COMMENT '订单状态：1 未付款，2已付款未消费，3已消费，4 已退款，5订单已过期，6 支付中',
+  `TradeNo` varchar(100) NOT NULL DEFAULT '' COMMENT '交易单号',
+  `PayType` tinyint(4) unsigned NOT NULL DEFAULT '0' COMMENT '支付方式：0 微信支付，1积分支付，2微信+积分混合支付，3会员+积分支付,4 会员支付',
+  `PayMoney` decimal(10,2) unsigned NOT NULL DEFAULT '0.00' COMMENT '现金支付金额',
+  `PayIntegral` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '积分支付金额',
+  `ModifyTime` datetime NOT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '订单更新时间',
+  `OrderCreateTime` datetime NOT NULL COMMENT '订单创建时间',
+  `PayTime` datetime NOT NULL DEFAULT '1970-01-01 08:00:01' COMMENT '付款时间时间',
+  `RefundOrderTime` datetime NOT NULL DEFAULT '1970-01-01 08:00:01' COMMENT '退款时间',
+  `RefundMoney` decimal(10,2) unsigned NOT NULL DEFAULT '0.00' COMMENT '退款金额',
+  `RefundIntegral` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '退回积分金额',
+  `Remark` varchar(100) NOT NULL DEFAULT '' COMMENT '备注', 
+  PRIMARY KEY (`VirturalOrderId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Table structure for yj_tbl_virtual_good_order_detail 虚拟商品消费明细表
+-- ----------------------------
+CREATE TABLE  IF NOT EXISTS `yj_tbl_virtual_good_order_detail` (
+  `VirtualOrderDetailId` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '虚拟商品订单明细ID',
+  `VirturalOrderId` int(10) unsigned NOT NULL COMMENT '订单id',
+  `OpenId` varchar(100) NOT NULL COMMENT '微信openid',
+  `GoodName` varchar(100) CHARACTER SET utf8mb4 NOT NULL DEFAULT '' COMMENT '商品名称',
+  `GoodId` int(11) NOT NULL COMMENT '商品ID',
+  `IconUrl` varchar(255) CHARACTER SET utf8mb4 NOT NULL DEFAULT '' COMMENT '卡券图片url',
+  `CashPrice` decimal(10,2) unsigned NOT NULL DEFAULT '0.00' COMMENT '商品价格货币价格',
+  `IntegralPrice` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '积分价格',
+  `CheckTime` datetime NOT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '核销时间',
+  `BeginTime` datetime NOT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '可购买开始时间',
+  `EndTime` datetime NOT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '可购买结束时间',
+  `GoodType` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT '商品类型：0 门票券',
+  `CheckStatus` tinyint(4) NOT NULL DEFAULT '0' COMMENT '核销状态： 0 未付款, 1已付款, 2已撤单，3已退款, 4已核销,6支付中',
+  `CheckId` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '默认0 未核销状态 其他 核销id',
+  PRIMARY KEY (`VirtualOrderDetailId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Table structure for yj_tbl_virtual_good_order_detail 虚拟商品消费明细表
+-- ----------------------------
+CREATE TABLE  IF NOT EXISTS `yj_tbl_virtual_good_order_refund_detail` (
+  `VirtualOrderRefundDetailId` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '虚拟商品退款订单明细ID',
+  `VirtualOrderDetailIds` varchar(255) NOT NULL COMMENT '已购买商品明细id,逗号分隔',
+  `WechatTradeNo` varchar(100) NOT NULL COMMENT '统一支付订单号/统一支付退款单号，由统一支付平台生成返回。',
+  `RefundId` varchar(100) NOT NULL DEFAULT '0' COMMENT '系统返回退款订单号',
+  `RefundFee` varchar(100) NOT NULL DEFAULT '0' COMMENT '退款金额',
+  `TotalFee` varchar(100) NOT NULL DEFAULT '0' COMMENT '订单总金额',
+  `ModifyTime` datetime NOT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '更改时间',
+  PRIMARY KEY (`VirtualOrderRefundDetailId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

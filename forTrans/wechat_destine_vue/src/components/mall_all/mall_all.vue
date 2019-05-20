@@ -12,7 +12,7 @@
                 <div class="cartList-wrapper" v-show="cartList.length > 0 && showCartList" ref="cartListWrapper">
                     <ul class="cartList-box">
                         <li class="cartList-item" v-for="(item, idx) in cartList" :key="idx">
-                            <div class="title">{{ item.title }}</div>
+                            <div class="title">{{ item.goodName }}</div>
                             <div class="btn-control">
                                 <btn :ticket='item' v-on:addCart='addCart' v-on:decreaseCart='decreaseCart'/>
                             </div>
@@ -22,7 +22,7 @@
             </div>
             <div class="left" @click="showCartDetail">
                 <div class="totlePrice">
-                    合计：<span  class="num">{{ totlePrice }}</span>积分
+                    合计：<span  class="num">{{ totlePrice }}</span>元
                 </div>
                 <div class="totleCount">
                     <span class="num">{{ totleCount }}</span>件商品
@@ -51,66 +51,6 @@
                         title: 'RAVE套装-发光臂环',
                         price: 368,
                         pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
-                    },
-                    {
-                        id: 2,
-                        title: 'RAVE套装-发光臂环',
-                        price: 368,
-                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
-                    },
-                    {
-                        id: 3,
-                        title: 'RAVE套装-发光臂环',
-                        price: 368,
-                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
-                    },
-                    {
-                        id: 4,
-                        title: 'RAVE套装-发光臂环',
-                        price: 368,
-                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
-                    },
-                    {
-                        id: 5,
-                        title: 'RAVE套装-发光臂环',
-                        price: 368,
-                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
-                    },
-                    {
-                        id: 6,
-                        title: 'RAVE套装-发光臂环',
-                        price: 368,
-                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
-                    },
-                    {
-                        id: 7,
-                        title: 'RAVE套装-发光臂环',
-                        price: 368,
-                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
-                    },
-                    {
-                        id: 8,
-                        title: 'RAVE套装-发光臂环',
-                        price: 368,
-                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
-                    },
-                    {
-                        id: 9,
-                        title: 'RAVE套装-发光臂环',
-                        price: 368,
-                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
-                    },
-                    {
-                        id: 10,
-                        title: 'RAVE套装-发光臂环',
-                        price: 368,
-                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
-                    },
-                    {
-                        id: 11,
-                        title: 'RAVE套装-发光臂环',
-                        price: 368,
-                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
                     }
                 ],
                 cartList: [],
@@ -120,7 +60,6 @@
             }
 		},
         created () {
-			//alert(this.$route.query.weChatId)
 	        // if (typeof WeixinJSBridge === 'undefined') {
 		    //     if (document.addEventListener) {
 			//         document.addEventListener('WeixinJSBridgeReady', this.onBridgeReady, false)
@@ -136,16 +75,49 @@
 		        let reqUrl = href.substring(0, href.indexOf('wechat_destine/#'))
 		        this.$store.dispatch('setIp', reqUrl)
 	        }
-			// this.$nextTick(()=>{
-            //     this.listScroll = new BScroll(this.$refs.listWrapper,{
-			// 		click: true
-			// 	});
-            // });
+            
+            
+            // gradeid  默认 游客为 0
+            // goodtype  默认 0 门票券
+            console.log('this.$route.query')
+            console.log(this.$route.query)
+            this.$store.dispatch('setIsLoading', true)
+            this.$http.post(this.$store.state.IP + 'virtual/good/query', {
+                access_token: '',
+                companycode: '',
+                timestamp: '',
+                signature: '',
+                // wechatPubId: this.$route.query.weChatId,
+                data: {
+                    shopno: this.$route.query.shopNo,
+                    // openid: this.$route.query.openid,
+                    gradeid: 1,
+                    goodtype: 0
+                }
+                
+            },{
+                'emulateJSON': false,
+				'headers': {
+					'Content-Type': 'application/json;charset=UTF-8'
+				}
+            }).then(response => {
+                this.$store.dispatch('setIsLoading', false)
+                console.log(response.body.ret)
+                if (response.body.ret === '0') {
+                    this.ticketList = response.body.data
+                    this._initTicketList ()
+                    console.log(this.ticketList)
+                }
+               
+            }, response => {
+                this.$store.dispatch('setIsLoading', false)
+                console.log('调用虚拟商品列表接口失败了')
+            })
         },
         methods: {
 	        addCart (ticket) {
                 for (let i=0; i<this.cartList.length; i++) {
-                    if (this.cartList[i].id == ticket.id) {
+                    if (this.cartList[i].virtualGoodId == ticket.virtualGoodId) {
                         return ;
                     }
                 }
@@ -154,7 +126,7 @@
             }, 
             decreaseCart (ticket) {
                 for (let i=0; i<this.cartList.length; i++) {
-                    if (this.cartList[i].id == ticket.id) {
+                    if (this.cartList[i].virtualGoodId == ticket.virtualGoodId) {
                         if (this.cartList[i].count == 0) {
                             this.cartList.splice(i,1);
                             this.checkCartList();
@@ -184,6 +156,9 @@
                 for (let i=0; i<this.cartList.length; i++) {
                     this.cartList[i].count = 0;
                 }
+                for (let i=0; i<this.ticketList.length; i++) {
+                    this.ticketList[i].count = 0;
+                }
                 this.cartList = [];
             },
             showCartDetail () {
@@ -200,6 +175,21 @@
 						this.cartBs.refresh()
 					}
 				})
+            },
+            // 购物车是否已有票券
+            _initTicketList () {
+                this.cartList = this.$store.state.ticketList
+                for (let i=0; i<this.cartList.length; i++) {
+                    for (let j=0; j<this.ticketList.length; j++) {
+                        console.log(this.ticketList[j].virtualGoodId, this.cartList[i].count)
+                        if (this.ticketList[j].virtualGoodId === this.cartList[i].virtualGoodId) {
+                            
+                            this.$set(this.ticketList[j], 'count', this.cartList[i].count)
+                            break
+                        }
+                    }
+                }
+                console.log(this.ticketList, this.$store.state.ticketList)
             }
         },
         computed: {
@@ -208,24 +198,27 @@
             },
             totlePrice () {
                 var price = 0;
-                for (let i=0; i<this.ticketList.length; i++) {
-                    if(!this.ticketList[i].count) {
+                for (let i=0; i<this.cartList.length; i++) {
+                    if(!this.cartList[i].count) {
                         continue;
                     }
-                    price += this.ticketList[i].price * this.ticketList[i].count;
+                    price += this.cartList[i].cashPrice * this.cartList[i].count;
                 }
-                return price;
+                return price.toFixed(2);
             },
             totleCount () {
                 var count = 0;
-                for (let i=0; i<this.ticketList.length; i++) {
-                    if(!this.ticketList[i].count) {
+                for (let i=0; i<this.cartList.length; i++) {
+                    if(!this.cartList[i].count) {
                         continue;
                     }
-                    count += this.ticketList[i].count;
+                    count += this.cartList[i].count;
                 }
                 return count;
             }
+        },
+        beforeDestroy () {
+            this.$store.dispatch('setTicketList', this.cartList)
         },
         components: {
            btn,

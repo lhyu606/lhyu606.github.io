@@ -20,7 +20,8 @@ const state = {
 	isLoading: false,
 	// 是否处于加载状态
 	IP: '',
-    IP: 'http://yf.evideocloud.com.cn/',
+	IP: 'http://192.168.74.69:8080/',
+    // IP: 'http://yf.evideocloud.com.cn/',
 	// IP: 'http://192.168.74.69:8080', // fu的ip地址
 	// IP: 'http://192.168.73.149:8080', // jiang的IP地址
 	// IP: 'http://192.168.82.142:8080',
@@ -30,7 +31,7 @@ const state = {
 	openId: '1234567',
 	// 第一次打开页面
 	firstIn: true,
-	KTVlist: []
+	ticketList: []
 }
 
 export default new Vuex.Store({

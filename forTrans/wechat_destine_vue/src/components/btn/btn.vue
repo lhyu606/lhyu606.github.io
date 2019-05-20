@@ -27,9 +27,9 @@
         },
         methods: {
 	        addCart (event) {
-                // if (!event._constructed) {
-                //     return;
-                // }
+                if (event._constructed) {
+                    return;
+                }
                 if (!this.ticket.count) {
                     this.$set(this.ticket, 'count', 1);
                 } else {
@@ -38,9 +38,9 @@
                 this.$emit('addCart',this.ticket);
             },
             decreaseCart (event) {
-                // if (!event._constructed) {
-                //     return;
-                // }
+                if (event._constructed) {
+                    return;
+                }
                 this.ticket.count--;
                 this.$emit('decreaseCart', this.ticket)
             }

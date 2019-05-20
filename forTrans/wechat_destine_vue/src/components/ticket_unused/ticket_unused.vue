@@ -1,13 +1,17 @@
 <template>
-    <div class="ticket-contain">
-        <div class="goodCard-contain">
+    <div class="ticket-contain" :class="{noTicket: isNone}">
+        <div class="goodCard-contain" v-if="!isNone">
             <goodCard 
                 :ticketList="ticketList" 
-                v-on:addCart='addCart' 
-                v-on:decreaseCart='decreaseCart'
-                :hasControl="hasControl"></goodCard>
+                :hasControl="hasControl"
+                v-on:refund="refund">
+                <template v-slot:refund>
+                    <div  class="refund-btn">退款
+                    </div>
+                </template>    
+            </goodCard>
         </div>
-        <div class="getMore-contain">
+        <div class="getMore-contain" :class="{noTicket: isNone}">
             <div class="getMore">
                 <div v-if="isNone" class="none-box">
                     <div class="none-img"></div>
@@ -15,7 +19,7 @@
                         <span>暂无数据</span><br/><span>点击下方按钮去获得票券</span>
                     </div>
                 </div>
-                <router-link class="get-btn" to="/mall">去获得</router-link>
+                <router-link class="get-btn" :to="to">去获得</router-link>
             </div>
         </div>
     </div>
@@ -32,75 +36,28 @@
 			return {
 				ip: '',
                 ticketList: [
-                    {
-                        id: 1,
-                        title: 'RAVE套装-发光臂环',
-                        price: 368,
-                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
-                    },
-                    {
-                        id: 2,
-                        title: 'RAVE套装-发光臂环',
-                        price: 368,
-                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
-                    },
-                    {
-                        id: 3,
-                        title: 'RAVE套装-发光臂环',
-                        price: 368,
-                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
-                    },
-                    {
-                        id: 4,
-                        title: 'RAVE套装-发光臂环',
-                        price: 368,
-                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
-                    },
-                    {
-                        id: 5,
-                        title: 'RAVE套装-发光臂环',
-                        price: 368,
-                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
-                    },
-                    {
-                        id: 6,
-                        title: 'RAVE套装-发光臂环',
-                        price: 368,
-                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
-                    },
-                    {
-                        id: 7,
-                        title: 'RAVE套装-发光臂环',
-                        price: 368,
-                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
-                    },
-                    {
-                        id: 8,
-                        title: 'RAVE套装-发光臂环',
-                        price: 368,
-                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
-                    },
-                    {
-                        id: 9,
-                        title: 'RAVE套装-发光臂环',
-                        price: 368,
-                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
-                    },
-                    {
-                        id: 10,
-                        title: 'RAVE套装-发光臂环',
-                        price: 368,
-                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
-                    },
-                    {
-                        id: 11,
-                        title: 'RAVE套装-发光臂环',
-                        price: 368,
-                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
+                     {
+                        "virtualGoodId": 1,
+                        "headShopNo": 1,
+                        "shopNo": 36,
+                        "goodType": 0,
+                        "gradeId": 1,
+                        "sellNum": 200,
+                        "leftNum": 150,
+                        "iconUrl": "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg",
+                        "beginTime": "2019-5-20 10:48:16",
+                        "endTime": "2019-5-20 10:48:16",
+                        "payType": 0,
+                        "cashPrice": 0.01,
+                        "integralPrice": 0,
+                        "goodName": "测试券0",
+                        "remark": "现在开始测试",
+                        "sellEndTime": "2019-5-20 10:48:16",
+                        "sellBeginTime": "2019-5-20 10:48:16"
                     }
                 ],
-                hasControl: true,
-
+                hasControl: false,
+                to: '/mall'
             }
 		},
         created () {
@@ -119,27 +76,82 @@
 		        let href = window.location.href
 		        let reqUrl = href.substring(0, href.indexOf('wechat_destine/#'))
 		        this.$store.dispatch('setIp', reqUrl)
-	        }
-			
+            }
+            // gradeid  默认 游客为 0
+            // goodtype  默认 0 门票券
+            console.log('this.$route.query')
+            console.log(this.$route.query)
+            this.$store.dispatch('setIsLoading', true)
+            this.$http.post(this.$store.state.IP + 'virtual/ticket/get', {
+                access_token: '',
+                companycode: '',
+                timestamp: '',
+                signature: '',
+                // wechatPubId: this.$route.query.weChatId,
+                data: {
+                    openid: this.$route.query.openid,
+                    goodtype: 0,
+                    month: 5,
+                    status: 2
+                }
+                
+            },{
+                'emulateJSON': false,
+				'headers': {
+					'Content-Type': 'application/json;charset=UTF-8'
+				}
+            }).then(response => {
+                this.$store.dispatch('setIsLoading', false)
+                console.log(response.body.ret)
+                if (response.body.ret === '0') {
+                    // this.ticketList = response.body.data
+                    console.log(this.ticketList)
+                }
+               
+            })
+            // this.ticketList = this.$store.state.ticketList
+			this._initTo ()
         },
         methods: {
-	        toSelectCity () {
-	        	//alert(window.location.href)
-		        this.$router.push({path: 'selectCity', query: {openid: this.$route.query.openid, weChatId: this.$route.query.weChatId}})
+            _initTo () {
+                this.to += '?openid=' + this.$route.query.openid
+                this.to += '&shopNo=' + this.$route.query.shopNo
+                this.to += '&weChatId=' + this.$route.query.weChatId
+                this.to += '&companyId=' + this.$route.query.companyId
             },
 	        onBridgeReady () {
 		        WeixinJSBridge.call('hideOptionMenu')
-	        },
-	        toHistory () {
-		        this.$router.push({path: 'order_history', query: {openid: this.$route.query.openid}})
-	        },
-	        toTime (shopNo) {
-		        this.$router.push({path: 'choiceTime', query: {openid: this.$route.query.openid, shopNo: shopNo, weChatId: this.$route.query.weChatId}})
             },
-            ranTime() {
-                var time = new Date();
-                time += parseInt(Math.random() * 10) * 3600 * 24;
-                return new Date(time); 
+            refund (ticket) {
+                // virtual/order/refund
+                this.$store.dispatch('setIsLoading', true)
+                this.$http.post(this.$store.state.IP + 'virtual/order/refund', {
+                    access_token: '',
+                    companycode: '',
+                    timestamp: '',
+                    signature: '',
+                    // wechatPubId: this.$route.query.weChatId,
+                    data: {
+                        payorderid: this.$route.query.openid,
+                        refundgoodid: 0,
+                    }
+                    
+                },{
+                    'emulateJSON': false,
+                    'headers': {
+                        'Content-Type': 'application/json;charset=UTF-8'
+                    }
+                }).then(response => {
+                    this.$store.dispatch('setIsLoading', false)
+                    console.log(response.body.ret)
+                    if (response.body.ret === '0') {
+                        // this.ticketList = response.body.data
+                        console.log(this.ticketList)
+                    }
+                
+                })
+                console.log('tuikuN')
+                console.log(ticket)
             }
         },
         computed: {
@@ -172,6 +184,15 @@
         right 0
         bottom 48px
         left 0
+        .refund-btn
+            display block
+            padding 0 10px
+            height 30px
+            line-height 28px
+            font-size 14px
+            background #cea16a
+            color #201c19
+            border-radius 4px
     .getMore-contain
         width 100%
         height 48px
@@ -179,6 +200,11 @@
         left 0
         bottom 0
         background #333
+        &.noTicket
+            height auto
+            background #201c19
+            bottom 50%
+            transform translate(0, 50%)
     .getMore
         text-align center
         color #cea16a

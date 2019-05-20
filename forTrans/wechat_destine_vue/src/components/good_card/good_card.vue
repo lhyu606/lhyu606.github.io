@@ -2,21 +2,24 @@
     <div class="list-contain">
         <div class="list-wrapper" ref="listWrapper">
             <ul class="list">
-                <li class="item" v-for="(item, idx) in ticketList" :key="idx">
+                <li class="item" v-for="(item, idx) in ticketList" :key="item.virtualGoodId">
                     <div class="left">
-                        <img :src="item.pic" alt="">
+                        <img :src="item.iconUrl" alt="">
                     </div>
                     <div class="right">
-                        <div class="title">{{ item.title }}</div>
+                        <div class="title">{{ item.goodName }}</div>
                         <div class="footer">
                             <div class="price">
-                                <span class="num">{{ item.price }}</span>
-                                <span class="text">积分</span>
+                                <span class="num">{{ item.cashPrice }}</span>
+                                <span class="text">元</span>
+                            </div>
+                            <div @click="refund(item)">
+                                <slot name="refund" :ticket='item' ></slot>
                             </div>
                             <div class="btn-control" v-if="hasControl">
                                 <btn :ticket='item' v-on:addCart='addCart' v-on:decreaseCart='decreaseCart'/>
                             </div>
-                            <div class="btn-control" v-if="!hasControl">{{ noControlText }}</div>
+                            <div class="btn-control" v-if="noControlText">{{ noControlText }}</div>
                         </div>
                     </div>
                 </li>
@@ -47,13 +50,14 @@
                 
             }
 		},
-        created () {
+        created () {console.log(this.ticketList)
             // console.log(this.hasControl, this.noControlText)
 			this.$nextTick(()=>{
                 this.listScroll = new BScroll(this.$refs.listWrapper,{
 					click: true
 				});
             });
+            console.log(this.ticketList)
         },
         methods: {
 	        addCart (ticket) {
@@ -62,6 +66,9 @@
             decreaseCart (ticket) {
                 this.$emit('decreaseCart', ticket);
             },
+            refund (ticket) {
+                this.$emit('refund', ticket);
+            }
         },
         computed: {
 	        

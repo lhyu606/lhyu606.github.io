@@ -63,9 +63,20 @@
 		        this.$store.dispatch('setIp', reqUrl)
 	        }
 			
-            // 百度的API中获取经纬度的方法
+            this._initTab()
         },
         methods: {
+            _initTab () {
+                let item = null
+                for (let i=0; i<this.tabs.length; i++){
+                    item = this.tabs[i]
+                    item.to += '?openid=' + this.$route.query.openid
+                    item.to += '&shopNo=' + this.$route.query.shopNo
+                    item.to += '&weChatId=' + this.$route.query.weChatId
+                    item.to += '&companyId=' + this.$route.query.companyId
+                }
+                console.log(this.tabs)
+            },
 	        checkTab (type) {
                 console.log(type)
             }
