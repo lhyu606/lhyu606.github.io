@@ -79,8 +79,6 @@
             }
             // gradeid  默认 游客为 0
             // goodtype  默认 0 门票券
-            console.log('this.$route.query')
-            console.log(this.$route.query)
             this.$store.dispatch('setIsLoading', true)
             this.$http.post(this.$store.state.IP + 'virtual/ticket/get', {
                 access_token: '',
@@ -108,6 +106,9 @@
                     console.log(this.ticketList)
                 }
                
+            }, response => {
+                this.$store.dispatch('setIsLoading', false)
+                console.log('调用票券列表接口失败了')
             })
             // this.ticketList = this.$store.state.ticketList
 			this._initTo ()
@@ -199,7 +200,7 @@
         position absolute
         left 0
         bottom 0
-        background #333
+        background #423c31
         &.noTicket
             height auto
             background #201c19

@@ -1,23 +1,12 @@
 <template>
     <div class="ticket-wrapper">
-        <!-- <div class="tabs">
-            <div class="tab">
-                <router-link class="text" :class="{ active: type == 0 }" to="/ticket/unused" @click="type=0">
-                    <span>未使用</span>
+        <div class="tabs">
+            <div class="tab" v-for="(item,idx) in tabs" :key="idx">
+                <router-link class="text" :class="{ active: type == item.type }" :to="item.to" @click="checkType(item.type)">
+                    <span>{{ item.text }}</span>
                 </router-link>
             </div>
-            <div class="tab">
-                <router-link class="text" :class="{ active: type == 1 }" to="/ticket/record" @click="type=1">
-                    <span>使用记录</span>
-                </router-link>
-            </div>
-            <div class="tab">
-                <router-link class="text" :class="{ active: type == 2 }" to="/ticket/invalid" @click="type=2">
-                    <span>已过期</span>
-                </router-link>
-            </div>
-        </div> -->
-        <tabs :list='tabs'/>
+        </div>
         <router-view></router-view>
     </div>
 </template>
@@ -47,14 +36,16 @@
                         text: '使用记录'
                     },
                     {
-                        type: 2,
+                        type: 1,
                         to: '/ticket/invalid',
-                        text: '已过期'
+                        text: '已使用'
                     }
                 ]
             }
 		},
         created () {
+            console.log('this.type')
+            console.log(this.type)
 			//alert(this.$route.query.weChatId)
 	        // if (typeof WeixinJSBridge === 'undefined') {
 		    //     if (document.addEventListener) {
@@ -74,7 +65,7 @@
 			this._initTab()
         },
         methods: {
-	        _initTab () {console.log('-------------')
+	        _initTab () {
                 let item = null
                 for (let i=0; i<this.tabs.length; i++){
                     item = this.tabs[i]
@@ -85,6 +76,9 @@
                 }
                 console.log(this.tabs)
             },
+            checkType (type) {
+                this.type = type
+            }
         },
         computed: {
 	        cityName () {
@@ -107,7 +101,8 @@
             font-size 0px
             width 100%
             height 48px
-            border-1px(rgba(255,255,255,0.7))
+            background #423c31
+            // border-1px(rgba(255,255,255,0.7))
             .tab
                 display inline-block
                 width 33.3%
@@ -127,10 +122,13 @@
                     &.router-link-exact-active
                         span:after
                             position absolute
-                            left 0
-                            bottom -6px
+                            left 50%
+                            bottom -14px
+                            transform translate(-50%, 0)
                             content ''
                             display block
-                            width 100%
-                            border-top 1px solid #cea16a
+                            width 50px
+                            height 3px
+                            border-radius 1.5px
+                            background #cea16a
 </style>

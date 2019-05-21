@@ -173,7 +173,8 @@ const router = new Router({
 						require(['@/components/ticket_unused/ticket_unused'], resolve)
 					},
 					meta: {
-						title: '未使用票券'
+						title: '未使用票券',
+						tabType: 0
 					}
 				},
 				{
@@ -182,7 +183,8 @@ const router = new Router({
 						require(['@/components/ticket_record/ticket_record'], resolve)
 					},
 					meta: {
-						title: '使用记录'
+						title: '使用记录',
+						tabType: 1
 					}
 				},
 				{
@@ -191,7 +193,8 @@ const router = new Router({
 						require(['@/components/ticket_invalid/ticket_invalid'], resolve)
 					},
 					meta: {
-						title: '已过期'
+						title: '已过期',
+						tabType: 2
 					}
 				}
 			]
@@ -210,7 +213,8 @@ const router = new Router({
 						require(['@/components/mall_all/mall_all'], resolve)
 					},
 					meta: {
-						title: '票券列表'
+						title: '票券列表',
+						tabType: 0
 					}
 				},
 				{
@@ -219,7 +223,8 @@ const router = new Router({
 						require(['@/components/mall_record/mall_record'], resolve)
 					},
 					meta: {
-						title: '我的订单'
+						title: '我的订单',
+						tabType: 1
 					}
 				}
 			]
@@ -246,7 +251,10 @@ const router = new Router({
 })
 
 router.beforeEach((to, from, next) => {
-	
+	if (to.meta.tabType && router.app.$store) {
+		router.app.$store.dispatch('setTabType', to.meta.tabType)
+	}
+
 	next()
 })
 

@@ -1,5 +1,4 @@
 <template>
-    <!--<div class="pay-list" @click="toPayAbandon">-->
     <div class="order-detail">
         <a :href="tel">
             <div class="order-detail-top-phone-button" :style="{top: y + 'px'}"></div>
@@ -7,90 +6,42 @@
         <div class="order-detail-scroll-wrapper" ref="payListHook">
             <div>
                 <div class="order-detail-padding-top"></div>
-                <div class="order-detail-top">
-                    <div class="order-detail-top-circle"></div>
-                    <div class="order-detail-top-title">
-                        <div class="order-detail-top-title-left">
-                            <img :src="order.LogoUrl" v-show="order.LogoUrl!==''">
-                            <img src="../../common/pic/KTVlogo.png" v-show="order.LogoUrl===''">
-                            <div class="order-detail-top-title-left-wrapper">
-                                <div class="order-detail-top-title-left-up">{{order.CompanyName}}</div>
-                                <div class="order-detail-top-title-left-down">{{order.CompanyAddress}}</div>
+                <div class="order-detail-card" v-for="(item) in order" :key="item.virtualOrderDetailId">
+                    <div class="order-detail-top">
+                        <div class="order-detail-top-circle"></div>
+                        <div class="order-detail-top-title">
+                            <div class="order-detail-top-title-left">
+                                <img :src="item.iconUrl" v-show="item.iconUrl!==''">
+                                <img src="../../common/pic/KTVlogo.png" v-show="item.iconUrl===''">
+                                <span class="">{{ item.goodName }}</span>
                             </div>
                         </div>
-                        <div class="order-detail-top-title-right">
-                            <div class="order-detail-top-title-right-border"></div>
-                            <!--<a :href="tel">-->
-                            <div class="order-detail-top-title-right-phone-wrapper">
-                                <div class="order-detail-top-title-right-phone"></div>
+                        <div class="order-detail-top-list">
+                            <div class="order-detail-top-list-item">
+                                订单创建时间
+                                <div class="order-detail-top-list-right">
+                                {{item.beginTime}}
+                                </div>
                             </div>
-                            <!--</a>-->
+                            <div class="order-detail-top-list-item">
+                                价格
+                                <div class="order-detail-top-list-right">
+                                {{item.cashPrice}}
+                                </div>
+                            </div>
+                            <div class="order-detail-top-list-item">
+                                核销状态
+                                <div class="order-detail-top-list-right">
+                                {{ checkStatusToText(item.checkStatus) }}
+                                </div>
+                            </div>
+                            <div class="order-detail-top-list-item">
+                                订单核销时间
+                                <div class="order-detail-top-list-right">
+                                {{ item.checkTime }}
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="order-detail-top-check" v-show="order.showCode===1">
-                        <div class="order-detail-top-check-top">
-                            <div class="order-detail-top-check-top-left">验证码:</div>
-                            <div class="order-detail-top-check-top-right">{{order.OperateCode}}</div>
-                        </div>
-                        <div class="order-detail-top-check-down">请到酒吧收银台出示此验证码开启卡台</div>
-                    </div>
-                    <div class="order-detail-top-list">
-                        <div class="order-detail-top-list-item">
-                            时段
-                            <div class="order-detail-top-list-right">
-                            {{UsedBeginTime}}
-                        </div>
-                        </div>
-                        <div class="order-detail-top-list-item">
-                            卡台
-                            <div class="order-detail-top-list-right">
-                            {{order.RoomName}}
-                        </div>
-                        </div>
-                        <div class="order-detail-top-list-item">
-                            活动
-                            <div class="order-detail-top-list-right">
-                            {{order.BuyBreakName}}
-                        </div>
-                        </div>
-                    </div>
-                    <div class="order-detail-top-item">
-                        实付金额
-                        <div class="order-detail-top-item-right-pink">￥{{order.PayCharge}}</div>
-                    </div>
-                </div>
-                <div class="order-detail-padding"></div>
-                <div class="order-detail-middle">
-                    <div class="order-detail-middle-first">
-                        订单状态
-                        <div class="order-detail-middle-first-right">{{order.real_status_name}}</div>
-                    </div>
-                    <div class="order-detail-middle-list">
-                        <div class="order-detail-middle-list-item">订单编号：{{order.OperateID}}</div>
-                        <div class="order-detail-middle-list-item">预订时间：{{order.DestineDateTime}}</div>
-                        <div class="order-detail-middle-list-item">预订手机：{{order.GuestTel}}</div>
-                        <div class="order-detail-middle-list-item" v-show="order.Status!==0">支付方式：{{PayType}}</div>
-                    </div>
-                </div>
-                <div class="order-detail-padding" v-show="order.IsGrade!==2"></div>
-                <div class="order-detail-comment" @click="toComment" v-show="order.IsGrade===0">
-                    点击评价
-                    <div class="choice-detail-comment-icon"></div>
-                </div>
-                <div class="order-detail-comment" @click="toComment" v-show="order.IsGrade===1">
-                    我的评价
-                    <div class="choice-detail-comment-icon"></div>
-                </div>
-                <div class="order-detail-bottom">
-                    <div class="order-detail-bottom-up">
-                        <div class="order-detail-bottom-up-icon"></div>
-                        <span class="order-detail-bottom-up-word-pink">{{drawback_time}}</span>
-                        <span class="order-detail-bottom-up-word" v-show="!overTime">前可随时自助退款。本订单未超过约定时间，可以自助退款，如有疑问请联系商家。</span>
-                        <span class="order-detail-bottom-up-word" v-show="overTime">前可随时自助。本订单已超过约定可自助退款时间，当天内经过商家审核才可退款，次日无法退款。</span>
-                    </div>
-                    <div class="order-detail-bottom-padding" v-show="order.isShowRefundButton===1"></div>
-                    <div class="order-detail-bottom-down" v-show="order.isShowRefundButton===1">
-                        <div class="order-detail-bottom-down-button" @click="openWindowBack">申请退款</div>
                     </div>
                 </div>
             </div>
@@ -198,7 +149,7 @@
 				}
 			}
         },
-		created () {
+		created () {console.log(99)
 			if (typeof WeixinJSBridge === 'undefined') {
 				if (document.addEventListener) {
 					document.addEventListener('WeixinJSBridgeReady', this.onBridgeReady, false)
@@ -214,13 +165,19 @@
 				let reqUrl = href.substring(0, href.indexOf('wechat_destine/#'))
 				this.$store.dispatch('setIp', reqUrl)
 			}
-			// 调用查询订单详情接口***********************************************************************
+            // 调用查询订单详情接口***********************************************************************
+            console.log(this.$route.query.payOrderId)
 			this.$store.dispatch('setIsLoading', true)
-			this.$http.post(this.$store.state.IP + 'reserve_service/Wechat/Destine/getOrderDetail', {
-					DestineOrderID: this.$route.query.DestineOrderID,
-					OpenID: this.$route.query.openid,
-					OperateID: this.$route.query.OperateID
-				},
+			this.$http.post(this.$store.state.IP + 'virtual/order/query/detail', {
+					access_token: '',
+                    companycode: '',
+                    timestamp: '',
+                    signature: '',
+                    // wechatPubId: this.$route.query.weChatId,
+                    data: {
+                        payorderid: this.$route.query.payOrderId
+                        }
+                    },
 				{
 					'emulateJSON': false,
 					'headers': {
@@ -233,17 +190,10 @@
 				console.log('调用查询订单详情接口开始')
 				response = response.body
 				console.log(response)
-				if (response.code === '0') {
-					this.order = response.data
-					this.$nextTick(() => {
-						this.payListScroll = new BScroll(this.$refs.payListHook, {
-							click: true,
-							probeType: 3
-						})
-						this.payListScroll.on('scroll', (pos) => {
-							this.y = pos.y + 10
-						})
-					})
+				if (response.ret === '0') {
+                    this.order = response.data
+                    // this.order = this.order.concat(this.order[0])
+                    // console.log(this.order)
 				}
 				if (response.code !== '0') {
 					console.log('返回码不是0')
@@ -258,91 +208,36 @@
 			// 调用查询订单详情接口********************************************************************
 		},
 		methods: {
-			toComment () {
-				this.$router.push({path: 'commentShow', query: {openid: this.$route.query.openid, DestineOrderID: this.$route.query.DestineOrderID, OperateID: this.$route.query.OperateID}})
-            },
-			closeWindowBack () {
+            closeWindowBack () {
 				this.windowBack = false
             },
 			openWindowBack () {
 				this.windowBack = true
             },
-			onBridgeReady () {
-				WeixinJSBridge.call('hideOptionMenu')
-			},
-			getTimeCompare (date1, date2) {
-				if (date1.getTime() >= date2.getTime()) {
-					return true
-				}
-				if (date1.getTime() < date2.getTime()) {
-					return false
-				}
-			},
-			testTen (test) {
-				if (test < 10) {
-					return '0' + test
-				}
-				if (test > 9) {
-					return '' + test
-				}
-			},
-			timeFormat (time) {
-				let y = time.getUTCDay()
-				let yString = ''
-				if (y === 1) {
-					yString = '周一'
-				}
-				if (y === 2) {
-					yString = '周二'
-				}
-				if (y === 3) {
-					yString = '周三'
-				}
-				if (y === 4) {
-					yString = '周四'
-				}
-				if (y === 5) {
-					yString = '周五'
-				}
-				if (y === 6) {
-					yString = '周六'
-				}
-				if (y === 0) {
-					yString = '周日'
-				}
-				let date1 = new Date()
-				let date2 = new Date()
-				date2.setDate(date1.getDate() + 1)
-				let date3 = new Date()
-				date3.setDate(date1.getDate() + 2)
-				if (this.dateToString(date1) === this.dateToString(time)) {
-					yString = '今天'
-				}
-				if (this.dateToString(date2) === this.dateToString(time)) {
-					yString = '明天'
-				}
-				if (this.dateToString(date3) === this.dateToString(time)) {
-					yString = '后天'
-				}
-				return yString
-			},
-			dateToString (date) {
-				return date.getFullYear() + '-' + this.testTen(date.getMonth() + 1) + '-' + date.getDate()
-			},
-			stringToDate (string) {
-				let dateStr = string
-				let arr = dateStr.split(/[- :]/)
-				let time = new Date(arr[0], arr[1] - 1, arr[2], arr[3], arr[4], arr[5])
-                return time
-            },
-			toPayAbandon () {
-				this.$router.push({path: 'pay_abandon', query: {openid: this.$route.query.openid, DestineOrderID: this.$route.query.DestineOrderID, OperateID: this.$route.query.OperateID}})
-			}
+			checkStatusToText (checkStatus) {
+                // 核销状态 0 已付款 ,1已核销 ,2已撤单，3已退款
+                let text = ''
+                switch (checkStatus) {
+                    case 0:
+                        text = '已付款'
+                        break
+                    case 1:
+                        text = '已核销'
+                        break
+                    case 2:
+                        text = '已撤单'
+                        break
+                    case 3:
+                        text = '已退款'
+                        break
+                }
+                return text
+            }
 		}
 	}
 </script>
 
-<style lang="stylus" rel="stylesheet/stylus">
+<style lang="stylus" rel="stylesheet/stylus" scoped>
     .order-detail
         width 100%
         height 100%
@@ -367,6 +262,9 @@
             left 0
             background #201c19
             overflow hidden
+            .order-detail-card
+                margin-top 15px
+                overflow hidden
             .order-detail-padding-top
                 width 100%
                 height 10px
@@ -399,10 +297,15 @@
                         height 80px
                         padding 15px
                         background #423c31
+                        border-bottom  1px solid #cea16a
                         img
                             width 50px
                             height 50px
                             border-radius 3px
+                            vertical-align middle
+                        span
+                            margin-left 15px
+                            vertical-align middle
                         .order-detail-top-title-left-wrapper
                             display inline-block
                             vertical-align top
@@ -467,7 +370,7 @@
                         color rgba(255,255,255,0.7)
                 .order-detail-top-list
                     width 100%
-                    height 100px
+                    // height 100px
                     padding 15px
                     .order-detail-top-list-item
                         color rgba(255,255,255,0.7)

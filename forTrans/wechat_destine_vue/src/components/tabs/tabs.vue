@@ -1,5 +1,5 @@
 <template>
-    <div class="ticket-wrapper">
+    <div class="tabs-wrapper">
         <div class="tabs">
             <div class="tab" v-for="(item, idx) in list" :key="idx" :class="aplitClass" @click="checkTab(item.type)">
                 <router-link class="text" :class="{ active: item.type == 0}" :to="item.to">
@@ -30,11 +30,17 @@
             }
 		},
         created () {
-			// console.log(this.linePos)
+            this.type = this.$store.state.tabType
+			console.log('this.list')
+			console.log(this.type)
+        },
+        updated () {
+            this.type = this.$store.state.tabType
         },
         methods: {
 	        checkTab (type) {
-                this.type = type;
+                this.type = type
+                this.$store.dispatch('setTabType', this.type)
             }
         },
         computed: {
@@ -52,8 +58,8 @@
 
 <style lang="stylus" rel="stylesheet/stylus" scoped>
 @import "../../common/stylus/index.styl";
-    .ticket-wrapper
-        background #201c19
+    .tabs-wrapper
+        background #423c31
         min-height 100%
         color #cea16a
         padding 0 10px
@@ -64,8 +70,8 @@
             position relative
             .line
                 position absolute
-                bottom 6px
-                width 30px
+                bottom 0px
+                width 50px
                 height 3px
                 border-radius 1.5px
                 background #cea16a

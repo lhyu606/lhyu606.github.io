@@ -27,9 +27,18 @@
                 <div class="totleCount">
                     <span class="num">{{ totleCount }}</span>件商品
                 </div>
+                <div class="ball-container">
+                    <div v-for="(ball, idx) in balls" :key="idx">
+                        <transition name="drop" @before-enter="beforeDrop" @enter="dropping" @after-enter="afterDrop">
+                            <div class="ball" v-show="ball.show">
+                                <div class="inner inner-hook"></div>
+                            </div>
+                        </transition>
+                    </div>
+                </div>
             </div>
             <div class="right">
-                <div class="buybtn" :class="{active: totleCount > 0}" @click='wechatPay'>购买</div>
+                <div class="buybtn" :class="{active: totleCount > 0}" @click='OrderCreate'>下单</div>
             </div>
         </div>
     </div>
@@ -46,17 +55,44 @@
 			return {
 				ip: '',
                 ticketList: [
-                    {
-                        id: 1,
-                        title: 'RAVE套装-发光臂环',
-                        price: 368,
-                        pic: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg'
-                    }
+                    // {
+                    //     "virtualGoodId": 1,
+                    //     "headShopNo": 1,
+                    //     "shopNo": 36,
+                    //     "goodType": 0,
+                    //     "gradeId": 1,
+                    //     "sellNum": 200,
+                    //     "leftNum": 150,
+                    //     "iconUrl": "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3119243828,2785799000&fm=26&gp=0.jpg",
+                    //     "beginTime": "2019-5-20 10:48:16",
+                    //     "endTime": "2019-5-20 10:48:16",
+                    //     "payType": 0,
+                    //     "cashPrice": 0.01,
+                    //     "integralPrice": 0,
+                    //     "goodName": "测试券0",
+                    //     "remark": "现在开始测试",
+                    //     "sellEndTime": "2019-5-20 10:48:16",
+                    //     "sellBeginTime": "2019-5-20 10:48:16"
+                    // }
                 ],
                 cartList: [],
                 showCartList: false,
                 cartBs: null,
                 hasControl: true,
+                balls: [
+                    {
+                        show: false
+                    },{
+                        show: false
+                    },{
+                        show: false
+                    },{
+                        show: false
+                    },{
+                        show: false
+                    },
+                ],
+                dropBalls: []
             }
 		},
         created () {
@@ -115,7 +151,8 @@
             })
         },
         methods: {
-	        addCart (ticket) {
+	        addCart (ticket, el) {
+                this.drop (el)
                 for (let i=0; i<this.cartList.length; i++) {
                     if (this.cartList[i].virtualGoodId == ticket.virtualGoodId) {
                         return ;
@@ -136,12 +173,53 @@
                 }
                 this.checkCartList();
             },
-            wechatPay () {
+            OrderCreate () {
                 if (this.totleCount <= 0) {
                     alert('请先选择商品 ');
                     return;
                 }
-                alert('微信支付 ' + this.totlePrice + ' 元')
+                // 虚拟商品预下单
+                // @orders: {Key 商品id: value 商品数量}
+                let orders = {}
+                for (let i=0; i<this.cartList.length; i++) {
+                    orders[this.cartList[i].virtualGoodId] = this.cartList[i].count
+                }
+                this.$store.dispatch('setIsLoading', true)
+                    this.$http.post(this.$store.state.IP + 'virtual/order/create', {
+                        access_token: '',
+                        companycode: '',
+                        timestamp: '',
+                        signature: '',
+                        // wechatPubId: this.$route.query.weChatId,
+                        data: {
+                            shopno: this.$route.query.shopNo,
+                            openid: this.$route.query.openid,
+                            orders: orders,
+                            goodnum: this.totleCount,
+                            paychannel: 0,
+                            paymoney: this.totlePrice,
+                            paytype: 0, // 0 微信支付
+                            headshopno: this.cartList[0].headShopNo
+                        }
+                        
+                    },{
+                        'emulateJSON': false,
+                        'headers': {
+                            'Content-Type': 'application/json;charset=UTF-8'
+                        }
+                    }).then(response => {
+                        this.$store.dispatch('setIsLoading', false)
+                        console.log(response.body.ret)
+                        if (response.body.ret === '0') {
+                            
+                            // console.log(response.body.data)
+                        }
+                    
+                    }, response => {
+                        this.$store.dispatch('setIsLoading', false)
+                        console.log('调用虚拟商品列表接口失败了')
+                    })
+                //alert('微信支付 ' + this.totlePrice + ' 元')
             },
             checkCartList () {
                 for (let i=0; i<this.cartList.length; i++) {
@@ -190,6 +268,53 @@
                     }
                 }
                 console.log(this.ticketList, this.$store.state.ticketList)
+            },
+            drop (el) {
+                for (let i = 0; i < this.balls.length; i++) {
+                    let ball = this.balls[i]
+                    if (!ball.show) {
+                        ball.show = true
+                        ball.el = el
+                        this.dropBalls.push(ball)
+                        return
+                    }
+                }
+            },
+            beforeDrop (el) {
+                let count = this.balls.length
+                while (count--) {
+                    let ball = this.balls[count]
+                    if (ball.show) {
+                        let rect = ball.el.getBoundingClientRect()
+
+                        let x = rect.left - 35
+                        let y = -(window.innerHeight - rect.top - 44)
+                        el.style.display = ''
+                        el.style.webkitTransform = `translate3d(0,${y}px,0)`
+                        el.style.transform = `translate3d(0,${y}px,0)`
+                        let inner = el.getElementsByClassName('inner-hook')[0]
+                        inner.style.webkitTransform = `translate3d(${x}px,0,0)`
+                        inner.style.transform = `translate3d(${x}px,0,0)`
+                    }
+                }
+            },
+            dropping (el, done) {
+                let rf = el.offsetHeight
+                this.$nextTick(() => {
+                el.style.webkitTransform = 'translate3d(0,0,0)'
+                el.style.transform = 'translate3d(0,0,0)'
+                let inner = el.getElementsByClassName('inner-hook')[0]
+                inner.style.webkitTransform = 'translate3d(0,0,0)'
+                inner.style.transform = 'translate3d(0,0,0)'
+                el.addEventListener('transitionend', done)
+                })
+            },
+            afterDrop (el) {
+                let ball = this.dropBalls.shift()
+                if (ball) {
+                    ball.show = false
+                    el.style.display = 'none'
+                }
             }
         },
         computed: {
@@ -241,9 +366,9 @@
         left 0
         right 0
         height 48px
-        background #333333
+        background #423c31
         display flex
-        justify-content pace-between
+        justify-content space-between
         .cartlist
             position absolute
             top 0
@@ -252,7 +377,7 @@
             transform translate(0, -100%)
             width 100%
             max-height 180px
-            background #666666
+            background #201c19
             text-align center
             overflow hidden
             border-top 2px solid #cea16a
@@ -289,6 +414,20 @@
             line-height 20px
             .totlePrice
                 font-weight 900
+            .ball-container
+                .ball
+                    position: fixed
+                    left: 35px
+                    bottom: 35px
+                    z-index: 2000
+                    /*transition: all 0.5s cubic-bezier(0.49, -0.29, 0.75, 0.41)*/
+                    transition: all .5s cubic-bezier(0.66, -0.44, 0.9, 0.43)
+                    .inner
+                        width: 16px
+                        height: 16px
+                        border-radius: 50%
+                        background #cea16a
+                        transition: all .5s linear
         .right
             width 120px
             height 100%

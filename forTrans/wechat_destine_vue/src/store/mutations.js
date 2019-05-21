@@ -9,6 +9,7 @@ const SET_IP = 'SET_IP'
 const SET_IS_LOADING = 'SET_IS_LOADING'
 const SET_NOW_TOAST = 'SET_NOW_TOAST'
 const SET_TICKET_LIST = 'SET_TICKET_LIST'
+const SET_TAB_TYPE = 'SET_TAB_TYPE'
 const SET_FIRST_IN = 'SET_FIRST_IN'
 
 export default {
@@ -35,6 +36,9 @@ export default {
 	},
 	[SET_TICKET_LIST] (state, payload) {
 		state.ticketList = payload.item
+	},
+	[SET_TAB_TYPE] (state, payload) {
+		state.tabType = payload.item
 	}
 }
 

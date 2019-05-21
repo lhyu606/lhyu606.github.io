@@ -50,18 +50,17 @@
                 
             }
 		},
-        created () {console.log(this.ticketList)
+        created () {
             // console.log(this.hasControl, this.noControlText)
 			this.$nextTick(()=>{
                 this.listScroll = new BScroll(this.$refs.listWrapper,{
 					click: true
 				});
             });
-            console.log(this.ticketList)
         },
         methods: {
-	        addCart (ticket) {
-                this.$emit('addCart', ticket);
+	        addCart (ticket, el) {
+                this.$emit('addCart', ticket, el);
             }, 
             decreaseCart (ticket) {
                 this.$emit('decreaseCart', ticket);

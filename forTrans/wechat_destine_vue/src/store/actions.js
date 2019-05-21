@@ -23,4 +23,7 @@ export default {
 	setTicketList ({ commit, state }, item) {
 		commit('SET_TICKET_LIST', {item})
 	},
+	setTabType ({ commit, state }, item) {
+		commit('SET_TAB_TYPE', {item})
+	},
 }

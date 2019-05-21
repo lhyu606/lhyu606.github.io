@@ -1,19 +1,12 @@
 <template>
     <div class="ticket-wrapper">
-        <!-- <div class="tabs">
-            <div class="tab">
-                <router-link class="text" :class="{ active: type == 0 }" to="/mall/all" @click="type=0">
-                    <span>商品</span>
+        <div class="tabs">
+            <div class="tab" v-for="(item,idx) in tabs" :key="idx">
+                <router-link class="text" :class="{ active: type == item.type }" :to="item.to" @click="checkType(item.type)">
+                    <span>{{ item.text }}</span>
                 </router-link>
             </div>
-            <div class="tab">
-                <router-link class="text" :class="{ active: type == 1 }" to="/mall/record" @click="type=1">
-                    <span>我的订单</span>
-                </router-link>
-            </div>
-            <div class="line"></div>
-        </div> -->
-        <tabs :list='tabs' />
+        </div>
         <router-view></router-view>
     </div>
 </template>
@@ -77,8 +70,8 @@
                 }
                 console.log(this.tabs)
             },
-	        checkTab (type) {
-                console.log(type)
+            checkType (type) {
+                this.type = type
             }
         },
         computed: {
@@ -102,7 +95,8 @@
             font-size 0px
             width 100%
             height 48px
-            border-1px(rgba(255,255,255,0.7))
+            background #423c31
+            // border-1px(rgba(255,255,255,0.7))
             .tab
                 display inline-block
                 width 50%
@@ -122,10 +116,13 @@
                     &.router-link-exact-active
                         span:after
                             position absolute
-                            left 0
-                            bottom -6px
+                            left 50%
+                            bottom -14px
+                            transform translate(-50%, 0)
                             content ''
                             display block
-                            width 100%
-                            border-top 1px solid #cea16a
+                            width 50px
+                            height 3px
+                            border-radius 1.5px
+                            background #cea16a
 </style>

@@ -31,7 +31,8 @@ const state = {
 	openId: '1234567',
 	// 第一次打开页面
 	firstIn: true,
-	ticketList: []
+	ticketList: [],
+	tabType: 0
 }
 
 export default new Vuex.Store({

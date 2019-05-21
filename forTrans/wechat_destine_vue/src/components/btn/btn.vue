@@ -35,7 +35,7 @@
                 } else {
                     this.ticket.count++;
                 }
-                this.$emit('addCart',this.ticket);
+                this.$emit('addCart', this.ticket, event.target);
             },
             decreaseCart (event) {
                 if (event._constructed) {
