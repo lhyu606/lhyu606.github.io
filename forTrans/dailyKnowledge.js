@@ -60,7 +60,7 @@
 // splice reverse fill copyWithin sort push pop shift unshift
 
 // 不改变原数组 API
-// slice map forEach every filter reduce entry entries find
+// slice map forEach every some filter reduce entry entries find 
 
 
 // let 局部变量，不提升，不允许重复声明
@@ -141,25 +141,31 @@ dog instanceof Life;	// true
 
 // 深 copy
 function deepCopy(obj) {
-	if (obj == null) {
-		return null;
-	}
-	if(obj instanceof Date) {
-		return new Date(obj);
-	}
-	if(obj instanceof RegExp) {
-		return new RegExp(obj);
-	}
-	// let t = new obj.constructor();
-	var type = Object.prototype.toString.call(obj).slice(8, -1);
-	// console.log(type == 'Array' || type == 'Object')
-	if(type == 'Array' || type == 'Object') {
-		for(let key in obj) {
-			deepCopy(obj[key])
-		}
-	}
-
-	return obj;
+  if (obj == null) {
+    return null
+  }
+  if(obj instanceof Date) {
+    return new Date(obj)
+  }
+  if(obj instanceof RegExp) {
+    return new RegExp(obj)
+  }
+  var type = Object.prototype.toString.call(obj).slice(8, -1)
+  let clone = type == 'Array' ? [] : {}
+  if(type == 'Array' || type == 'Object'){
+    for(let key in obj){
+      if(obj.hasOwnProperty(key)){
+        if(obj[key] && typeof obj[key] === "object"){
+          clone[key] = this.deepCopy(obj[key])
+        }else{
+          clone[key] = obj[key]
+        }
+      }
+    }
+  } else {
+  	clone = obj
+  }
+  return clone
 }
 
 var obj = {
