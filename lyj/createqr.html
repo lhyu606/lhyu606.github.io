@@ -1,0 +1,154 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <title>福建省注册会计师协会报备系统</title>
+<style>
+body {
+  max-width: 1200px;
+}
+div {box-sizing: border-box;}
+.thead {
+  text-align: center;
+  margin: 20px 0; 
+}
+.contain {
+  border-left: 1px solid #dedede;
+  border-top: 1px solid #dedede;
+  line-height: 25px;
+  font-size: 0;
+}
+.title {
+  display: inline-block;
+  width: 20%;
+  height: 26px;
+  padding: 0 4px;
+  border-right: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+  font-size: 16px;
+  background: #f3f3f3;
+  vertical-align: top;
+}
+.title.none {
+  background: none;
+  border-right: none;
+}
+.content {
+  display: inline-block;
+  width: 30%;
+  height: 26px;
+  padding: 0 4px;
+  border-right: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+  font-size: 16px;
+  vertical-align: top;
+}
+.content input {
+  width: 100%;
+}
+.button {
+  margin: 20px;
+  padding: 0 14px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 4px;
+  text-align: center;
+  background: #dedede;
+}
+</style>
+</head>
+<body id="body">
+  <h3 class="thead">福建省注册会计师协会报备系统</h3>
+<div class="contain">
+  <form>
+  <div class="line">
+    <div class="title">报备号</div>
+    <div class="content">
+      <input type="text" name="" id="baobeihao">
+    </div>
+    <div class="title">报告日期</div>
+    <div class="content">
+      <input type="text" name="" id="date">
+    </div>
+  </div>
+  <!-- line -->
+  <div class="line">
+    <div class="title">事务所名称</div>
+    <div class="content">
+      <input type="text" name="" id="shopName">
+    </div>
+    <div class="title none">&nbsp;</div>
+    <div class="content">
+      <!-- <input type="text" name=""> -->
+      &nbsp;
+    </div>
+  </div>
+  <!-- line -->
+  <div class="line">
+    <div class="title">客户名称</div>
+    <div class="content">
+      <input type="text" name="" id="uname">
+    </div>
+    <div class="title">报告文号</div>
+    <div class="content">
+      <input type="text" name="" id="baogaohao">
+    </div>
+  </div>
+  <!-- line -->
+  <div class="line">
+    <div class="title">签字注师一</div>
+    <div class="content">
+      <input type="text" name="" id="zhushi1">
+    </div>
+    <div class="title">签字注师二</div>
+    <div class="content">
+      <input type="text" name="" id="zhushi2">
+    </div>
+  </div>
+  <!-- line -->
+  <div class="line">
+    <div class="title">审计报告意见类型</div>
+    <div class="content">
+      <input type="text" name="" id="yijian">
+    </div>
+    <div class="title none"></div>
+    <div class="content">
+      &nbsp;
+    </div>
+  </div>
+  <!-- line -->
+  </form>
+</div>
+<div class="button">生成二维码</div>
+  <div id="qrcode"></div>
+
+
+<script type="text/javascript" src="https://browser.360.cn/ajax/jquery_1.11.3_jquery.min.js"></script>
+<script type="text/javascript" src="http://www.jq22.com/js/jquery.qrcode.min.js"></script>
+<script>
+  var result = {}
+  $('.button').click(function () {
+    // 搜集数据，生成二维码
+    var inputs = $("input")
+    for (var i=0; i<inputs.length; i++) {
+      var key = inputs[i].getAttribute('id')
+      var value = inputs[i].value
+      if (!value || value == '') {
+        console.log('有选项未填满')
+      }
+      result[key] = value
+    }
+
+    console.log(result )
+    var scene = encodeURIComponent(JSON.stringify(result))
+    console.log(scene)
+    var url = "https://lhyu606.github.io/lyj/queryResult.html?scene=" + scene
+    console.log(url)
+    jQuery(function(){
+      jQuery('#qrcode').qrcode(url);
+    })
+  })
+  
+</script>
+</body>
+</html>
