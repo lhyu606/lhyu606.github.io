@@ -3,54 +3,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
   <title>福建省注册会计师协会报备系统</title>
-  <script type="text/javascript">
-    !function (window) {
-
-    /* 设计图文档宽度 */
-    var docWidth = 750;
-
-    var doc = window.document,
-        docEl = doc.documentElement,
-        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
-
-    var recalc = (function refreshRem () {
-        var clientWidth = docEl.getBoundingClientRect().width;
-
-        /* 8.55：小于320px不再缩小，11.2：大于420px不再放大 */
-        docEl.style.fontSize = Math.max(Math.min(20 * (clientWidth / docWidth), 11.2), 8.55) * 5 + 'px';
-
-        return refreshRem;
-    })();
-
-    /* 添加倍屏标识，安卓倍屏为1 */
-    docEl.setAttribute('data-dpr', window.navigator.appVersion.match(/iphone/gi) ? window.devicePixelRatio : 1);
-
-    if (/iP(hone|od|ad)/.test(window.navigator.userAgent)) {
-        /* 添加IOS标识 */
-        doc.documentElement.classList.add('ios');
-        /* IOS8以上给html添加hairline样式，以便特殊处理 */
-        if (parseInt(window.navigator.appVersion.match(/OS (\d+)_(\d+)_?(\d+)?/)[1], 10) >= 8)
-            doc.documentElement.classList.add('hairline');
-    }
-
-    if (!doc.addEventListener) return;
-    window.addEventListener(resizeEvt, recalc, false);
-    doc.addEventListener('DOMContentLoaded', recalc, false);
-
-}(window);
-  </script>
 <style>
 body {
-  min-width: 855px;
-  max-width: 1200px;
+  /*overflow: hidden;*/
 }
 div {box-sizing: border-box;}
 .thead {
+  transform-origin:left top;
   text-align: center;
   margin: 20px 0; 
-  font-size: 18px;
+  font-size: 14px;
 }
 .contain {
+  transform-origin:left top;
+  min-width: 1000px;
   border-left: 1px solid #dedede;
   border-top: 1px solid #dedede;
   line-height: 30px;
@@ -206,8 +172,10 @@ div {box-sizing: border-box;}
   }
   
 
-  window.history.pushState("9989", "123", origin + pathname + '?' + time);
+  // window.history.pushState(" ", " ", origin + pathname + '?' + time);
+  console.log(window.innerWidth - 16 / 1000, )
+  var scale = (window.innerWidth - 16) / 1000
+  $('.contain').css('transform', 'scale('+scale+')')
 </script>
 </body>
 </html>
-<!-- https://lhyu606.github.io/lyj/queryResult.html -->
