@@ -3,14 +3,52 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
   <title>福建省注册会计师协会报备系统</title>
+  <script type="text/javascript">
+    !function (window) {
+
+    /* 设计图文档宽度 */
+    var docWidth = 750;
+
+    var doc = window.document,
+        docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+
+    var recalc = (function refreshRem () {
+        var clientWidth = docEl.getBoundingClientRect().width;
+
+        /* 8.55：小于320px不再缩小，11.2：大于420px不再放大 */
+        docEl.style.fontSize = Math.max(Math.min(20 * (clientWidth / docWidth), 11.2), 8.55) * 5 + 'px';
+
+        return refreshRem;
+    })();
+
+    /* 添加倍屏标识，安卓倍屏为1 */
+    docEl.setAttribute('data-dpr', window.navigator.appVersion.match(/iphone/gi) ? window.devicePixelRatio : 1);
+
+    if (/iP(hone|od|ad)/.test(window.navigator.userAgent)) {
+        /* 添加IOS标识 */
+        doc.documentElement.classList.add('ios');
+        /* IOS8以上给html添加hairline样式，以便特殊处理 */
+        if (parseInt(window.navigator.appVersion.match(/OS (\d+)_(\d+)_?(\d+)?/)[1], 10) >= 8)
+            doc.documentElement.classList.add('hairline');
+    }
+
+    if (!doc.addEventListener) return;
+    window.addEventListener(resizeEvt, recalc, false);
+    doc.addEventListener('DOMContentLoaded', recalc, false);
+
+}(window);
+  </script>
 <style>
 body {
+  min-width: 855px;
   max-width: 1200px;
 }
 div {box-sizing: border-box;}
 .thead {
   text-align: center;
   margin: 20px 0; 
+  font-size: 18px;
 }
 .contain {
   border-left: 1px solid #dedede;
@@ -21,7 +59,7 @@ div {box-sizing: border-box;}
 .title {
   display: inline-block;
   width: 20%;
-  height: 30px;
+  min-height: 30px;
   padding: 0 4px;
   border-right: 1px solid #dedede;
   border-bottom: 1px solid #dedede;
@@ -36,7 +74,7 @@ div {box-sizing: border-box;}
 .content {
   display: inline-block;
   width: 30%;
-  height: 30px;
+  min-height: 30px;
   padding: 0 4px;
   border-right: 1px solid #dedede;
   border-bottom: 1px solid #dedede;
@@ -152,9 +190,10 @@ div {box-sizing: border-box;}
 
 <script type="text/javascript" src="../forTrans/js/jquery.min.js"></script>
 <script>
-  // var i = '%7B%22baobeihao%22%3A%2223%22%2C%22date%22%3A%2212-12%22%2C%22shopName%22%3A%22%E9%98%BF%E6%96%AF%E8%92%82%22%2C%22uname%22%3A%22%E9%98%BF%E4%BA%8C%22%2C%22baogaohao%22%3A%22%E5%9C%B0%E6%96%B9%EF%BC%8854%EF%BC%89%E7%88%B1%E7%9A%84%E8%89%B2%E6%94%BE%22%2C%22zhushi1%22%3A%22%E7%A8%8D%E7%AD%89%22%2C%22zhushi2%22%3A%22%E7%A8%8D%E7%AD%89%22%7D'
   var origin = window.location.origin
   var pathname = window.location.pathname
+  var date = new Date()
+  var time = date.getTime()
   var url = window.location.search.slice(7)
   try {
     var query = JSON.parse(decodeURIComponent(url))
@@ -167,8 +206,8 @@ div {box-sizing: border-box;}
   }
   
 
-  window.history.pushState("9989", "123", origin + pathname);
-  // http://localhost/queryResult.html?scene=%7B%22baobeihao%22%3A%2223%22%2C%22date%22%3A%2212-12%22%2C%22shopName%22%3A%22%E9%98%BF%E6%96%AF%E8%92%82%22%2C%22uname%22%3A%22%E9%98%BF%E4%BA%8C%22%2C%22baogaohao%22%3A%22%E5%9C%B0%E6%96%B9%EF%BC%8854%EF%BC%89%E7%88%B1%E7%9A%84%E8%89%B2%E6%94%BE%22%2C%22zhushi1%22%3A%22%E7%A8%8D%E7%AD%89%22%2C%22zhushi2%22%3A%22%E7%A8%8D%E7%AD%89%22%7D
+  window.history.pushState("9989", "123", origin + pathname + '?' + time);
 </script>
 </body>
 </html>
+<!-- https://lhyu606.github.io/lyj/queryResult.html -->
