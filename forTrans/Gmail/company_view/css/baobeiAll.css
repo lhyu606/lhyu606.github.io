@@ -1,0 +1,66 @@
+.thead {
+	text-align: center;
+}
+/* 分页查询页面 */
+.table {
+	width: 100%;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-collapse: collapse;
+}
+.table thead td {
+	text-align: center;
+	font-weight: bold;
+}
+.table tr:hover {
+	background: #efefef;
+}
+.table td {
+  padding: 4px;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.totle {
+	text-align: right;
+}
+.page {
+	margin-top: 20px; 
+	text-align: center;
+}
+.prev, .next {
+	padding: 6px 16px;
+	color: #fff;
+	background: #4caf50;
+	border-radius: 16px;
+	cursor: pointer;
+}
+.prev.grey, .next.grey {
+	background: #ededed;
+}
+.current {
+	margin: 0 14px;
+	width: 60px;
+	text-align: center;
+	border: none;
+	border-bottom: 1px solid #dedede;
+	outline: 0;
+}
+.changePage {
+	color: #0865BB;
+	cursor: pointer;
+	margin-left: 20px;
+}
+
+.edit {
+	color: #4caf50;
+	cursor: pointer;
+}
+.createQr {
+	color: #0865BB;
+	cursor: pointer;
+}
+.delete {
+	color: #ff0000;
+	cursor: pointer;
+}
+/* 分页查询页面 */

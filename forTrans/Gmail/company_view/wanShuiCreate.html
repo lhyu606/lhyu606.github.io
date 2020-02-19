@@ -1,0 +1,166 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <title>厦门税务</title>
+  <link rel="stylesheet" type="text/css" href="./css/wanShui.css">
+  <link rel="stylesheet" type="text/css" href="./css/jqDatePicker.css">
+</head>
+<body id="body">
+<div class="contain"><a href="/" style="float: right;font-size: 14px;">返回首页</a>
+  <div class="header line bgBlue">一般完税证明查验</div>
+  <div class="line flexlr">
+    <div class="title">来源:</div>
+    <div class="content">
+      <input type="text" name="" id="source">
+    </div>
+  </div>
+  <div class="line flexlr">
+    <div class="title">文书编号:</div>
+    <div class="content">
+      <input type="text" name="" id="wenShu">
+    </div>
+  </div>
+  <div class="line flexlr">
+    <div class="title">纳税人识别号:</div>
+    <div class="content">
+      <input type="text" name="" id="naShuiId">
+    </div>
+  </div>
+  <div class="line flexlr">
+    <div class="title">纳税人名称:</div>
+    <div class="content">
+      <input type="text" name="" id="naShuiName">
+    </div>
+  </div>
+  <div class="line flexlr">
+    <div class="title">入退库日期始:</div>
+    <div class="content">
+      <input type="text" name="" id="stockStart">
+    </div>
+  </div>
+  <div class="line flexlr">
+    <div class="title">入退库日期止:</div>
+    <div class="content">
+      <input type="text" name="" id="stockEnd">
+    </div>
+  </div>
+  <div class="line flexlr">
+    <div class="title">开具日期:</div>
+    <div class="content">
+      <input type="text" name="" id="naShuiDate">
+    </div>
+  </div>
+  <div class="line flexlr">
+    <div class="title">合计金额:</div>
+    <div class="content">
+      <input type="text" name="" id="totle">
+    </div>
+  </div>
+  <div class="line flexlr">
+    <div class="title">合计金额大写:</div>
+    <div class="content">
+      <input type="text" name="" id="totleBig">
+    </div>
+  </div>
+  <div class="line flexlr">
+    <div class="title">纳税项目:</div>
+    <div class="content">
+      <input type="text" name="" id="taxItem">
+    </div>
+  </div>
+  <div class="line flexlr">
+    <div class="title">实缴税款:</div>
+    <div class="content">
+      <input type="text" name="" id="taxPaid">
+    </div>
+  </div>
+  <div class="line flexlr">
+    <div class="title">实退金额:</div>
+    <div class="content">
+      <input type="text" name="" id="taxReturn">
+    </div>
+  </div>
+  <div class="line flexlr">
+    <div class="title">缴(退)金额合计:</div>
+    <div class="content">
+      <input type="text" name="" id="taxPaidReturn">
+    </div>
+  </div>
+</div>
+<div class="button">生成二维码</div>
+<div id="qrcode"></div>
+
+
+<script type="text/javascript" src="./js/jquery.min.js"></script>
+<script type="text/javascript" src="./js/jqDatePicker.js"></script>
+<script type="text/javascript" src="./js/jquery.qrcode.min.js"></script>
+<script>
+$(function($) {
+  var date = new Date()
+  var today = date.getFullYear() + 50 + '-' + (date.getMonth()+1) + '-' + date.getDate()
+  // 初始化 日期 插件
+  console.log($("#stockStart"))
+  $("#stockStart").myDatePicker({
+    startDate: '1990-01-01 00:00:00', //不指定则取2014-01-01
+     endDate: today,  //不指定则取当天
+     parent: $("#stockStart").parent(), //不指定则取body
+     view: 2 //默认为2  0-4五个数字分别表示 年、月、日、周、季度 五个视图
+  });
+  $("#stockEnd").myDatePicker({
+    startDate: '1990-01-01 00:00:00', //不指定则取2014-01-01
+     endDate: today,  //不指定则取当天
+     parent: $("#stockStart").parent(), //不指定则取body
+     view: 2 //默认为2  0-4五个数字分别表示 年、月、日、周、季度 五个视图
+  });
+  $("#naShuiDate").myDatePicker({
+    startDate: '1990-01-01 00:00:00', //不指定则取2014-01-01
+     endDate: today,  //不指定则取当天
+     parent: $("#stockStart").parent(), //不指定则取body
+     view: 2 //默认为2  0-4五个数字分别表示 年、月、日、周、季度 五个视图
+  });
+
+  var result = {}
+  var origin = window.location.origin
+  $('.button').click(function () {
+    // 搜集数据，生成二维码
+    var inputs = $("input")
+    for (var i=0; i<inputs.length; i++) {
+      var key = inputs[i].getAttribute('id')
+      var value = inputs[i].value
+      if (!value || value == '') {
+        console.log('有选项未填满')
+      }
+      result[key] = value
+    }
+
+    console.log(result )
+    var scene = encodeURIComponent(JSON.stringify(result))
+    console.log(scene)
+    var url = origin + "/wanShuiQuery.html?scene=" + scene
+    // 存储 内容
+    $.ajax({
+      type: "POST",
+      url: origin + "/company_service/public/index.php/api/saveShuiWu",
+      data: result,
+      success: function(res){
+        console.log(res.data );
+        url = origin + "/company_view/wanShuiQuery.html?scene=" + res.data.id
+        console.log(url)
+        jQuery(function(){
+          jQuery('#qrcode').qrcode(url);
+        })
+      }
+    })
+  })
+  
+})
+</script>
+</body>
+</html>
+<!-- $("#input-id").myDatepicker({
+     startDate:'yyyy-mm-dd', //不指定则取2014-01-01
+     endDate:'yyyy-mm-dd',  //不指定则取当天
+     parent: $(parent-selector), //不指定则取body
+     view: 3 //默认为2  0-4五个数字分别表示 年、月、日、周、季度 五个视图
+}); -->
