@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+
+  "name": "一键隐藏",
+  "description": "网页上不想看到的内容可以随手点击隐藏，达到更好的页面视图",
+  "version": "2.1.2",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["ms.js"]
+    }
+  ]
+}
